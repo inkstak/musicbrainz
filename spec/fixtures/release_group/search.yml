@@ -1,0 +1,347 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/release-group?fmt=json&inc=&limit=10&query=releasegroup:%22nevermind%22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.9
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 06 Mar 2014 10:53:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Etag:
+      - "\"1329ff9d25dad78b5a65d2aad3166865\""
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: "{\"created\":\"2014-03-06T08:30:56.684Z\",\"count\":23,\"offset\":0,\"release-groups\":[{\"id\":\"1b022e01-4da6-387b-8658-8678046e4cef\",\"score\":\"100\",\"count\":32,\"title\":\"Nevermind\",\"primary-type\":\"Album\",\"artist-credit\":[{\"artist\":{\"id\":\"5b11f4ce-a62d-471e-81fc-a69a8278c7da\",\"name\":\"Nirvana\",\"sort-name\":\"Nirvana\",\"disambiguation\":\"90s
+        US grunge band\",\"aliases\":[{\"sort-name\":\"Nirvana US\",\"name\":\"Nirvana
+        US\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null}]}}],\"releases\":[{\"id\":\"45ee6323-6b11-4487-a66c-4e5d3c453eac\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"947348c2-7802-3030-a1ba-85bbac99bfe0\",\"title\":\"Nevermind\",\"status\":\"Bootleg\"},{\"id\":\"b4e87df5-e995-4438-ae42-c8df327f163f\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"88b363cb-86b2-431f-84b4-525d4aa7aa62\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"b8ccb9bf-9d3a-4adb-99c3-79ffe9812fb8\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"14da9257-d8aa-374b-9d9a-59435947afb5\",\"title\":\"Nevermind\",\"status\":\"Bootleg\"},{\"id\":\"3723c24b-a5a7-3295-b8ab-409a0650efac\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"e4520f1b-80fc-4bb8-9f45-0d98ac3c152f\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"b52a8f31-b5ab-34e9-92f4-f5b7110220f0\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"80d84b5b-62a0-42fb-bc97-10702e166b3b\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"729ea319-c077-4220-9a90-7798d36850e6\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"bcc627eb-1fc6-4b4c-a9d7-40161d3da800\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"c12262e2-7185-4942-87ee-da27ddd45ddf\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"1530ebe8-3fc9-4b2b-b0e5-2b1448cdbe0a\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"2c2ad01e-2e2f-4017-bace-df8c557b2787\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"704a8006-4ec5-424c-afe2-f4561c4dd79c\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"f7930de3-081a-452a-bafe-f7285a2abb6d\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"7fcef9db-4772-4960-8bd3-cbad0d5432ca\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"9bc03b4b-cbf5-499c-8cfb-b24d3c01098f\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"0c9e9d42-80c1-4d7b-bdb6-aeb70d3501c5\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"4cbf7629-4695-3885-9aca-a639e62ba4ab\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"a146429a-cedc-3ab0-9e41-1aaf5f6cdc2d\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"1f94237a-c9aa-43a7-a9e9-e181577e8eec\",\"title\":\"Nevermind\",\"status\":\"Bootleg\"},{\"id\":\"588c069f-ac7b-44ad-9b0b-b4f9d9248680\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"3bf3b8f8-0b27-4950-8832-70adf39fab6e\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"2feb350a-41c3-4358-addd-5b66ce2c34ba\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"9dce399d-3ec7-34a4-97d0-b4bac54e5f08\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"d0634387-179a-4360-8e94-0810fede6d8d\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"eccae410-7577-4daa-b602-92d305828331\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"6a836116-174e-4b04-b7fe-7a65772fd114\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"5d732751-4098-4ddc-a692-ab8e5b2a6a2a\",\"title\":\"\\uD801\\uDC24\\uD801\\uDC29\\uD801\\uDC42\\uD801\\uDC49\\uD801\\uDC4B\\uD801\\uDC28\\uD801\\uDC4C\\uD801\\uDC3C\",\"status\":\"Pseudo-Release\"},{\"id\":\"8e061dc4-790e-4587-ba53-011e7852f88d\",\"title\":\"Nevermind\",\"status\":\"Official\"}],\"tags\":[{\"count\":4,\"name\":\"rock\"},{\"count\":3,\"name\":\"alternative
+        rock\"},{\"count\":18,\"name\":\"grunge\"},{\"count\":4,\"name\":\"alternative\"},{\"count\":1,\"name\":\"1991\"},{\"count\":1,\"name\":\"rock
+        and indie\"},{\"count\":3,\"name\":\"dave 1991\"},{\"count\":2,\"name\":\"hidden
+        track\"},{\"count\":1,\"name\":\"rerip grunge\"},{\"count\":1,\"name\":\"hardnheavy\"},{\"count\":1,\"name\":\"pop/rock\"},{\"count\":3,\"name\":\"alternative/indie
+        rock\"},{\"count\":3,\"name\":\"alternative pop/rock\"}]},{\"id\":\"59af7c7e-fd87-33e1-8f5a-eece2b9e0425\",\"score\":\"100\",\"count\":1,\"title\":\"Nevermind\",\"artist-credit\":[{\"artist\":{\"id\":\"8bfac288-ccc5-448d-9573-c33ea2aa5c30\",\"name\":\"Red
+        Hot Chili Peppers\",\"sort-name\":\"Red Hot Chili Peppers\",\"aliases\":[{\"sort-name\":\"Red
+        Hot Chilli Peppers\",\"name\":\"Red Hot Chilli Peppers\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null},{\"sort-name\":\"Red
+        Hot Chilly Peppers\",\"name\":\"Red Hot Chilly Peppers\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null},{\"sort-name\":\"RHCP\",\"name\":\"RHCP\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null},{\"sort-name\":\"The
+        Red Hot Chili Peppers\",\"name\":\"The Red Hot Chili Peppers\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null},{\"sort-name\":\"The
+        Red Hot Chilli Peppers\",\"name\":\"The Red Hot Chilli Peppers\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null}]}}],\"releases\":[{\"id\":\"63899143-ad33-468a-a3bc-50823465e621\",\"title\":\"Nevermind\",\"status\":\"Bootleg\"}],\"tags\":[{\"count\":2,\"name\":\"rock\"}]},{\"id\":\"12a6363a-213c-3d21-aa59-8b2f0e7227b6\",\"score\":\"100\",\"count\":1,\"title\":\"Nevermind\",\"primary-type\":\"Album\",\"artist-credit\":[{\"artist\":{\"id\":\"730288f5-74ea-44de-a8a0-334049a5d7aa\",\"name\":\"Clockcleaner\",\"sort-name\":\"Clockcleaner\"}}],\"releases\":[{\"id\":\"f94b19bf-e724-4d26-9235-e13de5fba1bd\",\"title\":\"Nevermind\",\"status\":\"Official\"}]},{\"id\":\"21590daa-5b86-327d-b090-05f2546d2d4a\",\"score\":\"62\",\"count\":1,\"title\":\"Nevermind
+        Sessions\",\"primary-type\":\"Album\",\"secondary-types\":[\"Compilation\"],\"artist-credit\":[{\"artist\":{\"id\":\"5b11f4ce-a62d-471e-81fc-a69a8278c7da\",\"name\":\"Nirvana\",\"sort-name\":\"Nirvana\",\"disambiguation\":\"90s
+        US grunge band\",\"aliases\":[{\"sort-name\":\"Nirvana US\",\"name\":\"Nirvana
+        US\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null}]}}],\"releases\":[{\"id\":\"1bddce0f-c0d4-452a-b803-265828293461\",\"title\":\"Nevermind
+        Sessions\",\"status\":\"Bootleg\"}]},{\"id\":\"15604977-e74f-48cf-ac07-18d36f600ae3\",\"score\":\"62\",\"count\":1,\"title\":\"Nevermind
+        Lullabye\",\"primary-type\":\"Album\",\"artist-credit\":[{\"artist\":{\"id\":\"b04badb3-6159-41bd-b944-38e45d709ae9\",\"name\":\"Nushu\",\"sort-name\":\"Nushu\"}}],\"releases\":[{\"id\":\"891b716b-e52a-422b-bef3-53c419776601\",\"title\":\"Nevermind
+        Lullabye\",\"status\":\"Official\"}]},{\"id\":\"54936576-9784-3284-92b9-aab594907039\",\"score\":\"50\",\"count\":1,\"title\":\"Nevermind
+        My Blues\",\"primary-type\":\"Album\",\"artist-credit\":[{\"artist\":{\"id\":\"02e6703b-80f0-4aa8-915c-71a51418aa4d\",\"name\":\"Ben
+        Arnold\",\"sort-name\":\"Arnold, Ben\"}}],\"releases\":[{\"id\":\"8ff0420a-b028-4b4f-8228-b2d0a4d1383a\",\"title\":\"Nevermind
+        My Blues\",\"status\":\"Official\"}]},{\"id\":\"026cbfb8-a4a2-34ae-8657-407c7536169e\",\"score\":\"50\",\"count\":1,\"title\":\"Nevermind
+        the Furthermore\",\"primary-type\":\"Album\",\"artist-credit\":[{\"artist\":{\"id\":\"5808186a-7a11-4cf7-b1c7-588687c89372\",\"name\":\"The
+        Remus Lupins\",\"sort-name\":\"Remus Lupins, The\"}}],\"releases\":[{\"id\":\"04463ef9-117c-4c5f-bd57-de0f8ef3b6dc\",\"title\":\"Nevermind
+        the Furthermore\",\"status\":\"Official\"}]},{\"id\":\"83d6f693-9545-377d-ab94-f5de03823eed\",\"score\":\"50\",\"count\":1,\"title\":\"Nevermind,
+        It's An Interview\",\"primary-type\":\"Other\",\"secondary-types\":[\"Interview\"],\"artist-credit\":[{\"artist\":{\"id\":\"5b11f4ce-a62d-471e-81fc-a69a8278c7da\",\"name\":\"Nirvana\",\"sort-name\":\"Nirvana\",\"disambiguation\":\"90s
+        US grunge band\",\"aliases\":[{\"sort-name\":\"Nirvana US\",\"name\":\"Nirvana
+        US\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null}]}}],\"releases\":[{\"id\":\"990679f1-0055-42cb-9e98-4c9dd6ccf90b\",\"title\":\"Nevermind,
+        It's An Interview\",\"status\":\"Promotion\"}]},{\"id\":\"c8a160e4-d034-382a-b4e3-353061d691cd\",\"score\":\"50\",\"count\":2,\"title\":\"Nevermind!
+        Glitterhouse Is 20!\",\"primary-type\":\"Album\",\"secondary-types\":[\"Compilation\"],\"artist-credit\":[{\"artist\":{\"id\":\"89ad4ac3-39f7-470e-963a-56509c546377\",\"name\":\"Various
+        Artists\",\"sort-name\":\"Various Artists\",\"disambiguation\":\"add compilations
+        to this artist\"}}],\"releases\":[{\"id\":\"0146dee0-8cc1-4edc-be67-a344a4fdfdb8\",\"title\":\"Nevermind!
+        Glitterhouse Is 20!\",\"status\":\"Official\"},{\"id\":\"9e0d2f0c-3989-4fd6-870a-7498f0135fb2\",\"title\":\"Nevermind!
+        Glitterhouse Is 20! (disc 4: No Depression: Another Late Night mix by Prince
+        Koolski)\",\"status\":\"Official\"}]},{\"id\":\"fbf5ad0f-4da4-3529-8bb4-03a66b01b863\",\"score\":\"50\",\"count\":1,\"title\":\"Nevermind
+        / All Apologies\",\"primary-type\":\"Album\",\"secondary-types\":[\"Compilation\"],\"artist-credit\":[{\"artist\":{\"id\":\"5b11f4ce-a62d-471e-81fc-a69a8278c7da\",\"name\":\"Nirvana\",\"sort-name\":\"Nirvana\",\"disambiguation\":\"90s
+        US grunge band\",\"aliases\":[{\"sort-name\":\"Nirvana US\",\"name\":\"Nirvana
+        US\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null}]}}],\"releases\":[{\"id\":\"b9be05ca-05c4-4d1f-93f2-a1c31ea2cb50\",\"title\":\"Nevermind
+        / All Apologies\",\"status\":\"Bootleg\"}],\"tags\":[{\"count\":2,\"name\":\"grunge\"}]}]}"
+    http_version: 
+  recorded_at: Thu, 06 Mar 2014 10:53:02 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/release-group?fmt=json&inc=&limit=2&query=releasegroup:%22nevermind%22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.9
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 06 Mar 2014 10:53:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Etag:
+      - "\"063ed84bda1d4130a8d30b917d162886\""
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: "{\"created\":\"2014-03-06T08:30:56.684Z\",\"count\":23,\"offset\":0,\"release-groups\":[{\"id\":\"1b022e01-4da6-387b-8658-8678046e4cef\",\"score\":\"100\",\"count\":32,\"title\":\"Nevermind\",\"primary-type\":\"Album\",\"artist-credit\":[{\"artist\":{\"id\":\"5b11f4ce-a62d-471e-81fc-a69a8278c7da\",\"name\":\"Nirvana\",\"sort-name\":\"Nirvana\",\"disambiguation\":\"90s
+        US grunge band\",\"aliases\":[{\"sort-name\":\"Nirvana US\",\"name\":\"Nirvana
+        US\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null}]}}],\"releases\":[{\"id\":\"45ee6323-6b11-4487-a66c-4e5d3c453eac\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"947348c2-7802-3030-a1ba-85bbac99bfe0\",\"title\":\"Nevermind\",\"status\":\"Bootleg\"},{\"id\":\"b4e87df5-e995-4438-ae42-c8df327f163f\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"88b363cb-86b2-431f-84b4-525d4aa7aa62\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"b8ccb9bf-9d3a-4adb-99c3-79ffe9812fb8\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"14da9257-d8aa-374b-9d9a-59435947afb5\",\"title\":\"Nevermind\",\"status\":\"Bootleg\"},{\"id\":\"3723c24b-a5a7-3295-b8ab-409a0650efac\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"e4520f1b-80fc-4bb8-9f45-0d98ac3c152f\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"b52a8f31-b5ab-34e9-92f4-f5b7110220f0\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"80d84b5b-62a0-42fb-bc97-10702e166b3b\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"729ea319-c077-4220-9a90-7798d36850e6\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"bcc627eb-1fc6-4b4c-a9d7-40161d3da800\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"c12262e2-7185-4942-87ee-da27ddd45ddf\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"1530ebe8-3fc9-4b2b-b0e5-2b1448cdbe0a\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"2c2ad01e-2e2f-4017-bace-df8c557b2787\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"704a8006-4ec5-424c-afe2-f4561c4dd79c\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"f7930de3-081a-452a-bafe-f7285a2abb6d\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"7fcef9db-4772-4960-8bd3-cbad0d5432ca\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"9bc03b4b-cbf5-499c-8cfb-b24d3c01098f\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"0c9e9d42-80c1-4d7b-bdb6-aeb70d3501c5\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"4cbf7629-4695-3885-9aca-a639e62ba4ab\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"a146429a-cedc-3ab0-9e41-1aaf5f6cdc2d\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"1f94237a-c9aa-43a7-a9e9-e181577e8eec\",\"title\":\"Nevermind\",\"status\":\"Bootleg\"},{\"id\":\"588c069f-ac7b-44ad-9b0b-b4f9d9248680\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"3bf3b8f8-0b27-4950-8832-70adf39fab6e\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"2feb350a-41c3-4358-addd-5b66ce2c34ba\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"9dce399d-3ec7-34a4-97d0-b4bac54e5f08\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"d0634387-179a-4360-8e94-0810fede6d8d\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"eccae410-7577-4daa-b602-92d305828331\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"6a836116-174e-4b04-b7fe-7a65772fd114\",\"title\":\"Nevermind\",\"status\":\"Official\"},{\"id\":\"5d732751-4098-4ddc-a692-ab8e5b2a6a2a\",\"title\":\"\\uD801\\uDC24\\uD801\\uDC29\\uD801\\uDC42\\uD801\\uDC49\\uD801\\uDC4B\\uD801\\uDC28\\uD801\\uDC4C\\uD801\\uDC3C\",\"status\":\"Pseudo-Release\"},{\"id\":\"8e061dc4-790e-4587-ba53-011e7852f88d\",\"title\":\"Nevermind\",\"status\":\"Official\"}],\"tags\":[{\"count\":4,\"name\":\"rock\"},{\"count\":3,\"name\":\"alternative
+        rock\"},{\"count\":18,\"name\":\"grunge\"},{\"count\":4,\"name\":\"alternative\"},{\"count\":1,\"name\":\"1991\"},{\"count\":1,\"name\":\"rock
+        and indie\"},{\"count\":3,\"name\":\"dave 1991\"},{\"count\":2,\"name\":\"hidden
+        track\"},{\"count\":1,\"name\":\"rerip grunge\"},{\"count\":1,\"name\":\"hardnheavy\"},{\"count\":1,\"name\":\"pop/rock\"},{\"count\":3,\"name\":\"alternative/indie
+        rock\"},{\"count\":3,\"name\":\"alternative pop/rock\"}]},{\"id\":\"59af7c7e-fd87-33e1-8f5a-eece2b9e0425\",\"score\":\"100\",\"count\":1,\"title\":\"Nevermind\",\"artist-credit\":[{\"artist\":{\"id\":\"8bfac288-ccc5-448d-9573-c33ea2aa5c30\",\"name\":\"Red
+        Hot Chili Peppers\",\"sort-name\":\"Red Hot Chili Peppers\",\"aliases\":[{\"sort-name\":\"Red
+        Hot Chilli Peppers\",\"name\":\"Red Hot Chilli Peppers\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null},{\"sort-name\":\"Red
+        Hot Chilly Peppers\",\"name\":\"Red Hot Chilly Peppers\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null},{\"sort-name\":\"RHCP\",\"name\":\"RHCP\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null},{\"sort-name\":\"The
+        Red Hot Chili Peppers\",\"name\":\"The Red Hot Chili Peppers\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null},{\"sort-name\":\"The
+        Red Hot Chilli Peppers\",\"name\":\"The Red Hot Chilli Peppers\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null}]}}],\"releases\":[{\"id\":\"63899143-ad33-468a-a3bc-50823465e621\",\"title\":\"Nevermind\",\"status\":\"Bootleg\"}],\"tags\":[{\"count\":2,\"name\":\"rock\"}]}]}"
+    http_version: 
+  recorded_at: Thu, 06 Mar 2014 10:53:26 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/artist/5b11f4ce-a62d-471e-81fc-a69a8278c7da?fmt=json&inc=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.9
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Mar 2014 12:20:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Content-Length:
+      - '622'
+      Etag:
+      - "\"3f5e9749258cb6bb87a6b93c15caa485\""
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: "{\"country\":\"US\",\"ipis\":[],\"area\":{\"disambiguation\":\"\",\"iso_3166_3_codes\":[],\"sort-name\":\"United
+        States\",\"name\":\"United States\",\"id\":\"489ce91b-6658-3307-9877-795b68554c98\",\"iso_3166_2_codes\":[],\"iso_3166_1_codes\":[\"US\"]},\"sort-name\":\"Nirvana\",\"name\":\"Nirvana\",\"disambiguation\":\"90s
+        US grunge band\",\"life-span\":{\"ended\":true,\"begin\":\"1988-01\",\"end\":\"1994-04-05\"},\"end_area\":null,\"id\":\"5b11f4ce-a62d-471e-81fc-a69a8278c7da\",\"type\":\"Group\",\"begin_area\":{\"disambiguation\":\"\",\"iso_3166_3_codes\":[],\"sort-name\":\"Aberdeen\",\"name\":\"Aberdeen\",\"id\":\"a640b45c-c173-49b1-8030-973603e895b5\",\"iso_3166_2_codes\":[],\"iso_3166_1_codes\":[]}}"
+    http_version: 
+  recorded_at: Mon, 10 Mar 2014 12:20:35 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/release-group?artist=5b11f4ce-a62d-471e-81fc-a69a8278c7da&fmt=json&inc=&limit=25
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.9
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Mar 2014 12:20:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Etag:
+      - "\"1788af83c90ff2441e41463606236a37\""
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: "{\"release-groups\":[{\"disambiguation\":\"\",\"first-release-date\":\"1992-12-14\",\"secondary-types\":[\"Compilation\"],\"id\":\"01cf1391-141b-3c87-8650-45ade6e59070\",\"title\":\"Incesticide\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1996\",\"secondary-types\":[\"Compilation\"],\"id\":\"04565adb-04f3-32d9-8582-e4c023b0f199\",\"title\":\"Singles\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1993\",\"secondary-types\":[\"Compilation\"],\"id\":\"178b993e-fa9c-36d3-9d73-c5a8ba0c748d\",\"title\":\"Wipeout\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1991-09-23\",\"secondary-types\":[],\"id\":\"1b022e01-4da6-387b-8658-8678046e4cef\",\"title\":\"Nevermind\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1993-09-21\",\"secondary-types\":[],\"id\":\"2a0981fb-9593-3019-864b-ce934d97a16e\",\"title\":\"In
+        Utero\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1992\",\"secondary-types\":[\"Compilation\"],\"id\":\"339ab911-1568-32cf-8997-f00a538208c9\",\"title\":\"Down
+        With Me\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1994\",\"secondary-types\":[\"Compilation\"],\"id\":\"37b1659c-7560-34cd-8946-d6f3c5c9ad92\",\"title\":\"It's
+        Better to Burn Out Than to Fade Away...\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1992\",\"secondary-types\":[\"Compilation\"],\"id\":\"3f09f97d-3b18-336c-9760-9ebb7df3497e\",\"title\":\"Seventh
+        Heaven\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"2003\",\"secondary-types\":[\"Compilation\"],\"id\":\"51cb77d2-4722-34e9-b72f-66e3f9fb03f6\",\"title\":\"Outcesticide
+        6: A Mess of Blues\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1994\",\"secondary-types\":[\"Compilation\"],\"id\":\"584b7e62-d8b5-378e-986c-dfc78e1fc06e\",\"title\":\"Outcesticide
+        II: The Needle & The Damage Done\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"2002-10-28\",\"secondary-types\":[\"Compilation\"],\"id\":\"5ab32af4-c62e-3cbf-aa8c-c761581d3b94\",\"title\":\"Nirvana\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1994\",\"secondary-types\":[\"Compilation\"],\"id\":\"5bcaeba6-a532-3fa0-b540-75c09f70f759\",\"title\":\"The
+        Very Best\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1995\",\"secondary-types\":[\"Compilation\"],\"id\":\"5dba01ed-b4e9-394e-a875-c7c2ff052133\",\"title\":\"Outcesticide
+        III: The Final Solution\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1992\",\"secondary-types\":[\"Compilation\"],\"id\":\"85155291-222f-388a-a5f7-dcaa60b65afd\",\"title\":\"Before
+        We Ever Minded\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"2001\",\"secondary-types\":[\"Compilation\"],\"id\":\"915dc49e-8203-31b8-bb19-ca5996a2b810\",\"title\":\"In
+        Utero Demos\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"2001\",\"secondary-types\":[\"Compilation\"],\"id\":\"9a198646-ff93-3459-b943-f39da399c270\",\"title\":\"First
+        Live Show\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"2000-02-14\",\"secondary-types\":[\"Compilation\"],\"id\":\"9a3ed295-7823-374e-95fe-c8ce79b6ca2a\",\"title\":\"Secret
+        Songs: The Unreleased Album\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1994\",\"secondary-types\":[\"Compilation\"],\"id\":\"9f42e883-12a4-3790-b3c1-0e2982f2d832\",\"title\":\"Outcesticide:
+        In Memory of Kurt Cobain\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1994\",\"secondary-types\":[\"Compilation\"],\"id\":\"bcbe3ddf-7901-315c-8282-f0e9d5b88285\",\"title\":\"Heart
+        Shaped Box, Volume 2\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1994\",\"secondary-types\":[\"Compilation\"],\"id\":\"c0fdd829-fa5d-4bf0-a227-39979375298d\",\"title\":\"The
+        Eternal Legacy\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1996\",\"secondary-types\":[\"Compilation\"],\"id\":\"e1aa0917-d84a-36aa-92d1-880d2b994748\",\"title\":\"Outcesticide
+        IV: Rape of the Vaults\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1999\",\"secondary-types\":[\"Compilation\"],\"id\":\"e602b067-c9eb-31eb-bed0-80e4245d5d54\",\"title\":\"Dark
+        Emotion\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1998\",\"secondary-types\":[\"Compilation\"],\"id\":\"ee7695bc-fde5-3a84-8ebb-195fa5ee6c2d\",\"title\":\"Outcesticide
+        V: Disintegration\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1989-06-01\",\"secondary-types\":[],\"id\":\"f1afec0b-26dd-3db5-9aa1-c91229a74a24\",\"title\":\"Bleach\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1994\",\"secondary-types\":[\"Compilation\"],\"id\":\"fdeebee4-b749-31c4-8a9b-d8d25cd9a43a\",\"title\":\"Grunge
+        Is Dead\",\"primary-type\":\"Album\"}],\"release-group-offset\":0,\"release-group-count\":664}"
+    http_version: 
+  recorded_at: Mon, 10 Mar 2014 12:20:36 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/release-group?fmt=json&inc=&limit=10&query=artist:%225b11f4ce-a62d-471e-81fc-a69a8278c7da%22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.9
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Mar 2014 12:26:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Content-Length:
+      - '79'
+      Etag:
+      - "\"fdc23f0dcf284ebce5fb13ba50bf23f3\""
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: "{\"created\":\"2014-03-10T09:12:02.196Z\",\"count\":0,\"offset\":0,\"release-groups\":[]}"
+    http_version: 
+  recorded_at: Mon, 10 Mar 2014 12:26:58 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/release-group?fmt=json&inc=&limit=10&query=artist:%22Nirvana%22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.9
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Mar 2014 12:32:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Etag:
+      - "\"3254a7aba730d13ca78303d8057dd38c\""
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: "{\"created\":\"2014-03-10T09:12:02.196Z\",\"count\":698,\"offset\":0,\"release-groups\":[{\"id\":\"60c826fb-8853-3796-8ff2-16c35f362ec9\",\"score\":\"100\",\"count\":1,\"title\":\"B-Side
+        Themselves\",\"primary-type\":\"Album\",\"secondary-types\":[\"Compilation\"],\"artist-credit\":[{\"artist\":{\"id\":\"5b11f4ce-a62d-471e-81fc-a69a8278c7da\",\"name\":\"Nirvana\",\"sort-name\":\"Nirvana\",\"disambiguation\":\"90s
+        US grunge band\",\"aliases\":[{\"sort-name\":\"Nirvana US\",\"name\":\"Nirvana
+        US\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null}]}}],\"releases\":[{\"id\":\"ac4bc467-00ac-48c7-af85-3d12837a06dd\",\"title\":\"B-Side
+        Themselves\",\"status\":\"Bootleg\"}],\"tags\":[{\"count\":2,\"name\":\"alternative
+        rock\"}]},{\"id\":\"fdeebee4-b749-31c4-8a9b-d8d25cd9a43a\",\"score\":\"100\",\"count\":1,\"title\":\"Grunge
+        Is Dead\",\"primary-type\":\"Album\",\"secondary-types\":[\"Compilation\"],\"artist-credit\":[{\"artist\":{\"id\":\"5b11f4ce-a62d-471e-81fc-a69a8278c7da\",\"name\":\"Nirvana\",\"sort-name\":\"Nirvana\",\"disambiguation\":\"90s
+        US grunge band\",\"aliases\":[{\"sort-name\":\"Nirvana US\",\"name\":\"Nirvana
+        US\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null}]}}],\"releases\":[{\"id\":\"7dd7f328-db0b-45a3-a2c9-3a0f9869fd1c\",\"title\":\"Grunge
+        Is Dead\",\"status\":\"Bootleg\"}],\"tags\":[{\"count\":1,\"name\":\"grunge\"}]},{\"id\":\"5d00401a-0166-36c5-9b76-48c270f6378a\",\"score\":\"100\",\"count\":1,\"title\":\"1993-11-18:
+        Performance: MTV Unplugged, Sony Studios, New York City, NY, USA\",\"primary-type\":\"Album\",\"secondary-types\":[\"Live\"],\"artist-credit\":[{\"artist\":{\"id\":\"5b11f4ce-a62d-471e-81fc-a69a8278c7da\",\"name\":\"Nirvana\",\"sort-name\":\"Nirvana\",\"disambiguation\":\"90s
+        US grunge band\",\"aliases\":[{\"sort-name\":\"Nirvana US\",\"name\":\"Nirvana
+        US\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null}]}}],\"releases\":[{\"id\":\"899c6c20-3490-4495-81af-2ad9a39d5316\",\"title\":\"1993-11-18:
+        Performance: MTV Unplugged, Sony Studios, New York City, NY, USA\",\"status\":\"Bootleg\"}]},{\"id\":\"68a3a3e8-c5f7-37cd-ada6-7defc208fce1\",\"score\":\"100\",\"count\":1,\"title\":\"1991-10-12:
+        Dressed for Success, Cabaret Metro, Chicago, IL, USA\",\"primary-type\":\"Album\",\"secondary-types\":[\"Live\"],\"artist-credit\":[{\"artist\":{\"id\":\"5b11f4ce-a62d-471e-81fc-a69a8278c7da\",\"name\":\"Nirvana\",\"sort-name\":\"Nirvana\",\"disambiguation\":\"90s
+        US grunge band\",\"aliases\":[{\"sort-name\":\"Nirvana US\",\"name\":\"Nirvana
+        US\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null}]}}],\"releases\":[{\"id\":\"ed779065-ae4b-40e1-966b-2289862ad69c\",\"title\":\"1991-10-12:
+        Dressed for Success, Cabaret Metro, Chicago, IL, USA\",\"status\":\"Bootleg\"}],\"tags\":[{\"count\":1,\"name\":\"alternative
+        rock\"}]},{\"id\":\"ee7740c1-59bf-387f-98ba-0939b7cbe850\",\"score\":\"100\",\"count\":1,\"title\":\"1991-11-25:
+        On Stage in Europe: Paradiso, Amsterdam, The Netherlands\",\"primary-type\":\"Album\",\"secondary-types\":[\"Live\"],\"artist-credit\":[{\"artist\":{\"id\":\"5b11f4ce-a62d-471e-81fc-a69a8278c7da\",\"name\":\"Nirvana\",\"sort-name\":\"Nirvana\",\"disambiguation\":\"90s
+        US grunge band\",\"aliases\":[{\"sort-name\":\"Nirvana US\",\"name\":\"Nirvana
+        US\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null}]}}],\"releases\":[{\"id\":\"d95d602e-0480-4767-8199-6b2801e48e45\",\"title\":\"1991-11-25:
+        On Stage in Europe: Paradiso, Amsterdam, The Netherlands\",\"status\":\"Bootleg\"}],\"tags\":[{\"count\":1,\"name\":\"rock\"},{\"count\":1,\"name\":\"grunge\"}]},{\"id\":\"5bcaeba6-a532-3fa0-b540-75c09f70f759\",\"score\":\"100\",\"count\":1,\"title\":\"The
+        Very Best\",\"primary-type\":\"Album\",\"secondary-types\":[\"Compilation\"],\"artist-credit\":[{\"artist\":{\"id\":\"5b11f4ce-a62d-471e-81fc-a69a8278c7da\",\"name\":\"Nirvana\",\"sort-name\":\"Nirvana\",\"disambiguation\":\"90s
+        US grunge band\",\"aliases\":[{\"sort-name\":\"Nirvana US\",\"name\":\"Nirvana
+        US\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null}]}}],\"releases\":[{\"id\":\"557393d4-74ae-4833-8c72-822ed1a10175\",\"title\":\"The
+        Very Best\",\"status\":\"Bootleg\"}],\"tags\":[{\"count\":2,\"name\":\"blues\"},{\"count\":2,\"name\":\"rock\"},{\"count\":2,\"name\":\"alternative\"},{\"count\":3,\"name\":\"grunge\"}]},{\"id\":\"20d52601-bc04-3ef0-a99a-320954bb5f86\",\"score\":\"100\",\"count\":1,\"title\":\"The
+        Complete Radio Sessions\",\"primary-type\":\"Album\",\"secondary-types\":[\"Compilation\"],\"artist-credit\":[{\"artist\":{\"id\":\"5b11f4ce-a62d-471e-81fc-a69a8278c7da\",\"name\":\"Nirvana\",\"sort-name\":\"Nirvana\",\"disambiguation\":\"90s
+        US grunge band\",\"aliases\":[{\"sort-name\":\"Nirvana US\",\"name\":\"Nirvana
+        US\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null}]}}],\"releases\":[{\"id\":\"c3f454d9-b887-43ca-a2f8-ee034e6fdc1b\",\"title\":\"The
+        Complete Radio Sessions\",\"status\":\"Bootleg\"}],\"tags\":[{\"count\":1,\"name\":\"rock\"},{\"count\":1,\"name\":\"grunge\"}]},{\"id\":\"e3223ece-35c1-3dc3-bbb3-26e9e16248bc\",\"score\":\"100\",\"count\":1,\"title\":\"Outcesticide,
+        Volume 1\",\"primary-type\":\"Album\",\"secondary-types\":[\"Compilation\"],\"artist-credit\":[{\"artist\":{\"id\":\"5b11f4ce-a62d-471e-81fc-a69a8278c7da\",\"name\":\"Nirvana\",\"sort-name\":\"Nirvana\",\"disambiguation\":\"90s
+        US grunge band\",\"aliases\":[{\"sort-name\":\"Nirvana US\",\"name\":\"Nirvana
+        US\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null}]}}],\"releases\":[{\"id\":\"a55c58c0-5eef-4565-8a57-34cb37e37932\",\"title\":\"Outcesticide,
+        Volume 1\",\"status\":\"Bootleg\"}],\"tags\":[{\"count\":1,\"name\":\"blues\"}]},{\"id\":\"6c44f64a-58e4-3e94-8458-788712f6c6aa\",\"score\":\"100\",\"count\":1,\"title\":\"Pay
+        to Play\",\"primary-type\":\"Album\",\"secondary-types\":[\"Compilation\"],\"artist-credit\":[{\"artist\":{\"id\":\"5b11f4ce-a62d-471e-81fc-a69a8278c7da\",\"name\":\"Nirvana\",\"sort-name\":\"Nirvana\",\"disambiguation\":\"90s
+        US grunge band\",\"aliases\":[{\"sort-name\":\"Nirvana US\",\"name\":\"Nirvana
+        US\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null}]}}],\"releases\":[{\"id\":\"ecdd8595-2cc8-4668-bf7b-00b0c83876d0\",\"title\":\"Pay
+        to Play\",\"status\":\"Bootleg\"}]},{\"id\":\"4fcc5ec2-d177-396b-b810-9439031b3c3a\",\"score\":\"100\",\"count\":4,\"title\":\"Hormoaning\",\"primary-type\":\"EP\",\"artist-credit\":[{\"artist\":{\"id\":\"5b11f4ce-a62d-471e-81fc-a69a8278c7da\",\"name\":\"Nirvana\",\"sort-name\":\"Nirvana\",\"disambiguation\":\"90s
+        US grunge band\",\"aliases\":[{\"sort-name\":\"Nirvana US\",\"name\":\"Nirvana
+        US\",\"locale\":null,\"type\":null,\"primary\":null,\"begin-date\":null,\"end-date\":null}]}}],\"releases\":[{\"id\":\"966ceb95-7189-31d1-8acb-7653707c1d18\",\"title\":\"Hormoaning\",\"status\":\"Official\"},{\"id\":\"26f552c9-a21e-465d-a84a-2c6113cf74be\",\"title\":\"Hormoaning\",\"status\":\"Official\"},{\"id\":\"6540661c-ed9e-4e2e-8b8b-8bbc7c0f26c3\",\"title\":\"Hormoaning\",\"status\":\"Official\"},{\"id\":\"991e4857-25e2-4001-9b39-8f6cec964bfd\",\"title\":\"Hormoaning\",\"status\":\"Official\"}],\"tags\":[{\"count\":1,\"name\":\"rock\"},{\"count\":4,\"name\":\"grunge\"},{\"count\":1,\"name\":\"1992\"},{\"count\":1,\"name\":\"pop/rock\"},{\"count\":1,\"name\":\"alternative/indie
+        rock\"},{\"count\":1,\"name\":\"alternative pop/rock\"}]}]}"
+    http_version: 
+  recorded_at: Mon, 10 Mar 2014 12:32:21 GMT
+recorded_with: VCR 2.8.0

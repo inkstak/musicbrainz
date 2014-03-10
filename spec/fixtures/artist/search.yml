@@ -1,0 +1,204 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/artist?fmt=json&inc=&limit=10&query=artist:%22Nirvana%22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.9
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 06 Mar 2014 10:53:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Etag:
+      - "\"45c5c5c01d5c59bf744710345fb84b25\""
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjcmVhdGVkIjoiMjAxNC0wMy0wNlQwODoyNzo1OS40MDJaIiwiY291bnQi
+        OjEwLCJvZmZzZXQiOjAsImFydGlzdCI6W3siaWQiOiI1YjExZjRjZS1hNjJk
+        LTQ3MWUtODFmYy1hNjlhODI3OGM3ZGEiLCJ0eXBlIjoiR3JvdXAiLCJzY29y
+        ZSI6IjEwMCIsIm5hbWUiOiJOaXJ2YW5hIiwic29ydC1uYW1lIjoiTmlydmFu
+        YSIsImNvdW50cnkiOiJVUyIsImFyZWEiOnsiaWQiOiI0ODljZTkxYi02NjU4
+        LTMzMDctOTg3Ny03OTViNjg1NTRjOTgiLCJuYW1lIjoiVW5pdGVkIFN0YXRl
+        cyIsInNvcnQtbmFtZSI6IlVuaXRlZCBTdGF0ZXMifSwiYmVnaW4tYXJlYSI6
+        eyJpZCI6ImE2NDBiNDVjLWMxNzMtNDliMS04MDMwLTk3MzYwM2U4OTViNSIs
+        Im5hbWUiOiJBYmVyZGVlbiIsInNvcnQtbmFtZSI6IkFiZXJkZWVuIn0sImRp
+        c2FtYmlndWF0aW9uIjoiOTBzIFVTIGdydW5nZSBiYW5kIiwibGlmZS1zcGFu
+        Ijp7ImJlZ2luIjoiMTk4OC0wMSIsImVuZCI6IjE5OTQtMDQtMDUiLCJlbmRl
+        ZCI6dHJ1ZX0sImFsaWFzZXMiOlt7InNvcnQtbmFtZSI6Ik5pcnZhbmEgVVMi
+        LCJuYW1lIjoiTmlydmFuYSBVUyIsImxvY2FsZSI6bnVsbCwidHlwZSI6bnVs
+        bCwicHJpbWFyeSI6bnVsbCwiYmVnaW4tZGF0ZSI6bnVsbCwiZW5kLWRhdGUi
+        Om51bGx9XSwidGFncyI6W3siY291bnQiOjIsIm5hbWUiOiJwdW5rIn0seyJj
+        b3VudCI6MSwibmFtZSI6ImxlZ2VuZGFyeSJ9LHsiY291bnQiOjEsIm5hbWUi
+        OiI5MCJ9LHsiY291bnQiOjIsIm5hbWUiOiJzZWF0dGxlIn0seyJjb3VudCI6
+        MSwibmFtZSI6Im5vcnRod2VzdCJ9LHsiY291bnQiOjEsIm5hbWUiOiJhbHRl
+        cm5hdGl2ZSJ9LHsiY291bnQiOjEsIm5hbWUiOiJyb2NrIGFuZCBpbmRpZSJ9
+        LHsiY291bnQiOjEsIm5hbWUiOiJhbcOpcmljYWluIn0seyJjb3VudCI6Miwi
+        bmFtZSI6InVzYSJ9LHsiY291bnQiOjcsIm5hbWUiOiJhbWVyaWNhbiJ9LHsi
+        Y291bnQiOjEsIm5hbWUiOiJ1bml0ZWQgc3RhdGVzIn0seyJjb3VudCI6MSwi
+        bmFtZSI6Imt1cnQgY29iYWluIn0seyJjb3VudCI6MiwibmFtZSI6IjkwcyJ9
+        LHsiY291bnQiOjMsIm5hbWUiOiJhbHRlcm5hdGl2ZSByb2NrIn0seyJjb3Vu
+        dCI6MTIsIm5hbWUiOiJncnVuZ2UifSx7ImNvdW50IjoxLCJuYW1lIjoibmly
+        dmFuYSJ9LHsiY291bnQiOjEsIm5hbWUiOiJiYW5kIn0seyJjb3VudCI6Nywi
+        bmFtZSI6InJvY2sifV19LHsiaWQiOiI4NWFmMDcwOS05NWRiLTRmYmMtODAx
+        YS0xMjBlOWY0NzY2ZDAiLCJ0eXBlIjoiR3JvdXAiLCJzY29yZSI6IjEwMCIs
+        Im5hbWUiOiJOaXJ2YW5hIiwic29ydC1uYW1lIjoiTmlydmFuYSIsImNvdW50
+        cnkiOiJGSSIsImFyZWEiOnsiaWQiOiI2YTI2NGY5NC02ZmYxLTMwYjEtOWE4
+        MS00MWY3YmZhYmQ2MTYiLCJuYW1lIjoiRmlubGFuZCIsInNvcnQtbmFtZSI6
+        IkZpbmxhbmQifSwiZGlzYW1iaWd1YXRpb24iOiJFYXJseSAxOTgwJ3MgRmlu
+        bmlzaCBwdW5rIGJhbmQiLCJsaWZlLXNwYW4iOnsiZW5kZWQiOm51bGx9LCJ0
+        YWdzIjpbeyJjb3VudCI6MSwibmFtZSI6InB1bmsifSx7ImNvdW50IjoxLCJu
+        YW1lIjoiZmlubGFuZCJ9XX0seyJpZCI6IjkyODJjOGI0LWNhMGItNGM2Yi1i
+        N2UzLTRmNzc2MmRmYzRkNiIsInR5cGUiOiJHcm91cCIsInNjb3JlIjoiMTAw
+        IiwibmFtZSI6Ik5pcnZhbmEiLCJzb3J0LW5hbWUiOiJOaXJ2YW5hIiwiY291
+        bnRyeSI6IkdCIiwiYXJlYSI6eyJpZCI6IjhhNzU0YTE2LTAwMjctM2EyOS1i
+        NmQ3LTJiNDBlYTA0ODFlZCIsIm5hbWUiOiJVbml0ZWQgS2luZ2RvbSIsInNv
+        cnQtbmFtZSI6IlVuaXRlZCBLaW5nZG9tIn0sImRpc2FtYmlndWF0aW9uIjoi
+        NjBzIGJhbmQgZnJvbSB0aGUgVUsiLCJsaWZlLXNwYW4iOnsiYmVnaW4iOiIx
+        OTY3IiwiZW5kZWQiOm51bGx9LCJ0YWdzIjpbeyJjb3VudCI6MSwibmFtZSI6
+        InJvY2sifSx7ImNvdW50IjoxLCJuYW1lIjoicG9wIn0seyJjb3VudCI6MSwi
+        bmFtZSI6InByb2dyZXNzaXZlIHJvY2sifSx7ImNvdW50IjoxLCJuYW1lIjoi
+        b3JjaGVzdHJhbCJ9LHsiY291bnQiOjEsIm5hbWUiOiJicml0aXNoIn0seyJj
+        b3VudCI6MSwibmFtZSI6InBvd2VyIHBvcCJ9LHsiY291bnQiOjEsIm5hbWUi
+        OiJwc3ljaGVkZWxpYyByb2NrIn0seyJjb3VudCI6MSwibmFtZSI6InNvZnQg
+        cm9jayJ9LHsiY291bnQiOjEsIm5hbWUiOiJzeW1waG9uaWMgcm9jayJ9LHsi
+        Y291bnQiOjEsIm5hbWUiOiJlbmdsaXNoIn1dfSx7ImlkIjoiYzNhNjRhMjUt
+        MjUxYi00ZDAzLWFmYmEtMTQ3MTQ0MDI0NWI4IiwidHlwZSI6Ikdyb3VwIiwi
+        c2NvcmUiOiI2MiIsIm5hbWUiOiJBcHByb2FjaGluZyBOaXJ2YW5hIiwic29y
+        dC1uYW1lIjoiQXBwcm9hY2hpbmcgTmlydmFuYSIsImNvdW50cnkiOiJVUyIs
+        ImFyZWEiOnsiaWQiOiI0ODljZTkxYi02NjU4LTMzMDctOTg3Ny03OTViNjg1
+        NTRjOTgiLCJuYW1lIjoiVW5pdGVkIFN0YXRlcyIsInNvcnQtbmFtZSI6IlVu
+        aXRlZCBTdGF0ZXMifSwibGlmZS1zcGFuIjp7ImVuZGVkIjpudWxsfX0seyJp
+        ZCI6ImIzMDUzMjBlLWMxNTgtNDNmNC1iNWJlLTQ0NTBlMmY5OWEzMiIsInNj
+        b3JlIjoiNjIiLCJuYW1lIjoiRWwgTmlydmFuYSIsInNvcnQtbmFtZSI6Ik5p
+        cnZhbmEsIEVsIiwibGlmZS1zcGFuIjp7ImVuZGVkIjpudWxsfX0seyJpZCI6
+        ImYyZGZkZmY5LTM4NjItNGJlMC1iZjg1LTljODMzZmEzMDU5ZSIsInR5cGUi
+        OiJHcm91cCIsInNjb3JlIjoiNjIiLCJuYW1lIjoiTmlydmFuYSAyMDAyIiwi
+        c29ydC1uYW1lIjoiTmlydmFuYSAyMDAyIiwiY291bnRyeSI6IlNFIiwiYXJl
+        YSI6eyJpZCI6IjIzZDEwODcyLWY1YWUtM2YwYy1iZjU1LTMzMjc4OGExNmVj
+        YiIsIm5hbWUiOiJTd2VkZW4iLCJzb3J0LW5hbWUiOiJTd2VkZW4ifSwiZGlz
+        YW1iaWd1YXRpb24iOiJTd2VkaXNoIGRlYXRoIG1ldGFsIGJhbmQiLCJsaWZl
+        LXNwYW4iOnsiYmVnaW4iOiIxOTg4IiwiZW5kZWQiOm51bGx9LCJhbGlhc2Vz
+        IjpbeyJzb3J0LW5hbWUiOiJOaXJ2YW5hIiwibmFtZSI6Ik5pcnZhbmEiLCJs
+        b2NhbGUiOm51bGwsInR5cGUiOm51bGwsInByaW1hcnkiOm51bGwsImJlZ2lu
+        LWRhdGUiOm51bGwsImVuZC1kYXRlIjpudWxsfSx7InNvcnQtbmFtZSI6IlBy
+        b3BoZXQgMjAwMiIsIm5hbWUiOiJQcm9waGV0IDIwMDIiLCJsb2NhbGUiOm51
+        bGwsInR5cGUiOm51bGwsInByaW1hcnkiOm51bGwsImJlZ2luLWRhdGUiOm51
+        bGwsImVuZC1kYXRlIjpudWxsfV19LHsiaWQiOiIzMjljMDRhZS0zYjczLTRj
+        YTMtOTk2Zi03NTYwOGFiMWJlZmIiLCJ0eXBlIjoiUGVyc29uIiwic2NvcmUi
+        OiI2MiIsIm5hbWUiOiJOaXJ2YW5hIFNpbmdoIiwic29ydC1uYW1lIjoiU2lu
+        Z2gsIE5pcnZhbmEiLCJsaWZlLXNwYW4iOnsiZW5kZWQiOm51bGx9fSx7Imlk
+        IjoiODZmOWFlMjQtYmEyYS00ZDU1LTkyNzUtMGI4OWI4NWY2ZTNhIiwic2Nv
+        cmUiOiI2MiIsIm5hbWUiOiJXZWVkIE5pcnZhbmEiLCJzb3J0LW5hbWUiOiJX
+        ZWVkIE5pcnZhbmEiLCJsaWZlLXNwYW4iOnsiZW5kZWQiOm51bGx9fSx7Imlk
+        IjoiMjA2NDE5ZTAtM2E3YS00OWNlLTg0MzctNGU3NTc3NjdkMDJiIiwidHlw
+        ZSI6IlBlcnNvbiIsInNjb3JlIjoiNjIiLCJuYW1lIjoiTmlydmFuYSBTYXZv
+        dXJ5Iiwic29ydC1uYW1lIjoiU2F2b3VyeSwgTmlydmFuYSIsImdlbmRlciI6
+        ImZlbWFsZSIsImNvdW50cnkiOiJVUyIsImFyZWEiOnsiaWQiOiI0ODljZTkx
+        Yi02NjU4LTMzMDctOTg3Ny03OTViNjg1NTRjOTgiLCJuYW1lIjoiVW5pdGVk
+        IFN0YXRlcyIsInNvcnQtbmFtZSI6IlVuaXRlZCBTdGF0ZXMifSwibGlmZS1z
+        cGFuIjp7ImVuZGVkIjpudWxsfX0seyJpZCI6ImUxMzg4NDM1LWY4MGQtNDM0
+        YS05OTgwLWYxYzlmNWFhOWI5MCIsInNjb3JlIjoiNDMiLCJuYW1lIjoiTmly
+        dmFuYSBTaXRhciAmIFN0cmluZyBHcm91cCIsInNvcnQtbmFtZSI6Ik5pcnZh
+        bmEgU2l0YXIgJiBTdHJpbmcgR3JvdXAiLCJsaWZlLXNwYW4iOnsiZW5kZWQi
+        Om51bGx9fV19
+    http_version: 
+  recorded_at: Thu, 06 Mar 2014 10:53:01 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/artist?fmt=json&inc=&limit=2&query=artist:%22Nirvana%22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.9
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 06 Mar 2014 10:53:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Etag:
+      - "\"4e65aa0f0a08113b11c053c0096aa82e\""
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjcmVhdGVkIjoiMjAxNC0wMy0wNlQwODoyNzo1OS40MDJaIiwiY291bnQi
+        OjEwLCJvZmZzZXQiOjAsImFydGlzdCI6W3siaWQiOiI1YjExZjRjZS1hNjJk
+        LTQ3MWUtODFmYy1hNjlhODI3OGM3ZGEiLCJ0eXBlIjoiR3JvdXAiLCJzY29y
+        ZSI6IjEwMCIsIm5hbWUiOiJOaXJ2YW5hIiwic29ydC1uYW1lIjoiTmlydmFu
+        YSIsImNvdW50cnkiOiJVUyIsImFyZWEiOnsiaWQiOiI0ODljZTkxYi02NjU4
+        LTMzMDctOTg3Ny03OTViNjg1NTRjOTgiLCJuYW1lIjoiVW5pdGVkIFN0YXRl
+        cyIsInNvcnQtbmFtZSI6IlVuaXRlZCBTdGF0ZXMifSwiYmVnaW4tYXJlYSI6
+        eyJpZCI6ImE2NDBiNDVjLWMxNzMtNDliMS04MDMwLTk3MzYwM2U4OTViNSIs
+        Im5hbWUiOiJBYmVyZGVlbiIsInNvcnQtbmFtZSI6IkFiZXJkZWVuIn0sImRp
+        c2FtYmlndWF0aW9uIjoiOTBzIFVTIGdydW5nZSBiYW5kIiwibGlmZS1zcGFu
+        Ijp7ImJlZ2luIjoiMTk4OC0wMSIsImVuZCI6IjE5OTQtMDQtMDUiLCJlbmRl
+        ZCI6dHJ1ZX0sImFsaWFzZXMiOlt7InNvcnQtbmFtZSI6Ik5pcnZhbmEgVVMi
+        LCJuYW1lIjoiTmlydmFuYSBVUyIsImxvY2FsZSI6bnVsbCwidHlwZSI6bnVs
+        bCwicHJpbWFyeSI6bnVsbCwiYmVnaW4tZGF0ZSI6bnVsbCwiZW5kLWRhdGUi
+        Om51bGx9XSwidGFncyI6W3siY291bnQiOjIsIm5hbWUiOiJwdW5rIn0seyJj
+        b3VudCI6MSwibmFtZSI6ImxlZ2VuZGFyeSJ9LHsiY291bnQiOjEsIm5hbWUi
+        OiI5MCJ9LHsiY291bnQiOjIsIm5hbWUiOiJzZWF0dGxlIn0seyJjb3VudCI6
+        MSwibmFtZSI6Im5vcnRod2VzdCJ9LHsiY291bnQiOjEsIm5hbWUiOiJhbHRl
+        cm5hdGl2ZSJ9LHsiY291bnQiOjEsIm5hbWUiOiJyb2NrIGFuZCBpbmRpZSJ9
+        LHsiY291bnQiOjEsIm5hbWUiOiJhbcOpcmljYWluIn0seyJjb3VudCI6Miwi
+        bmFtZSI6InVzYSJ9LHsiY291bnQiOjcsIm5hbWUiOiJhbWVyaWNhbiJ9LHsi
+        Y291bnQiOjEsIm5hbWUiOiJ1bml0ZWQgc3RhdGVzIn0seyJjb3VudCI6MSwi
+        bmFtZSI6Imt1cnQgY29iYWluIn0seyJjb3VudCI6MiwibmFtZSI6IjkwcyJ9
+        LHsiY291bnQiOjMsIm5hbWUiOiJhbHRlcm5hdGl2ZSByb2NrIn0seyJjb3Vu
+        dCI6MTIsIm5hbWUiOiJncnVuZ2UifSx7ImNvdW50IjoxLCJuYW1lIjoibmly
+        dmFuYSJ9LHsiY291bnQiOjEsIm5hbWUiOiJiYW5kIn0seyJjb3VudCI6Nywi
+        bmFtZSI6InJvY2sifV19LHsiaWQiOiI4NWFmMDcwOS05NWRiLTRmYmMtODAx
+        YS0xMjBlOWY0NzY2ZDAiLCJ0eXBlIjoiR3JvdXAiLCJzY29yZSI6IjEwMCIs
+        Im5hbWUiOiJOaXJ2YW5hIiwic29ydC1uYW1lIjoiTmlydmFuYSIsImNvdW50
+        cnkiOiJGSSIsImFyZWEiOnsiaWQiOiI2YTI2NGY5NC02ZmYxLTMwYjEtOWE4
+        MS00MWY3YmZhYmQ2MTYiLCJuYW1lIjoiRmlubGFuZCIsInNvcnQtbmFtZSI6
+        IkZpbmxhbmQifSwiZGlzYW1iaWd1YXRpb24iOiJFYXJseSAxOTgwJ3MgRmlu
+        bmlzaCBwdW5rIGJhbmQiLCJsaWZlLXNwYW4iOnsiZW5kZWQiOm51bGx9LCJ0
+        YWdzIjpbeyJjb3VudCI6MSwibmFtZSI6InB1bmsifSx7ImNvdW50IjoxLCJu
+        YW1lIjoiZmlubGFuZCJ9XX1dfQ==
+    http_version: 
+  recorded_at: Thu, 06 Mar 2014 10:53:25 GMT
+recorded_with: VCR 2.8.0
