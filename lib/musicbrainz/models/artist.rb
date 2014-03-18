@@ -12,8 +12,8 @@ module MusicBrainz
       self.name           = json['name']
       self.sort_name      = json['sort-name']
       self.country        = json['country']
-      self.date_begin     = json['life-span']['begin']
-      self.date_end       = json['life-span']['end']
+      self.date_begin     = json['life-span'] && json['life-span']['begin']
+      self.date_end       = json['life-span'] && json['life-span']['end']
       self.disambiguation = json['disambiguation']
       self.score          = json['score'].to_i if json.key? 'score'
 
@@ -28,7 +28,10 @@ module MusicBrainz
     end
 
     def release_groups limit: nil
-      @client.browse_release_groups artist: id, limit: limit
+      @client.browse_release_groups(artist: id, limit: limit).map do |release|
+        release.artist ||= self
+        release
+      end
     end
   end
 end
