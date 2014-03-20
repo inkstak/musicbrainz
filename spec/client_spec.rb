@@ -10,14 +10,14 @@ describe MusicBrainz::Client do
   end
 
   describe 'query_interval' do
-    before { MusicBrainz.config.query_interval = 0.5 }
+    before { MusicBrainz.config.query_interval = 0.2 }
     after  { MusicBrainz.config.query_interval = 0 }
 
     it do
       expect{ request }.to_not raise_error
       expect{ request }.to raise_error MusicBrainz::RequestIntervalTooShort
 
-      sleep 0.5
+      sleep 0.2
       expect{ request }.to_not raise_error
     end
   end
@@ -30,7 +30,7 @@ describe MusicBrainz::Client do
   end
 
   describe 'retry' do
-    before { MusicBrainz.config.query_interval = 0.5 }
+    before { MusicBrainz.config.query_interval = 0.2 }
     before { MusicBrainz.config.retry          = 1 }
 
     after  { MusicBrainz.config.query_interval = 0 }
