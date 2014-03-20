@@ -1,8 +1,4 @@
-
 module MusicBrainz
-  class InvalidRequest < StandardError
-  end
-
   class Client
     ENDPOINT = 'http://musicbrainz.org/ws/2/'
 
@@ -13,8 +9,10 @@ module MusicBrainz
         MusicBrainz.config.faraday.call(f) if MusicBrainz.config.faraday
 
         f.response  :json
+        f.use       MusicBrainz::Middleware::Headers
+        f.use       MusicBrainz::Middleware::Retry
+        f.use       MusicBrainz::Middleware::Interval
         f.adapter   Faraday.default_adapter
-        f.use       MusicBrainz::Middleware
       end
     end
 
@@ -52,7 +50,10 @@ module MusicBrainz
 
     def get url, options={}
       options = build_options(options)
-      data    = http.get(url, options)
+      data    = http.get(url, options) do |request|
+        request.options[:last_request_at] = @last_request_at
+        @last_request_at = Time.now
+      end
 
       case data.status
       when 400 then raise InvalidRequest.new(data.body['error'])

@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/artist/5b11f4ce-a62d-471e-81fc-a69a8278c7da?fmt=json&inc=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainzGemTestSuite/1.0.0 ( savater.sebastien@gmail.com )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 20 Mar 2014 08:10:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Content-Length:
+      - '622'
+      Etag:
+      - "\"3f5e9749258cb6bb87a6b93c15caa485\""
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: "{\"country\":\"US\",\"ipis\":[],\"area\":{\"disambiguation\":\"\",\"iso_3166_3_codes\":[],\"sort-name\":\"United
+        States\",\"name\":\"United States\",\"id\":\"489ce91b-6658-3307-9877-795b68554c98\",\"iso_3166_2_codes\":[],\"iso_3166_1_codes\":[\"US\"]},\"sort-name\":\"Nirvana\",\"name\":\"Nirvana\",\"disambiguation\":\"90s
+        US grunge band\",\"life-span\":{\"ended\":true,\"begin\":\"1988-01\",\"end\":\"1994-04-05\"},\"end_area\":null,\"id\":\"5b11f4ce-a62d-471e-81fc-a69a8278c7da\",\"type\":\"Group\",\"begin_area\":{\"disambiguation\":\"\",\"iso_3166_3_codes\":[],\"sort-name\":\"Aberdeen\",\"name\":\"Aberdeen\",\"id\":\"a640b45c-c173-49b1-8030-973603e895b5\",\"iso_3166_2_codes\":[],\"iso_3166_1_codes\":[]}}"
+    http_version: 
+  recorded_at: Thu, 20 Mar 2014 08:10:36 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/artist/5b11f4ce-a62d-471e-81fc-a69a8278c7da?fmt=json&inc=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainzGemTestSuite/1.0.0 ( savater.sebastien@gmail.com )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 20 Mar 2014 08:12:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Content-Length:
+      - '622'
+      Etag:
+      - "\"3f5e9749258cb6bb87a6b93c15caa485\""
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: "{\"country\":\"US\",\"ipis\":[],\"area\":{\"disambiguation\":\"\",\"iso_3166_3_codes\":[],\"sort-name\":\"United
+        States\",\"name\":\"United States\",\"id\":\"489ce91b-6658-3307-9877-795b68554c98\",\"iso_3166_2_codes\":[],\"iso_3166_1_codes\":[\"US\"]},\"sort-name\":\"Nirvana\",\"name\":\"Nirvana\",\"disambiguation\":\"90s
+        US grunge band\",\"life-span\":{\"ended\":true,\"begin\":\"1988-01\",\"end\":\"1994-04-05\"},\"end_area\":null,\"id\":\"5b11f4ce-a62d-471e-81fc-a69a8278c7da\",\"type\":\"Group\",\"begin_area\":{\"disambiguation\":\"\",\"iso_3166_3_codes\":[],\"sort-name\":\"Aberdeen\",\"name\":\"Aberdeen\",\"id\":\"a640b45c-c173-49b1-8030-973603e895b5\",\"iso_3166_2_codes\":[],\"iso_3166_1_codes\":[]}}"
+    http_version: 
+  recorded_at: Thu, 20 Mar 2014 08:12:54 GMT
+recorded_with: VCR 2.8.0

@@ -257,4 +257,271 @@ http_interactions:
         Is Dead\",\"primary-type\":\"Album\"}],\"release-group-offset\":0,\"release-group-count\":664}"
     http_version: 
   recorded_at: Mon, 10 Mar 2014 12:37:45 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/artist/5b11f4ce-a62d-471e-81fc-a69a8278c7da?inc=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainzGemTestSuite/1.0.0 ( savater.sebastien@gmail.com )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 19 Mar 2014 18:02:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Content-Length:
+      - '622'
+      Etag:
+      - "\"3f5e9749258cb6bb87a6b93c15caa485\""
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: "{\"country\":\"US\",\"ipis\":[],\"area\":{\"disambiguation\":\"\",\"iso_3166_3_codes\":[],\"sort-name\":\"United
+        States\",\"name\":\"United States\",\"id\":\"489ce91b-6658-3307-9877-795b68554c98\",\"iso_3166_2_codes\":[],\"iso_3166_1_codes\":[\"US\"]},\"sort-name\":\"Nirvana\",\"name\":\"Nirvana\",\"disambiguation\":\"90s
+        US grunge band\",\"life-span\":{\"ended\":true,\"begin\":\"1988-01\",\"end\":\"1994-04-05\"},\"end_area\":null,\"id\":\"5b11f4ce-a62d-471e-81fc-a69a8278c7da\",\"type\":\"Group\",\"begin_area\":{\"disambiguation\":\"\",\"iso_3166_3_codes\":[],\"sort-name\":\"Aberdeen\",\"name\":\"Aberdeen\",\"id\":\"a640b45c-c173-49b1-8030-973603e895b5\",\"iso_3166_2_codes\":[],\"iso_3166_1_codes\":[]}}"
+    http_version: 
+  recorded_at: Wed, 19 Mar 2014 18:02:03 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/artist/5b11f4ce-a62d-471e-81fc-a69a8278c7da?inc=artist-rels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainzGemTestSuite/1.0.0 ( savater.sebastien@gmail.com )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 19 Mar 2014 18:02:03 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Etag:
+      - "\"bb029336ff400ec2cba0411f543e268a\""
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: "{\"country\":\"US\",\"ipis\":[],\"area\":{\"disambiguation\":\"\",\"iso_3166_3_codes\":[],\"sort-name\":\"United
+        States\",\"name\":\"United States\",\"id\":\"489ce91b-6658-3307-9877-795b68554c98\",\"iso_3166_2_codes\":[],\"iso_3166_1_codes\":[\"US\"]},\"relations\":[{\"type-id\":\"5be4c609-9afa-4ea0-910b-12ffb71e3821\",\"end\":\"1993-09\",\"direction\":\"backward\",\"ended\":true,\"artist\":{\"disambiguation\":\"Guitarist
+        with The Exploited, Goodbye Mr. Mackenzie and Nirvana\",\"relations\":[],\"sort-name\":\"Duncan,
+        John\",\"name\":\"John Duncan\",\"id\":\"258e917c-4cf0-4a1a-a07d-dacfe6b93398\"},\"type\":\"member
+        of band\",\"begin\":\"1993-07-23\",\"attributes\":[]},{\"type-id\":\"5be4c609-9afa-4ea0-910b-12ffb71e3821\",\"end\":\"1994-01\",\"direction\":\"backward\",\"ended\":true,\"artist\":{\"disambiguation\":\"\",\"relations\":[],\"sort-name\":\"Goldston,
+        Lori\",\"name\":\"Lori Goldston\",\"id\":\"279575ec-fe30-455f-adb1-7a627a0badba\"},\"type\":\"member
+        of band\",\"begin\":\"1993-07-23\",\"attributes\":[]},{\"type-id\":\"5be4c609-9afa-4ea0-910b-12ffb71e3821\",\"end\":\"1990-09-24\",\"direction\":\"backward\",\"ended\":true,\"artist\":{\"disambiguation\":\"\",\"relations\":[],\"sort-name\":\"Peters,
+        Dan\",\"name\":\"Dan Peters\",\"id\":\"3402566b-20dc-47f1-973b-2af1dedae702\"},\"type\":\"member
+        of band\",\"begin\":\"1990-07\",\"attributes\":[]},{\"type-id\":\"5be4c609-9afa-4ea0-910b-12ffb71e3821\",\"end\":\"1994-04-05\",\"direction\":\"backward\",\"ended\":true,\"artist\":{\"disambiguation\":\"\",\"relations\":[],\"sort-name\":\"Cobain,
+        Kurt\",\"name\":\"Kurt Cobain\",\"id\":\"3c9b356d-d1db-4f4e-a7a3-2d00c1d70255\"},\"type\":\"member
+        of band\",\"begin\":\"1988-01\",\"attributes\":[\"founder\"]},{\"type-id\":\"5be4c609-9afa-4ea0-910b-12ffb71e3821\",\"end\":\"1994-04-05\",\"direction\":\"backward\",\"ended\":true,\"artist\":{\"disambiguation\":\"\",\"relations\":[],\"sort-name\":\"Smear,
+        Pat\",\"name\":\"Pat Smear\",\"id\":\"3da65013-dfdd-40c7-b9c7-e4c829862c66\"},\"type\":\"member
+        of band\",\"begin\":\"1993-08-09\",\"attributes\":[]},{\"type-id\":\"5be4c609-9afa-4ea0-910b-12ffb71e3821\",\"end\":\"1994-04-05\",\"direction\":\"backward\",\"ended\":true,\"artist\":{\"disambiguation\":\"\",\"relations\":[],\"sort-name\":\"Grohl,
+        Dave\",\"name\":\"Dave Grohl\",\"id\":\"4d5f891d-9bce-45ae-ad86-912dd27252fa\"},\"type\":\"member
+        of band\",\"begin\":\"1990-09-24\",\"attributes\":[]},{\"type-id\":\"5be4c609-9afa-4ea0-910b-12ffb71e3821\",\"end\":\"1988\",\"direction\":\"backward\",\"ended\":true,\"artist\":{\"disambiguation\":\"Nirvana's
+        3rd drummer\",\"relations\":[],\"sort-name\":\"Foster, Dave\",\"name\":\"Dave
+        Foster\",\"id\":\"6740416b-a0ab-4a46-9ee5-8cd9c69c6442\"},\"type\":\"member
+        of band\",\"begin\":\"1988\",\"attributes\":[]},{\"type-id\":\"5be4c609-9afa-4ea0-910b-12ffb71e3821\",\"end\":\"1990-08\",\"direction\":\"backward\",\"ended\":true,\"artist\":{\"disambiguation\":\"\",\"relations\":[],\"sort-name\":\"Everman,
+        Jason\",\"name\":\"Jason Everman\",\"id\":\"797dc323-fc39-4597-98cc-d10493f67326\"},\"type\":\"member
+        of band\",\"begin\":\"1990-08\",\"attributes\":[]},{\"type-id\":\"5be4c609-9afa-4ea0-910b-12ffb71e3821\",\"end\":\"1988-05\",\"direction\":\"backward\",\"ended\":true,\"artist\":{\"disambiguation\":\"\",\"relations\":[],\"sort-name\":\"Burckhard,
+        Aaron\",\"name\":\"Aaron Burckhard\",\"id\":\"86d3f2c7-2a19-4249-ad7c-6feec74118d7\"},\"type\":\"member
+        of band\",\"begin\":\"1988-02\",\"attributes\":[]},{\"type-id\":\"5be4c609-9afa-4ea0-910b-12ffb71e3821\",\"end\":\"1988-01\",\"direction\":\"backward\",\"ended\":true,\"artist\":{\"disambiguation\":\"\",\"relations\":[],\"sort-name\":\"Crover,
+        Dale\",\"name\":\"Dale Crover\",\"id\":\"9b93a71b-1484-4bea-b096-f660c1161f8a\"},\"type\":\"member
+        of band\",\"begin\":\"1988-01\",\"attributes\":[]},{\"type-id\":\"5be4c609-9afa-4ea0-910b-12ffb71e3821\",\"end\":\"1990\",\"direction\":\"backward\",\"ended\":true,\"artist\":{\"disambiguation\":\"\",\"relations\":[],\"sort-name\":\"Crover,
+        Dale\",\"name\":\"Dale Crover\",\"id\":\"9b93a71b-1484-4bea-b096-f660c1161f8a\"},\"type\":\"member
+        of band\",\"begin\":\"1990\",\"attributes\":[]},{\"type-id\":\"5be4c609-9afa-4ea0-910b-12ffb71e3821\",\"end\":\"1994-04-05\",\"direction\":\"backward\",\"ended\":true,\"artist\":{\"disambiguation\":\"\",\"relations\":[],\"sort-name\":\"Novoselic,
+        Krist\",\"name\":\"Krist Novoselic\",\"id\":\"ac05e29f-0561-4445-bb26-5562d2389531\"},\"type\":\"member
+        of band\",\"begin\":\"1988-01\",\"attributes\":[\"founder\"]},{\"type-id\":\"5be4c609-9afa-4ea0-910b-12ffb71e3821\",\"end\":\"1990-06\",\"direction\":\"backward\",\"ended\":true,\"artist\":{\"disambiguation\":\"\",\"relations\":[],\"sort-name\":\"Channing,
+        Chad\",\"name\":\"Chad Channing\",\"id\":\"e2f28104-72bb-4c8f-b0f9-78d4eaf492fd\"},\"type\":\"member
+        of band\",\"begin\":\"1988-05\",\"attributes\":[]}],\"sort-name\":\"Nirvana\",\"name\":\"Nirvana\",\"disambiguation\":\"90s
+        US grunge band\",\"life-span\":{\"ended\":true,\"begin\":\"1988-01\",\"end\":\"1994-04-05\"},\"end_area\":null,\"id\":\"5b11f4ce-a62d-471e-81fc-a69a8278c7da\",\"type\":\"Group\",\"begin_area\":{\"disambiguation\":\"\",\"iso_3166_3_codes\":[],\"sort-name\":\"Aberdeen\",\"name\":\"Aberdeen\",\"id\":\"a640b45c-c173-49b1-8030-973603e895b5\",\"iso_3166_2_codes\":[],\"iso_3166_1_codes\":[]}}"
+    http_version: 
+  recorded_at: Wed, 19 Mar 2014 18:02:04 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/artist/5b11f4ce-a62d-471e-81fc-a69a8278c7da?inc=url-rels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainzGemTestSuite/1.0.0 ( savater.sebastien@gmail.com )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 19 Mar 2014 18:02:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Etag:
+      - "\"b5d4bc8be2d3ef5e1a7c15e74a1875c6\""
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: "{\"country\":\"US\",\"ipis\":[],\"area\":{\"disambiguation\":\"\",\"iso_3166_3_codes\":[],\"sort-name\":\"United
+        States\",\"name\":\"United States\",\"id\":\"489ce91b-6658-3307-9877-795b68554c98\",\"iso_3166_2_codes\":[],\"iso_3166_1_codes\":[\"US\"]},\"relations\":[{\"type-id\":\"e4d73442-3762-45a8-905c-401da65544ed\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"http://decoda.com/nirvana-lyrics\",\"relations\":[],\"id\":\"2759d810-5a97-446e-b168-09d2dec389a9\"},\"type\":\"lyrics\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"29651736-fa6d-48e4-aadc-a557c6add1cb\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"http://en.wikipedia.org/wiki/Nirvana_(band)\",\"relations\":[],\"id\":\"d99c5574-096b-45af-bf20-c3dc3e94fde5\"},\"type\":\"wikipedia\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"e4d73442-3762-45a8-905c-401da65544ed\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"http://lyrics.wikia.com/Nirvana\",\"relations\":[],\"id\":\"47e69f92-e4b3-46ca-9f95-28cc11bedf34\"},\"type\":\"lyrics\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"d94fb61c-fa20-4e3c-a19a-71a949fb2c55\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"http://musicmoz.org/Bands_and_Artists/N/Nirvana/\",\"relations\":[],\"id\":\"21daaa31-4c41-4fc9-b07d-e77b3f01d3e6\"},\"type\":\"other
+        databases\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"e4d73442-3762-45a8-905c-401da65544ed\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"http://muzikum.eu/en/122-4216/nirvana/lyrics.html\",\"relations\":[],\"id\":\"740505c7-3a30-4482-8ca6-10183b37d308\"},\"type\":\"lyrics\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"d94fb61c-fa20-4e3c-a19a-71a949fb2c55\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"http://rateyourmusic.com/artist/nirvana\",\"relations\":[],\"id\":\"07a468c6-3ceb-4e44-b0b9-f46cca1151dc\"},\"type\":\"other
+        databases\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"4fb0eeec-a6eb-4ae3-ad52-b55765b94e8f\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"http://sliver.it/nirvana/test/index.html\",\"relations\":[],\"id\":\"cca2fe38-99c2-4f4d-a3e0-6d84945b7861\"},\"type\":\"discography\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"e8571dcc-35d4-4e91-a577-a3382fd84460\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"http://viaf.org/viaf/138573893\",\"relations\":[],\"id\":\"421a959a-c50f-4a52-99e4-3c603dd37145\"},\"type\":\"VIAF\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"6b3e3c85-0002-4f34-aca6-80ace0d7e846\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"http://www.allmusic.com/artist/mn0000357406\",\"relations\":[],\"id\":\"4a425cd3-641d-409c-a282-2334935bf1bd\"},\"type\":\"allmusic\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"d028a975-000c-4525-9333-d3c8425e4b54\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"http://www.bbc.co.uk/music/artists/5b11f4ce-a62d-471e-81fc-a69a8278c7da\",\"relations\":[],\"id\":\"627ce98c-0eef-41c7-b28f-cc3387b98aab\"},\"type\":\"BBC
+        Music page\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"04a5b104-a4c2-4bac-99a1-7b837c37d9e4\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"http://www.discogs.com/artist/125246\",\"relations\":[],\"id\":\"81846eca-af41-43d0-bcae-b62dbf5cfa2f\"},\"type\":\"discogs\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"fe33d22f-c3b0-4d68-bd53-a856badf2b15\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"http://www.hereisnirvana.com/\",\"relations\":[],\"id\":\"9e31ece5-9275-489c-a197-065a3c466474\"},\"type\":\"official
+        homepage\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"94c8b0cc-4477-4106-932c-da60e63de61c\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"http://www.imdb.com/name/nm1110321/\",\"relations\":[],\"id\":\"85229dcd-cc79-4ce8-a3be-4b0539e9148a\"},\"type\":\"IMDb\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"99429741-f3f6-484b-84f8-23af51991770\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"http://www.last.fm/music/Nirvana\",\"relations\":[],\"id\":\"36dc918b-2a58-4d31-9ccd-10af003e7386\"},\"type\":\"social
+        network\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"4fb0eeec-a6eb-4ae3-ad52-b55765b94e8f\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"http://www.livenirvana.com/bootography/listing85a9.html?listingquery=all\",\"relations\":[],\"id\":\"73a6779b-8aaa-42ff-9833-e550ad974be4\"},\"type\":\"discography\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"4fb0eeec-a6eb-4ae3-ad52-b55765b94e8f\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"http://www.livenirvana.com/digitalnirvana/discography/index.html\",\"relations\":[],\"id\":\"aa2f9928-f2d0-4ce3-9714-af7566b9df94\"},\"type\":\"discography\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"f484f897-81cc-406e-96f9-cd799a04ee24\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"http://www.livenirvana.com/\",\"relations\":[],\"id\":\"74c7fc4f-cb3d-45ef-9c83-f7a1061f0272\"},\"type\":\"fanpage\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"d94fb61c-fa20-4e3c-a19a-71a949fb2c55\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"http://www.musik-sammler.de/artist/2597\",\"relations\":[],\"id\":\"e88eb245-f5f5-4173-afb7-378f950644c2\"},\"type\":\"other
+        databases\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"4fb0eeec-a6eb-4ae3-ad52-b55765b94e8f\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"http://www.nirvanaarchive.com/\",\"relations\":[],\"id\":\"d0498330-0679-4174-a145-273dd974e09e\"},\"type\":\"discography\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"f484f897-81cc-406e-96f9-cd799a04ee24\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"http://www.nirvanaclub.com/\",\"relations\":[],\"id\":\"e42476ce-e923-498e-8e98-d11ae200aebb\"},\"type\":\"fanpage\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"b6f02157-a9d3-4f24-9057-0675b2dbc581\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"http://www.purevolume.com/Nirvana109A\",\"relations\":[],\"id\":\"61139a11-0318-481d-b305-bf569e400e50\"},\"type\":\"purevolume\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"79c5b84d-a206-4f4c-9832-78c028c312c3\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"http://www.secondhandsongs.com/artist/169\",\"relations\":[],\"id\":\"5f33ae58-aa56-40bd-ad14-ab7db9b3d3fd\"},\"type\":\"secondhandsongs\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"689870a4-a1e4-4912-b17f-7b2664215698\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"http://www.wikidata.org/wiki/Q11649\",\"relations\":[],\"id\":\"1221730c-3a48-49fa-8001-beaa6e93c892\"},\"type\":\"wikidata\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"6a540e5b-58c6-4192-b6ba-dbc71ec8fcf0\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"http://www.youtube.com/user/NirvanaVEVO\",\"relations\":[],\"id\":\"c8d415be-b993-4ade-bd28-d3ab4806fcbd\"},\"type\":\"youtube\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"221132e9-e30e-43f2-a741-15afc4c5fa7c\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"https://commons.wikimedia.org/wiki/File:Nirvana_around_1992.jpg\",\"relations\":[],\"id\":\"88867281-e540-4b37-9fce-870dda1bfd8b\"},\"type\":\"image\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"bac47923-ecde-4b59-822e-d08f0cd10156\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"https://myspace.com/nirvana\",\"relations\":[],\"id\":\"706cb178-5d5c-49e0-a07f-149751b94043\"},\"type\":\"myspace\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"35b3a50f-bf0e-4309-a3b4-58eeed8cee6a\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"https://soundcloud.com/nirvana\",\"relations\":[],\"id\":\"14c6ec03-4bd8-4f12-bfef-f2450746adab\"},\"type\":\"online
+        community\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"99429741-f3f6-484b-84f8-23af51991770\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"https://twitter.com/Nirvana\",\"relations\":[],\"id\":\"f5cfd704-b99a-45fc-9aed-8747257cad03\"},\"type\":\"social
+        network\",\"begin\":null,\"attributes\":[]},{\"type-id\":\"99429741-f3f6-484b-84f8-23af51991770\",\"end\":null,\"direction\":\"forward\",\"ended\":false,\"url\":{\"resource\":\"https://www.facebook.com/Nirvana\",\"relations\":[],\"id\":\"a9cec2d1-0544-4dc9-a4b2-640751654573\"},\"type\":\"social
+        network\",\"begin\":null,\"attributes\":[]}],\"sort-name\":\"Nirvana\",\"name\":\"Nirvana\",\"disambiguation\":\"90s
+        US grunge band\",\"life-span\":{\"ended\":true,\"begin\":\"1988-01\",\"end\":\"1994-04-05\"},\"end_area\":null,\"id\":\"5b11f4ce-a62d-471e-81fc-a69a8278c7da\",\"type\":\"Group\",\"begin_area\":{\"disambiguation\":\"\",\"iso_3166_3_codes\":[],\"sort-name\":\"Aberdeen\",\"name\":\"Aberdeen\",\"id\":\"a640b45c-c173-49b1-8030-973603e895b5\",\"iso_3166_2_codes\":[],\"iso_3166_1_codes\":[]}}"
+    http_version: 
+  recorded_at: Wed, 19 Mar 2014 18:02:05 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/artist/5b11f4ce-a62d-471e-81fc-123456789abc?inc=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainzGemTestSuite/1.0.0 ( savater.sebastien@gmail.com )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Wed, 19 Mar 2014 18:02:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Content-Length:
+      - '21'
+      Etag:
+      - "\"75421e5814f8b1c17a20c760d653a9be\""
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: "{\"error\":\"Not Found\"}"
+    http_version: 
+  recorded_at: Wed, 19 Mar 2014 18:02:05 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/release-group?artist=5b11f4ce-a62d-471e-81fc-a69a8278c7da&inc=&limit=25
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainzGemTestSuite/1.0.0 ( savater.sebastien@gmail.com )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 19 Mar 2014 18:02:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Etag:
+      - "\"1788af83c90ff2441e41463606236a37\""
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: "{\"release-groups\":[{\"disambiguation\":\"\",\"first-release-date\":\"1992-12-14\",\"secondary-types\":[\"Compilation\"],\"id\":\"01cf1391-141b-3c87-8650-45ade6e59070\",\"title\":\"Incesticide\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1996\",\"secondary-types\":[\"Compilation\"],\"id\":\"04565adb-04f3-32d9-8582-e4c023b0f199\",\"title\":\"Singles\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1993\",\"secondary-types\":[\"Compilation\"],\"id\":\"178b993e-fa9c-36d3-9d73-c5a8ba0c748d\",\"title\":\"Wipeout\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1991-09-23\",\"secondary-types\":[],\"id\":\"1b022e01-4da6-387b-8658-8678046e4cef\",\"title\":\"Nevermind\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1993-09-21\",\"secondary-types\":[],\"id\":\"2a0981fb-9593-3019-864b-ce934d97a16e\",\"title\":\"In
+        Utero\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1992\",\"secondary-types\":[\"Compilation\"],\"id\":\"339ab911-1568-32cf-8997-f00a538208c9\",\"title\":\"Down
+        With Me\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1994\",\"secondary-types\":[\"Compilation\"],\"id\":\"37b1659c-7560-34cd-8946-d6f3c5c9ad92\",\"title\":\"It's
+        Better to Burn Out Than to Fade Away...\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1992\",\"secondary-types\":[\"Compilation\"],\"id\":\"3f09f97d-3b18-336c-9760-9ebb7df3497e\",\"title\":\"Seventh
+        Heaven\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"2003\",\"secondary-types\":[\"Compilation\"],\"id\":\"51cb77d2-4722-34e9-b72f-66e3f9fb03f6\",\"title\":\"Outcesticide
+        6: A Mess of Blues\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1994\",\"secondary-types\":[\"Compilation\"],\"id\":\"584b7e62-d8b5-378e-986c-dfc78e1fc06e\",\"title\":\"Outcesticide
+        II: The Needle & The Damage Done\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"2002-10-28\",\"secondary-types\":[\"Compilation\"],\"id\":\"5ab32af4-c62e-3cbf-aa8c-c761581d3b94\",\"title\":\"Nirvana\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1994\",\"secondary-types\":[\"Compilation\"],\"id\":\"5bcaeba6-a532-3fa0-b540-75c09f70f759\",\"title\":\"The
+        Very Best\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1995\",\"secondary-types\":[\"Compilation\"],\"id\":\"5dba01ed-b4e9-394e-a875-c7c2ff052133\",\"title\":\"Outcesticide
+        III: The Final Solution\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1992\",\"secondary-types\":[\"Compilation\"],\"id\":\"85155291-222f-388a-a5f7-dcaa60b65afd\",\"title\":\"Before
+        We Ever Minded\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"2001\",\"secondary-types\":[\"Compilation\"],\"id\":\"915dc49e-8203-31b8-bb19-ca5996a2b810\",\"title\":\"In
+        Utero Demos\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"2001\",\"secondary-types\":[\"Compilation\"],\"id\":\"9a198646-ff93-3459-b943-f39da399c270\",\"title\":\"First
+        Live Show\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"2000-02-14\",\"secondary-types\":[\"Compilation\"],\"id\":\"9a3ed295-7823-374e-95fe-c8ce79b6ca2a\",\"title\":\"Secret
+        Songs: The Unreleased Album\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1994\",\"secondary-types\":[\"Compilation\"],\"id\":\"9f42e883-12a4-3790-b3c1-0e2982f2d832\",\"title\":\"Outcesticide:
+        In Memory of Kurt Cobain\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1994\",\"secondary-types\":[\"Compilation\"],\"id\":\"bcbe3ddf-7901-315c-8282-f0e9d5b88285\",\"title\":\"Heart
+        Shaped Box, Volume 2\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1994\",\"secondary-types\":[\"Compilation\"],\"id\":\"c0fdd829-fa5d-4bf0-a227-39979375298d\",\"title\":\"The
+        Eternal Legacy\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1996\",\"secondary-types\":[\"Compilation\"],\"id\":\"e1aa0917-d84a-36aa-92d1-880d2b994748\",\"title\":\"Outcesticide
+        IV: Rape of the Vaults\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1999\",\"secondary-types\":[\"Compilation\"],\"id\":\"e602b067-c9eb-31eb-bed0-80e4245d5d54\",\"title\":\"Dark
+        Emotion\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1998\",\"secondary-types\":[\"Compilation\"],\"id\":\"ee7695bc-fde5-3a84-8ebb-195fa5ee6c2d\",\"title\":\"Outcesticide
+        V: Disintegration\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1989-06-01\",\"secondary-types\":[],\"id\":\"f1afec0b-26dd-3db5-9aa1-c91229a74a24\",\"title\":\"Bleach\",\"primary-type\":\"Album\"},{\"disambiguation\":\"\",\"first-release-date\":\"1994\",\"secondary-types\":[\"Compilation\"],\"id\":\"fdeebee4-b749-31c4-8a9b-d8d25cd9a43a\",\"title\":\"Grunge
+        Is Dead\",\"primary-type\":\"Album\"}],\"release-group-offset\":0,\"release-group-count\":664}"
+    http_version: 
+  recorded_at: Wed, 19 Mar 2014 18:02:06 GMT
 recorded_with: VCR 2.8.0
