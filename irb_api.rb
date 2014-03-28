@@ -17,8 +17,8 @@ MusicBrainz.configure do |c|
   c.contact     = "savater.sebastien@gmail.com"
 
   c.faraday do |f|
-    f.use :instrumentation
-    f.response :caching, ActiveSupport::Cache.lookup_store(:file_store, './tmp/cache')
+    # f.use :instrumentation
+    # f.response :caching, ActiveSupport::Cache.lookup_store(:file_store, './tmp/cache')
   end
 end
 

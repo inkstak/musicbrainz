@@ -17,8 +17,6 @@ MusicBrainz.configure do |c|
   c.app_name       = "MusicBrainzGemTestSuite"
   c.app_version    = MusicBrainz::VERSION
   c.contact        = `git config user.email`.chomp
-  c.query_interval = 0
-  c.retry          = 0
 end
 
 RSpec.configure do |config|

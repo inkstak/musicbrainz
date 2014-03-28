@@ -1,15 +1,21 @@
 module MusicBrainz
   module Middleware
     class Interval < Faraday::Middleware
-      def call(env)
-        @last_request_at = env[:request][:last_request_at]
-        raise RequestIntervalTooShort unless ready?
 
-        @app.call(env)
+      def initialize app, interval
+        @interval = interval
+        super app
       end
 
-      def config
-        MusicBrainz.config
+      def call(env)
+        @last_request_at = env[:request][:last_request_at]
+
+        raise RequestIntervalTooShort.new("interval (#{ @interval }) not respected",
+          interval:     @interval,
+          time_to_wait: time_to_wait
+        ) unless ready?
+
+        @app.call(env)
       end
 
       def time_passed
@@ -17,7 +23,11 @@ module MusicBrainz
       end
 
       def ready?
-        time_passed > config.query_interval
+        time_passed > @interval
+      end
+
+      def time_to_wait
+        @interval - (Time.now.to_f - @last_request_at.to_f)
       end
     end
   end

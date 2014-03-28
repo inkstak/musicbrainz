@@ -4,14 +4,13 @@ module MusicBrainz
 
     attr_reader :http
 
-    def initialize
+    def initialize &block
       @http ||= Faraday.new url: ENDPOINT do |f|
         MusicBrainz.config.faraday.call(f) if MusicBrainz.config.faraday
+        block.call(f) if block_given?
 
         f.response  :json
         f.use       MusicBrainz::Middleware::Headers
-        f.use       MusicBrainz::Middleware::Retry
-        f.use       MusicBrainz::Middleware::Interval
         f.adapter   Faraday.default_adapter
       end
     end
@@ -56,14 +55,11 @@ module MusicBrainz
       end
 
       case data.status
-      when 400 then raise InvalidRequest.new(data.body['error'])
+      when 400 then raise InvalidRequest, data.body['error']
       when 404 then nil
       else
         yield data.body
       end
-
-    rescue Faraday::Error::ClientError
-      nil
     end
 
     def lookup path, uid, includes: [], &block
