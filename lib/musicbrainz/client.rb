@@ -6,11 +6,12 @@ module MusicBrainz
 
     def initialize &block
       @http ||= Faraday.new url: ENDPOINT do |f|
-        MusicBrainz.config.faraday.call(f) if MusicBrainz.config.faraday
-        block.call(f) if block_given?
+        MusicBrainz.config.call(f) if MusicBrainz.config
+        block.call(f)              if block_given?
+
+        raise MissingConfiguration unless f.builder.handlers.include?(MusicBrainz::Middleware)
 
         f.response  :json
-        f.use       MusicBrainz::Middleware::Headers
         f.adapter   Faraday.default_adapter
       end
     end
@@ -49,10 +50,7 @@ module MusicBrainz
 
     def get url, options={}
       options = build_options(options)
-      data    = http.get(url, options) do |request|
-        request.options[:last_request_at] = @last_request_at
-        @last_request_at = Time.now
-      end
+      data    = http.get(url, options)
 
       case data.status
       when 400 then raise InvalidRequest, data.body['error']

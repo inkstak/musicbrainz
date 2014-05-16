@@ -4,7 +4,6 @@
 
 require 'musicbrainz'
 require 'awesome_print'
-require 'active_support'
 
 puts "Examples :" +
   "\napi.artist('5b11f4ce-a62d-471e-81fc-a69a8278c7da')" +
@@ -16,12 +15,14 @@ MusicBrainz.configure do |c|
   c.app_version = MusicBrainz::VERSION
   c.contact     = "savater.sebastien@gmail.com"
 
-  c.faraday do |f|
-    # f.use :instrumentation
-    # f.response :caching, ActiveSupport::Cache.lookup_store(:file_store, './tmp/cache')
-  end
+  c.use :instrumentation
+  # f.response :caching, ActiveSupport::Cache.lookup_store(:file_store, './tmp/cache')
 end
 
 def api
   @api ||= MusicBrainz::Client.new
+  #  do |c|
+  #   c.request :retry, max: 2, interval: 0.5
+
+  # end
 end

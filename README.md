@@ -2,7 +2,9 @@
 
 A simple client for the [MusicBrainz](http://musicbrainz.org) web service, largely inspired by the [musicbrainz gem](https://github.com/localhots/musicbrainz) by [Gregory Eremin](https://github.com/localhots)
 
-It uses the new JSON API (currently in beta) and implements subqueries as an option.
+It uses through a threadsafe client the [new JSON API](http://wiki.musicbrainz.org/Development/JSON_Web_Service) (currently in development), implements subqueries as an option and allows you to use `Rails.cache` or any cache design you have implemented.
+
+[![Build Status](https://travis-ci.org/inkstak/musicbrainz.svg)](https://travis-ci.org/inkstak/musicbrainz)
 
 
 ## Installation
@@ -17,7 +19,6 @@ Add this line to your application's Gemfile:
 Ruby version 2.x required.
 
 
-
 ## Usage
 
     client = MusicBrainz::Client.new
@@ -26,26 +27,24 @@ Ruby version 2.x required.
     artist = client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da'
 
 
-
-
 ### Configuration
 
 You can setup a global configuration:
 
     MusicBrainz.configure do |c|
       c.app_name    = 'MyApp'
-    c.app_version = '0.0.1.alpha'
+      c.app_version = '0.0.1.alpha'
       c.contact     = 'john.doe@my.app'
     end
 
-  client = MusicBrainz::Client.new
+    client = MusicBrainz::Client.new
 
 
-... or a threadsafe one:
+Or a threadsafe one:
 
     client = MusicBrainz::Client.new do |c|
       c.app_name    = 'MyApp'
-    c.app_version = '0.0.1.alpha'
+      c.app_version = '0.0.1.alpha'
       c.contact     = 'john.doe@my.app'
     end
 
@@ -57,15 +56,38 @@ You may also use provided middlewares to avoid being blocked or throttled, or us
 
 ### Requests
 
-Take a look to [JSON API manual](http://wiki.musicbrainz.org/Cover_Art_Archive/API).
+You can request following assets:
+
+* artists
+* release_groups
+* releases
+* recordings
+
+For each assets you can perform a search request (plural method) and a lookup request (singular method).
+
+    client = MusicBrainz::Client.new
+    search = client.artists 'Foo Fighters'
+    artist = client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da'
+
+
+In order to request more information on lookup, you must understand relationships as described in [API manual](http://musicbrainz.org/doc/Development/XML_Web_Service/Version_2#Lookups) and use the `:includes` option.
+
+    artist = client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da', includes: 'url-rels'
 
 
 #### Artists
 
-    client = MusicBrainz::Client.new
-
     search = client.artists 'Foo Fighters'
-    artist = client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da', includes: 'url-rels'
+    artist = client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da', includes: %w(url-rels relationships)
+
+    artist.release_groups
+    artist.release_groups
+
+Available `includes` options:
+
+* url-rels
+* relationships
+
 
 
 
@@ -74,32 +96,26 @@ Take a look to [JSON API manual](http://wiki.musicbrainz.org/Cover_Art_Archive/A
 The `MusicBrainz::Client` uses Faraday middlewares to control requests cycle.
 
 
-#### Query Interval
+#### Query Interval & Retry
 
-Be sure your client won't spam the API
-
-    client = MusicBrainz::Client.new do |c|
-      c.use MusicBrainz::Middleware::Interval, 0.2
-    end
-
-
-#### Retry
-
-Retry middleware works along the Interval middelware.
+To be sure your client won't spam the API accordingly to the [MusicBrainz best practises](http://musicbrainz.org/doc/XML_Web_Service/Rate_Limiting#How_can_I_be_a_good_citizen_and_be_smart_about_using_the_Web_Service.3F)
 
     client = MusicBrainz::Client.new do |c|
-      c.use MusicBrainz::Middleware::Retry   , 1
-      c.use MusicBrainz::Middleware::Interval, 0.2
+      c.request :retry, max: 2, interval: 1
     end
-
-<b>Important:</b> the Retry middleware must be call <b>before</b> the Interval
 
 
 #### Caching
 
-Take a look at [faraday_middleware](https://github.com/lostisland/faraday_middleware).
+Take a look at [faraday_middleware](https://github.com/lostisland/faraday_middleware).  
 You may implement simple response body caching like that:
 
     client = MusicBrainz::Client.new do |c|
       c.response :caching, ActiveSupport::Cache.lookup_store(:file_store, './tmp/cache')
+    end
+
+Inside a Rails app, it will look like:
+
+    client = MusicBrainz::Client.new do |c|
+      c.response :caching, Rails.cache
     end

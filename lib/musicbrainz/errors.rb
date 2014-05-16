@@ -1,4 +1,10 @@
 module MusicBrainz
+  class MissingConfiguration < StandardError
+  end
+
+  class InvalidConfiguration < StandardError
+  end
+
   class InvalidRequest < StandardError
   end
 
