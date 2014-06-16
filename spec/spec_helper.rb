@@ -23,12 +23,11 @@ end
 
 CACHE_STORE = ActiveSupport::Cache.lookup_store(:file_store, './tmp/cache')
 
-MusicBrainz.configure do |c|
-  c.request :musicbrainz,
-    app_name:     "MusicBrainz Test",
-    app_version:  MusicBrainz::VERSION,
-    contact:      "test@inkstak.me"
-end
+MUSICBRAINZ_CONFIG = lambda {|config|
+  config.app_name    = "MusicBrainz Test"
+  config.app_version = MusicBrainz::VERSION
+  config.contact     = "test@inkstak.me"
+}
 
 RSpec.configure do |config|
   config.order = 'random'

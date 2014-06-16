@@ -29,7 +29,7 @@ Ruby version 2.x required.
 
 ### Configuration
 
-You can setup a global configuration:
+You first need to setup a global configuration:
 
     MusicBrainz.configure do |c|
       c.app_name    = 'MyApp'
@@ -40,18 +40,9 @@ You can setup a global configuration:
     client = MusicBrainz::Client.new
 
 
-Or a threadsafe one:
-
-    client = MusicBrainz::Client.new do |c|
-      c.app_name    = 'MyApp'
-      c.app_version = '0.0.1.alpha'
-      c.contact     = 'john.doe@my.app'
-    end
-
-
 The `app_name`, `app_version` & `contact` values are required before running any requests accordingly to the [MusicBrainz best practises](http://musicbrainz.org/doc/XML_Web_Service/Rate_Limiting#How_can_I_be_a_good_citizen_and_be_smart_about_using_the_Web_Service.3F).
 
-You may also use provided middlewares to avoid being blocked or throttled, or use Faraday middlewares to implement caching or instrumentation.
+You may also use middlewares to avoid being blocked or throttled, to implement caching or instrumentation.
 
 
 ### Requests
@@ -63,9 +54,16 @@ You can request following assets:
 * releases
 * recordings
 
-For each assets you can perform a search request (plural method) and a lookup request (singular method).
+
+For each assets you can perform:
+
+* a search request (plural named method)
+* a lookup request (singular method)
+
+Example:
 
     client = MusicBrainz::Client.new
+
     search = client.artists 'Foo Fighters'
     artist = client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da'
 
@@ -80,7 +78,6 @@ In order to request more information on lookup, you must understand relationship
     search = client.artists 'Foo Fighters'
     artist = client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da', includes: %w(url-rels relationships)
 
-    artist.release_groups
     artist.release_groups
 
 Available `includes` options:

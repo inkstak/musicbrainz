@@ -15,7 +15,7 @@ MusicBrainz.configure do |c|
   c.app_version = MusicBrainz::VERSION
   c.contact     = "savater.sebastien@gmail.com"
 
-  c.use :instrumentation
+  # c.use :instrumentation
   # f.response :caching, ActiveSupport::Cache.lookup_store(:file_store, './tmp/cache')
 end
 

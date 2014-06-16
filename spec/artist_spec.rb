@@ -2,7 +2,14 @@ require 'spec_helper'
 
 describe MusicBrainz::Client do
 
-  let(:client) { MusicBrainz::Client.new }
+  before do
+    MusicBrainz.configure &MUSICBRAINZ_CONFIG
+  end
+
+  let :client  do
+    MusicBrainz::Client.new
+  end
+
 
   describe '#artist' do
     around do |e|

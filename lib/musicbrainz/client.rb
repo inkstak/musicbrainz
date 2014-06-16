@@ -6,10 +6,11 @@ module MusicBrainz
 
     def initialize &block
       @http ||= Faraday.new url: ENDPOINT do |f|
-        MusicBrainz.config.call(f) if MusicBrainz.config
-        block.call(f)              if block_given?
+        raise MissingConfiguration unless MusicBrainz.config
+        raise InvalidConfiguration unless MusicBrainz.config.valid?
+        f.request :musicbrainz, MusicBrainz.config.options
 
-        raise MissingConfiguration unless f.builder.handlers.include?(MusicBrainz::Middleware)
+        block.call(f) if block_given?
 
         f.response  :json
         f.adapter   Faraday.default_adapter
