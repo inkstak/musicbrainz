@@ -2,21 +2,14 @@ require 'spec_helper'
 
 describe MusicBrainz::Client do
 
-  before do
-    MusicBrainz.reset_config
-  end
+  before { MusicBrainz.reset_config }
+  around {|e| VCR.use_cassette('client') { e.run }} #, record: :new_episodes
 
-  around do |e|
-    VCR.use_cassette('sample') { e.run }
-  end
+  define_method(:request)           { client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da' }
+  define_method(:bad_request)       { client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da', includes: 'unknown' }
+  define_method(:throttled_request) { client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da', includes: 'throttled' }
 
-  define_method :request do
-    client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da'
-  end
-
-  let :client do
-    MusicBrainz::Client.new
-  end
+  let(:client) { MusicBrainz::Client.new }
 
 
   context 'without configuration' do
@@ -50,7 +43,7 @@ describe MusicBrainz::Client do
 
     it do
       expect{ request }.to_not raise_error
-      expect{ request }.to raise_error
+      expect{ request }.to raise_error(VCR::Errors::UnhandledHTTPRequestError)
     end
 
     context 'with caching' do
@@ -64,6 +57,14 @@ describe MusicBrainz::Client do
         expect{ request }.to_not raise_error
         expect{ request }.to_not raise_error
       end
+    end
+
+    context 'with bad request' do
+      it { expect{ bad_request }.to raise_error(MusicBrainz::BadRequest, %r{#{ 'not a valid inc parameter' }}) }
+    end
+
+    context 'with request throttled' do
+      it { expect{ throttled_request }.to raise_error(MusicBrainz::RequestFailed, %r{#{ 'exceeding the allowable rate limit' }}) }
     end
   end
 end

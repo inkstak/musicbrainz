@@ -1,3 +1,5 @@
+require 'awesome_print'
+
 module MusicBrainz
   class Client
     ENDPOINT = 'http://musicbrainz.org/ws/2/'
@@ -54,9 +56,11 @@ module MusicBrainz
       data    = http.get(url, options)
 
       case data.status
-      when 400 then raise InvalidRequest, data.body['error']
+      when 503 then raise RequestFailed, data.body['error']
+      when 400 then raise BadRequest, data.body['error']
       when 404 then nil
       else
+        # ap data.body
         yield data.body
       end
     end

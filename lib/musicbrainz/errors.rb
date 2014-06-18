@@ -5,7 +5,10 @@ module MusicBrainz
   class InvalidConfiguration < StandardError
   end
 
-  class InvalidRequest < StandardError
+  class BadRequest < StandardError
+  end
+
+  class RequestFailed < StandardError
   end
 
   class RequestIntervalTooShort < StandardError

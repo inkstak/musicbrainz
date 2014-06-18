@@ -76,14 +76,14 @@ In order to request more information on lookup, you must understand relationship
 #### Artists
 
     search = client.artists 'Foo Fighters'
-    artist = client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da', includes: %w(url-rels relationships)
+    artist = client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da', includes: %w(url-rels artist-rels)
 
     artist.release_groups
 
 Available `includes` options:
 
 * url-rels
-* relationships
+* artist-rels
 
 
 

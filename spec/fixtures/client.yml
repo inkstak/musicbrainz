@@ -1,0 +1,132 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/artist/5b11f4ce-a62d-471e-81fc-a69a8278c7da?fmt=json&inc=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 16 May 2014 22:41:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Content-Length:
+      - '622'
+      Etag:
+      - '"3f5e9749258cb6bb87a6b93c15caa485"'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Nirvana","name":"Nirvana","disambiguation":"90s
+        US grunge band","life-span":{"ended":true,"begin":"1988-01","end":"1994-04-05"},"end_area":null,"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","type":"Group","begin_area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Aberdeen","name":"Aberdeen","id":"a640b45c-c173-49b1-8030-973603e895b5","iso_3166_2_codes":[],"iso_3166_1_codes":[]}}'
+    http_version: 
+  recorded_at: Fri, 16 May 2014 22:41:57 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/artist/5b11f4ce-a62d-471e-81fc-a69a8278c7da?fmt=json&inc=unknown
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Wed, 18 Jun 2014 20:25:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Content-Length:
+      - '73'
+      Etag:
+      - '"cb3f9fbaff8e50d7526335816b755f5d"'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"error":"unknown is not a valid inc parameter for the artist resource."}'
+    http_version: 
+  recorded_at: Wed, 18 Jun 2014 20:25:02 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/artist/5b11f4ce-a62d-471e-81fc-a69a8278c7da?fmt=json&inc=throttled
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 503
+      message: Service Unavailable
+    headers:
+      Date:
+      - Wed, 18 Jun 2014 20:28:03 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Content-Length:
+      - '177'
+      Etag:
+      - '"c1f2f49d98cc440133703cd4c161f189"'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Rate-Limited:
+      - 22.3 22.0 20
+    body:
+      encoding: UTF-8
+      string: '{"error":"Your requests are exceeding the allowable rate limit (22.3,
+        limit is 22.0 per 20 seconds). Please see http://wiki.musicbrainz.org/XMLWebService
+        for more information."}'
+    http_version: 
+  recorded_at: Wed, 18 Jun 2014 20:28:02 GMT
+recorded_with: VCR 2.9.0

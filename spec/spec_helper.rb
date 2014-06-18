@@ -3,6 +3,7 @@ require 'bundler/setup'
 require 'musicbrainz'
 require 'vcr'
 require 'webmock/rspec'
+require 'rspec/collection_matchers'
 require 'awesome_print'
 require 'active_support'
 

@@ -13,7 +13,7 @@ describe MusicBrainz::Client do
 
   describe '#artist' do
     around do |e|
-      VCR.use_cassette('artist/nirvana', record: :new_episodes) { e.run }
+      VCR.use_cassette('artist/nirvana') { e.run }
     end
 
     let(:artist) { client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da' }
@@ -30,7 +30,7 @@ describe MusicBrainz::Client do
     it { expect( artist.urls          ).to be_nil }
     it { expect( artist.relationships ).to be_nil }
 
-    context 'with unknown UID' do
+    context 'with UID not found' do
       let(:artist) { client.artist '5b11f4ce-a62d-471e-81fc-123456789abc' }
 
       it { expect( artist ).to be_nil }
@@ -42,6 +42,9 @@ describe MusicBrainz::Client do
       it { expect( artist.urls ).to be_a Hash }
       it { expect( artist.urls['wikipedia']      ).to be_a String }
       it { expect( artist.urls['social network'] ).to be_an Array }
+
+      it { expect( artist.urls['wikipedia']      ).to eq 'http://en.wikipedia.org/wiki/Nirvana_(band)' }
+      it { expect( artist.urls['social network'] ).to include 'http://www.last.fm/music/Nirvana' }
     end
 
     context 'with relationships' do
@@ -54,14 +57,14 @@ describe MusicBrainz::Client do
     describe '#release_groups' do
       let(:releases) { artist.release_groups }
 
-      it { expect( releases    ).to have(25).releases }
+      it { expect( releases    ).to have(25).items }
       it { expect( releases[0] ).to be_a MusicBrainz::ReleaseGroup }
     end
   end
 
   describe '#artists' do
     around do |e|
-      VCR.use_cassette('artist/search', record: :new_episodes) { e.run }
+      VCR.use_cassette('artist/search') { e.run }
     end
 
     let(:results) { client.artists 'Nirvana' }

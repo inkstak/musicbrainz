@@ -12,7 +12,7 @@ describe MusicBrainz::Client do
 
   describe '#release_group' do
     around do |e|
-      VCR.use_cassette('release_group/nevermind', record: :new_episodes) { e.run }
+      VCR.use_cassette('release_group/nevermind') { e.run }
     end
 
     let(:release) { client.release_group '1b022e01-4da6-387b-8658-8678046e4cef' }
@@ -38,7 +38,7 @@ describe MusicBrainz::Client do
 
   describe '#release_groups' do
     around do |e|
-      VCR.use_cassette('release_group/search', record: :new_episodes) { e.run }
+      VCR.use_cassette('release_group/search') { e.run }
     end
 
     let(:results) { client.release_groups 'nevermind' }
@@ -73,13 +73,13 @@ describe MusicBrainz::Client do
 
   describe '#browse_release_groups' do
     around do |e|
-      VCR.use_cassette('release_group/browse', record: :new_episodes) { e.run }
+      VCR.use_cassette('release_group/browse') { e.run }
     end
 
     context 'without linked arguments' do
       let(:releases) { client.browse_release_groups }
 
-      it { expect{ releases }.to raise_error(MusicBrainz::InvalidRequest) }
+      it { expect{ releases }.to raise_error(MusicBrainz::BadRequest) }
     end
 
     context 'with an artist' do
