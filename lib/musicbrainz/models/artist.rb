@@ -1,37 +1,30 @@
 module MusicBrainz
-  class Artist
-    attr_accessor :id, :type, :name, :sort_name,
-      :country, :date_begin, :date_end, :disambiguation,
-      :urls, :relationships, :score
+  class Artist < Model
+    include MusicBrainz::Binding::LifeSpan
+    include MusicBrainz::Binding::Score
+    include MusicBrainz::Binding::Urls
+    include MusicBrainz::Binding::Relationships
 
-    def initialize client, json
-      @client = client
+    property :id
+    property :type
+    property :name
+    property :sort_name
+    property :country
+    property :date_begin
+    property :date_end
+    property :disambiguation
 
-      self.id             = json['id']
-      self.type           = json['type']
-      self.name           = json['name']
-      self.sort_name      = json['sort-name']
-      self.country        = json['country']
-      self.date_begin     = json['life-span'] && json['life-span']['begin']
-      self.date_end       = json['life-span'] && json['life-span']['end']
-      self.disambiguation = json['disambiguation']
-      self.score          = json['score'].to_i if json.key? 'score'
+    coerce_key :area      , Area
+    coerce_key :begin_area, Area
+    coerce_key :end_area  , Area
 
-      self.urls           = json['relations'] && Urls.new(json)
-      self.relationships  = json['relations'] && Relationships.new(json)
-    end
+    coerce_key :relationships, Array[Relationship]
 
-    def inspect
-      "#<#{ self.class.name } " << (instance_variables - %i(@client)).map {|var|
-        '%s: %s' % [var.to_s[1..-1], instance_variable_get(var).inspect]
-      }.join(', ') << '>'
-    end
-
-    def release_groups limit: nil
-      @client.browse_release_groups(artist: id, limit: limit).map do |release|
-        release.artist ||= self
-        release
-      end
-    end
+    # def release_groups limit: nil
+    #   @client.browse_release_groups(artist: id, limit: limit).map do |release|
+    #     release.artist ||= self
+    #     release
+    #   end
+    # end
   end
 end

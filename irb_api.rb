@@ -6,9 +6,9 @@ require 'musicbrainz'
 require 'awesome_print'
 
 puts "Examples :" +
-  "\napi.artist('5b11f4ce-a62d-471e-81fc-a69a8278c7da')" +
-  "\napi.artists('Foo Fighters')" +
-  "\napi.release_groups artist: '5b11f4ce-a62d-471e-81fc-a69a8278c7da'"
+  "\nclient.artist('5b11f4ce-a62d-471e-81fc-a69a8278c7da')" +
+  "\nclient.artists('Foo Fighters')" +
+  "\nclient.release_groups artist: '5b11f4ce-a62d-471e-81fc-a69a8278c7da'"
 
 MusicBrainz.configure do |c|
   c.app_name    = "MusicBrainz Test"
@@ -19,10 +19,6 @@ MusicBrainz.configure do |c|
   # f.response :caching, ActiveSupport::Cache.lookup_store(:file_store, './tmp/cache')
 end
 
-def api
-  @api ||= MusicBrainz::Client.new
-  #  do |c|
-  #   c.request :retry, max: 2, interval: 0.5
-
-  # end
+def client
+  @client ||= MusicBrainz::Client.new
 end

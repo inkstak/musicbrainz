@@ -1,0 +1,401 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/release-group/1b022e01-4da6-387b-8658-8678046e4cef?fmt=json&inc=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 23 Jul 2014 11:59:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Content-Length:
+      - '163'
+      Etag:
+      - '"786a75c2d8f8db5ad011c337aabbf5c1"'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"disambiguation":"","first-release-date":"1991-09-23","secondary-types":[],"id":"1b022e01-4da6-387b-8658-8678046e4cef","title":"Nevermind","primary-type":"Album"}'
+    http_version: 
+  recorded_at: Wed, 23 Jul 2014 11:59:44 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/release-group/fb3770f6-83fb-32b7-85c4-1f522a92287e?fmt=json&inc=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 23 Jul 2014 12:12:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Content-Length:
+      - '185'
+      Etag:
+      - '"42919485fe6662428678850de4ff61bb"'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"disambiguation":"","first-release-date":"1994-11-01","secondary-types":["Live"],"id":"fb3770f6-83fb-32b7-85c4-1f522a92287e","title":"MTV
+        Unplugged in New York","primary-type":"Album"}'
+    http_version: 
+  recorded_at: Wed, 23 Jul 2014 12:12:34 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/release-group/fb3770f6-83fb-32b7-85c4-1f522a92287e?fmt=json&inc=url-rels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 23 Jul 2014 12:15:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Etag:
+      - '"c2ea2d7699bc805f6ba960f7fc1a1819"'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"disambiguation":"","first-release-date":"1994-11-01","relations":[{"type-id":"6578f0e9-1ace-4095-9de8-6e517ddb1ceb","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://en.wikipedia.org/wiki/MTV_Unplugged_in_New_York","relations":[],"id":"f2986eb1-3666-490d-85d5-fbe7f34c1e5a"},"type":"wikipedia","begin":null,"attributes":[]},{"type-id":"156344d3-da8b-40c6-8b10-7b1c22727124","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://lyrics.wikia.com/Nirvana:MTV_Unplugged_In_New_York_(1994)","relations":[],"id":"30f23eb0-e2b5-47b8-a97c-0badceed96b8"},"type":"lyrics","begin":null,"attributes":[]},{"type-id":"38320e40-9f4a-3ae7-8cb2-3f3c9c5d856d","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://musicmoz.org/Bands_and_Artists/N/Nirvana/Discography/MTV_Unplugged_in_New_York/","relations":[],"id":"f8a05ccc-9333-43f0-8b6c-6e8271c2ccb1"},"type":"other
+        databases","begin":null,"attributes":[]},{"type-id":"a50a1d20-2b20-4d2c-9a29-eb771dd78386","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.allmusic.com/album/mw0000118886","relations":[],"id":"0b8848e5-7ec2-4580-bc03-19629b193876"},"type":"allmusic","begin":null,"attributes":[]},{"type-id":"c3ac9c3b-f546-4d15-873f-b294d2c1b708","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.bbc.co.uk/music/reviews/8wvr","relations":[],"id":"a6badd35-d21f-4936-ba37-0d220ff8d9b3"},"type":"review","begin":null,"attributes":[]},{"type-id":"99e550f3-5ab4-3110-b5b9-fe01d970b126","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.discogs.com/master/22433","relations":[],"id":"f911a387-4106-4d95-9005-ea80c741c797"},"type":"discogs","begin":null,"attributes":[]},{"type-id":"38320e40-9f4a-3ae7-8cb2-3f3c9c5d856d","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.musik-sammler.de/album/26427","relations":[],"id":"7028a830-ddcf-4d5e-9c16-1a829d811dfd"},"type":"other
+        databases","begin":null,"attributes":[]},{"type-id":"b988d08c-5d86-4a57-9557-c83b399e3580","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.wikidata.org/wiki/Q212326","relations":[],"id":"3b9508e2-b57e-4e8b-9d2b-fd3d4e9b539f"},"type":"wikidata","begin":null,"attributes":[]}],"secondary-types":["Live"],"id":"fb3770f6-83fb-32b7-85c4-1f522a92287e","title":"MTV
+        Unplugged in New York","primary-type":"Album"}'
+    http_version: 
+  recorded_at: Wed, 23 Jul 2014 12:15:20 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/release-group/01234567-0123-0123-0123-012345678901?fmt=json&inc=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Wed, 23 Jul 2014 12:15:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Content-Length:
+      - '21'
+      Etag:
+      - '"75421e5814f8b1c17a20c760d653a9be"'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"error":"Not Found"}'
+    http_version: 
+  recorded_at: Wed, 23 Jul 2014 12:15:21 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/release-group?fmt=json&inc=&limit=10&query=MTV%20Unplugged%20in%20New%20York
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 23 Jul 2014 12:17:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Etag:
+      - '"b70bfe3b563904421067c09fd542795d"'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"created":"2014-07-23T06:31:32.814Z","count":43419,"offset":0,"release-groups":[{"id":"fb3770f6-83fb-32b7-85c4-1f522a92287e","score":"100","count":13,"title":"MTV
+        Unplugged in New York","primary-type":"Album","secondary-types":["Live"],"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"856045e3-162f-39ef-80ab-0cb13d054b96","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"d59a31a6-8bb4-4f9d-8692-f61025730905","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"846058c1-751f-44dc-8ff4-b801c2b82b4b","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"e5edb300-0df6-4089-87ae-ab4bfd20b66d","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"2ff3be28-f74f-40c9-bdde-c19b6e4384ee","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"38c769e9-570a-3282-843f-f4dc3d4d156f","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"b527f0f7-7735-3c77-add1-09a9e4a20abb","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"924f3fc8-4f4c-337c-bd9b-7b30250cb11d","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"dd5e127c-3046-47f4-b8f5-11cc25716834","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"bc1dec8f-aa31-391c-bae7-5fcd5563a0f0","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"453e5e8d-65ed-4670-b58b-7cb51dd9607d","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"47e459c9-ad7f-4f64-8b2e-1421d9e1e78f","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"34749ba4-c4c7-3354-9619-1b0f88d8222b","title":"MTV
+        Unplugged in New York","status":"Official"}],"tags":[{"count":1,"name":"alternative
+        pop/rock"},{"count":5,"name":"acoustic"},{"count":1,"name":"1994"},{"count":1,"name":"rock
+        and indie"},{"count":6,"name":"grunge"},{"count":2,"name":"alternative/indie
+        rock"},{"count":2,"name":"alternative"},{"count":6,"name":"folk rock"},{"count":7,"name":"rock"},{"count":1,"name":"pop/rock"}]},{"id":"f81f334b-69d6-3fc1-87d3-d4d7d19d9cc5","score":"100","count":2,"title":"MTV
+        Unplugged in New York","primary-type":"Album","secondary-types":["Live"],"artist-credit":[{"artist":{"id":"35581de7-591f-424f-9c64-7b22fd45605e","name":"Sportfreunde
+        Stiller","sort-name":"Sportfreunde Stiller"}}],"releases":[{"id":"61fc2733-07da-44c9-b2fe-5669e497e1ae","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"bb68c769-ee97-4f9a-b28f-3bbf944c6d92","title":"MTV
+        Unplugged in New York","status":"Official"}],"tags":[{"count":1,"name":"unplugged"}]},{"id":"63e6d172-4223-3150-b4be-c638ad6164f3","score":"72","count":1,"title":"1993-11-18:
+        Unplugged in New York: Unedited: MTV Unplugged, Sony Studios, New York City,
+        NY, USA","primary-type":"Album","secondary-types":["Live"],"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"c6beb785-77fa-4759-8861-c64d448999f2","title":"1993-11-18:
+        Unplugged in New York: Unedited: MTV Unplugged, Sony Studios, New York City,
+        NY, USA","status":"Bootleg"}]},{"id":"00edcd70-d773-37e8-9f6f-a1ef49de26f4","score":"63","count":1,"title":"1993-11-18:
+        Unplugged & In Utero: The Demos: MTV Unplugged, Sony Studios, New York City,
+        NY, USA","primary-type":"Album","secondary-types":["Live"],"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"0e866f35-d73e-42c5-a566-86ca3283c3d7","title":"1993-11-18:
+        Unplugged & In Utero: The Demos: MTV Unplugged, Sony Studios, New York City,
+        NY, USA","status":"Bootleg"}],"tags":[{"count":2,"name":"rock"}]},{"id":"e3ae6724-8324-3952-b666-ac60e821f566","score":"57","count":1,"title":"1993-11-18:
+        The Lunatic Is in My Head: MTV Unplugged, Sony Studios, New York City, NY,
+        USA","primary-type":"Album","secondary-types":["Live"],"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"9cc67572-0e26-45b5-9e81-f0cd61ba38f2","title":"1993-11-18:
+        The Lunatic Is in My Head: MTV Unplugged, Sony Studios, New York City, NY,
+        USA","status":"Bootleg"}]},{"id":"b2606dd9-9b98-39b9-ab5f-576e169efd32","score":"56","count":1,"title":"Unplugged
+        in New York 1996","primary-type":"Album","secondary-types":["Live"],"artist-credit":[{"artist":{"id":"c0b2500e-0cef-4130-869d-732b23ed9df5","name":"Tori
+        Amos","sort-name":"Amos, Tori","aliases":[{"sort-name":"Amos, Tori","name":"Amos,
+        Tori","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Torie
+        Amos","name":"Torie Amos","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"86ed1cce-a317-4327-a3b9-90552afe5b29","title":"Unplugged
+        in New York 1996","status":"Bootleg"}]},{"id":"ac158dde-dac3-317d-894d-38a9d7f11867","score":"52","count":1,"title":"1993-11-18:
+        MTV Unplugged, Sony Music Studios, New York, NY, USA","primary-type":"Album","secondary-types":["Live"],"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"2f67eee7-d148-4f6a-9418-9b5d599f850c","title":"1993-11-18:
+        MTV Unplugged, Sony Music Studios, New York, NY, USA","status":"Bootleg"}]},{"id":"6a75d17d-214d-3f14-98fa-3e9f1abcbf3b","score":"47","count":1,"title":"1993-11-18:
+        Unplugged: MTV Unplugged, Sony Studios, New York City, NY, USA","primary-type":"Album","secondary-types":["Live"],"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"0ae15ba4-6fb7-4218-a0e3-e039aed592fc","title":"1993-11-18:
+        Unplugged: MTV Unplugged, Sony Studios, New York City, NY, USA","status":"Bootleg"}],"tags":[{"count":3,"name":"alternative
+        rock"}]},{"id":"c0cd9e8d-6220-3896-94ba-734e68ba8e15","score":"47","count":1,"title":"1993-11-18:
+        Unplugged and More: MTV Unplugged, Sony Studios, New York City, NY, USA","primary-type":"Album","secondary-types":["Live"],"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"42f584b8-8c01-40f6-9966-5584de6235c6","title":"1993-11-18:
+        Unplugged and More: MTV Unplugged, Sony Studios, New York City, NY, USA","status":"Bootleg"}]},{"id":"567c4a0a-b29e-3aa2-9d7e-5d8c5d81875a","score":"47","count":1,"title":"1993-11-18:
+        Unplugged Live: MTV Unplugged, Sony Studios, New York City, NY, USA","primary-type":"Album","secondary-types":["Live"],"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"01002e71-fcca-4be9-bb67-b994db82f025","title":"1993-11-18:
+        Unplugged Live: MTV Unplugged, Sony Studios, New York City, NY, USA","status":"Bootleg"}]}]}'
+    http_version: 
+  recorded_at: Wed, 23 Jul 2014 12:17:43 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/release-group?fmt=json&inc=&limit=2&query=MTV%20Unplugged%20in%20New%20YorkNirvana
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 23 Jul 2014 12:20:13 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Etag:
+      - '"94fa5c18aa4f46fb64b2df59c3c27255"'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"created":"2014-07-23T06:31:32.814Z","count":43359,"offset":0,"release-groups":[{"id":"fb3770f6-83fb-32b7-85c4-1f522a92287e","score":"100","count":13,"title":"MTV
+        Unplugged in New York","primary-type":"Album","secondary-types":["Live"],"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"856045e3-162f-39ef-80ab-0cb13d054b96","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"d59a31a6-8bb4-4f9d-8692-f61025730905","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"846058c1-751f-44dc-8ff4-b801c2b82b4b","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"e5edb300-0df6-4089-87ae-ab4bfd20b66d","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"2ff3be28-f74f-40c9-bdde-c19b6e4384ee","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"38c769e9-570a-3282-843f-f4dc3d4d156f","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"b527f0f7-7735-3c77-add1-09a9e4a20abb","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"924f3fc8-4f4c-337c-bd9b-7b30250cb11d","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"dd5e127c-3046-47f4-b8f5-11cc25716834","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"bc1dec8f-aa31-391c-bae7-5fcd5563a0f0","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"453e5e8d-65ed-4670-b58b-7cb51dd9607d","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"47e459c9-ad7f-4f64-8b2e-1421d9e1e78f","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"34749ba4-c4c7-3354-9619-1b0f88d8222b","title":"MTV
+        Unplugged in New York","status":"Official"}],"tags":[{"count":1,"name":"alternative
+        pop/rock"},{"count":5,"name":"acoustic"},{"count":1,"name":"1994"},{"count":1,"name":"rock
+        and indie"},{"count":6,"name":"grunge"},{"count":2,"name":"alternative/indie
+        rock"},{"count":2,"name":"alternative"},{"count":6,"name":"folk rock"},{"count":7,"name":"rock"},{"count":1,"name":"pop/rock"}]},{"id":"f81f334b-69d6-3fc1-87d3-d4d7d19d9cc5","score":"100","count":2,"title":"MTV
+        Unplugged in New York","primary-type":"Album","secondary-types":["Live"],"artist-credit":[{"artist":{"id":"35581de7-591f-424f-9c64-7b22fd45605e","name":"Sportfreunde
+        Stiller","sort-name":"Sportfreunde Stiller"}}],"releases":[{"id":"61fc2733-07da-44c9-b2fe-5669e497e1ae","title":"MTV
+        Unplugged in New York","status":"Official"},{"id":"bb68c769-ee97-4f9a-b28f-3bbf944c6d92","title":"MTV
+        Unplugged in New York","status":"Official"}],"tags":[{"count":1,"name":"unplugged"}]}]}'
+    http_version: 
+  recorded_at: Wed, 23 Jul 2014 12:20:13 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/release-group?fmt=json&inc=&limit=10&query=artist:%22Nirvana%22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 23 Jul 2014 12:20:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Etag:
+      - '"a4b3837b23d02790e9b2162158da6802"'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"created":"2014-07-23T06:31:32.814Z","count":698,"offset":0,"release-groups":[{"id":"60c826fb-8853-3796-8ff2-16c35f362ec9","score":"100","count":1,"title":"B-Side
+        Themselves","primary-type":"Album","secondary-types":["Compilation"],"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"ac4bc467-00ac-48c7-af85-3d12837a06dd","title":"B-Side
+        Themselves","status":"Bootleg"}],"tags":[{"count":2,"name":"alternative rock"}]},{"id":"fdeebee4-b749-31c4-8a9b-d8d25cd9a43a","score":"100","count":1,"title":"Grunge
+        Is Dead","primary-type":"Album","secondary-types":["Compilation"],"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"7dd7f328-db0b-45a3-a2c9-3a0f9869fd1c","title":"Grunge
+        Is Dead","status":"Bootleg"}],"tags":[{"count":1,"name":"grunge"}]},{"id":"5d00401a-0166-36c5-9b76-48c270f6378a","score":"100","count":1,"title":"1993-11-18:
+        Performance: MTV Unplugged, Sony Studios, New York City, NY, USA","primary-type":"Album","secondary-types":["Live"],"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"899c6c20-3490-4495-81af-2ad9a39d5316","title":"1993-11-18:
+        Performance: MTV Unplugged, Sony Studios, New York City, NY, USA","status":"Bootleg"}]},{"id":"68a3a3e8-c5f7-37cd-ada6-7defc208fce1","score":"100","count":1,"title":"1991-10-12:
+        Dressed for Success, Cabaret Metro, Chicago, IL, USA","primary-type":"Album","secondary-types":["Live"],"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"ed779065-ae4b-40e1-966b-2289862ad69c","title":"1991-10-12:
+        Dressed for Success, Cabaret Metro, Chicago, IL, USA","status":"Bootleg"}],"tags":[{"count":1,"name":"alternative
+        rock"}]},{"id":"ee7740c1-59bf-387f-98ba-0939b7cbe850","score":"100","count":1,"title":"1991-11-25:
+        On Stage in Europe: Paradiso, Amsterdam, The Netherlands","primary-type":"Album","secondary-types":["Live"],"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"d95d602e-0480-4767-8199-6b2801e48e45","title":"1991-11-25:
+        On Stage in Europe: Paradiso, Amsterdam, The Netherlands","status":"Bootleg"}],"tags":[{"count":1,"name":"rock"},{"count":1,"name":"grunge"}]},{"id":"5bcaeba6-a532-3fa0-b540-75c09f70f759","score":"100","count":1,"title":"The
+        Very Best","primary-type":"Album","secondary-types":["Compilation"],"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"557393d4-74ae-4833-8c72-822ed1a10175","title":"The
+        Very Best","status":"Bootleg"}],"tags":[{"count":2,"name":"blues"},{"count":2,"name":"rock"},{"count":2,"name":"alternative"},{"count":3,"name":"grunge"}]},{"id":"20d52601-bc04-3ef0-a99a-320954bb5f86","score":"100","count":1,"title":"The
+        Complete Radio Sessions","primary-type":"Album","secondary-types":["Compilation"],"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"c3f454d9-b887-43ca-a2f8-ee034e6fdc1b","title":"The
+        Complete Radio Sessions","status":"Bootleg"}],"tags":[{"count":1,"name":"rock"},{"count":1,"name":"grunge"}]},{"id":"e3223ece-35c1-3dc3-bbb3-26e9e16248bc","score":"100","count":1,"title":"Outcesticide,
+        Volume 1","primary-type":"Album","secondary-types":["Compilation"],"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"a55c58c0-5eef-4565-8a57-34cb37e37932","title":"Outcesticide,
+        Volume 1","status":"Bootleg"}],"tags":[{"count":1,"name":"blues"}]},{"id":"6c44f64a-58e4-3e94-8458-788712f6c6aa","score":"100","count":1,"title":"Pay
+        to Play","primary-type":"Album","secondary-types":["Compilation"],"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"ecdd8595-2cc8-4668-bf7b-00b0c83876d0","title":"Pay
+        to Play","status":"Bootleg"}]},{"id":"4fcc5ec2-d177-396b-b810-9439031b3c3a","score":"100","count":4,"title":"Hormoaning","primary-type":"EP","artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"966ceb95-7189-31d1-8acb-7653707c1d18","title":"Hormoaning","status":"Official"},{"id":"26f552c9-a21e-465d-a84a-2c6113cf74be","title":"Hormoaning","status":"Official"},{"id":"6540661c-ed9e-4e2e-8b8b-8bbc7c0f26c3","title":"Hormoaning","status":"Official"},{"id":"991e4857-25e2-4001-9b39-8f6cec964bfd","title":"Hormoaning","status":"Official"}],"tags":[{"count":1,"name":"rock"},{"count":4,"name":"grunge"},{"count":1,"name":"1992"},{"count":1,"name":"pop/rock"},{"count":1,"name":"alternative/indie
+        rock"},{"count":1,"name":"alternative pop/rock"}]}]}'
+    http_version: 
+  recorded_at: Wed, 23 Jul 2014 12:20:47 GMT
+recorded_with: VCR 2.9.0

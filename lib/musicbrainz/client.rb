@@ -1,6 +1,11 @@
-require 'awesome_print'
+require 'faraday'
+require 'faraday_middleware'
+require 'musicbrainz/errors'
 
 module MusicBrainz
+
+  Faraday::Request.register_middleware musicbrainz: lambda { Middleware }
+
   class Client
     ENDPOINT = 'http://musicbrainz.org/ws/2/'
 
@@ -21,33 +26,28 @@ module MusicBrainz
 
     def artist *args
       lookup 'artist', *args do |json|
-        Artist.new self, json
+        Artist.new json
       end
     end
 
     def artists *args
       search 'artist', *args do |json|
-        json['artist'].map {|j| Artist.new self, j }
+        json['artist'].map {|j| Artist.new j }
       end
     end
 
     def release_group *args
       lookup 'release-group', *args do |json|
-        ReleaseGroup.new self, json
+        ReleaseGroup.new json
       end
     end
 
     def release_groups *args
       search 'release-group', *args do |json|
-        json['release-groups'].map {|j| ReleaseGroup.new self, j }
+        json['release-groups'].map {|j| ReleaseGroup.new j }
       end
     end
 
-    def browse_release_groups artist: nil, limit: 25
-      browse 'release-group', artist: artist, limit: limit do |json|
-        json['release-groups'].map {|j| ReleaseGroup.new self, j }
-      end
-    end
 
   private
 
@@ -57,10 +57,9 @@ module MusicBrainz
 
       case data.status
       when 503 then raise RequestFailed, data.body['error']
-      when 400 then raise BadRequest, data.body['error']
+      when 400 then raise BadRequest   , data.body['error']
       when 404 then nil
       else
-        # ap data.body
         yield data.body
       end
     end
@@ -70,10 +69,7 @@ module MusicBrainz
     end
 
     def search path, query, limit: 10, &block
-      query  = { path.gsub(/[_-]/, '') => query } if query.is_a? String
-      query  = query.map {|k,v| "#{k}:\"#{v}\"" }.join(' AND ')
-
-      get path, query: query, limit: limit, &block
+      get path, query: build_query(query), limit: limit, &block
     end
 
     def browse path, data, limit: 25, &block
@@ -85,6 +81,15 @@ module MusicBrainz
         inc: Array(options.delete(:includes)).join('+'),
         fmt: 'json'
       ).delete_if {|k,v| v.nil? }
+    end
+
+    def build_query query
+      case query
+      when Hash
+        query.map {|k,v| "#{k}:\"#{v}\"" }.join(' AND ')
+      else
+        query.to_s
+      end
     end
   end
 end

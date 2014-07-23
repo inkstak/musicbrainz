@@ -3,7 +3,7 @@ require 'spec_helper'
 describe MusicBrainz::Client do
 
   before { MusicBrainz.reset_config }
-  around {|e| VCR.use_cassette('client') { e.run }} #, record: :new_episodes
+  around {|e| VCR.use_cassette('client', record: :none) { e.run }}
 
   define_method(:request)           { client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da' }
   define_method(:bad_request)       { client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da', includes: 'unknown' }

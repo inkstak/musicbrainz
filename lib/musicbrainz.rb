@@ -1,21 +1,21 @@
-require 'faraday'
-require 'faraday_middleware'
-
-require 'json'
-
 require 'musicbrainz/version'
 require 'musicbrainz/configuration'
-require 'musicbrainz/errors'
-require 'musicbrainz/client'
-require 'musicbrainz/middleware'
-
-require 'musicbrainz/models/artist'
-require 'musicbrainz/models/release_group'
-require 'musicbrainz/models/urls'
-require 'musicbrainz/models/relationships'
 
 module MusicBrainz
 
-  Faraday::Request.register_middleware musicbrainz: lambda { Middleware }
+  autoload :Client    , 'musicbrainz/client'
+  autoload :Middleware, 'musicbrainz/middleware'
 
+  autoload :Model        , 'musicbrainz/model'
+  autoload :Artist       , 'musicbrainz/models/artist'
+  autoload :ReleaseGroup , 'musicbrainz/models/release_group'
+  autoload :Area         , 'musicbrainz/models/area'
+  autoload :Relationship , 'musicbrainz/models/relationship'
+
+  module Binding
+    autoload :Score         , 'musicbrainz/binding/score'
+    autoload :LifeSpan      , 'musicbrainz/binding/life_span'
+    autoload :Urls          , 'musicbrainz/binding/urls'
+    autoload :Relationships , 'musicbrainz/binding/relationships'
+  end
 end

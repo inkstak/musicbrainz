@@ -16,4 +16,5 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'faraday'
   s.add_dependency 'faraday_middleware'
+  s.add_dependency 'hashie', '~> 3.2.0'
 end
