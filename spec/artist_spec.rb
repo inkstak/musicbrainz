@@ -36,6 +36,8 @@ describe MusicBrainz::Client do
 
     context 'not found' do
       let(:artist) { client.artist '01234567-0123-0123-0123-012345678901' }
+
+      it { expect{ artist }.to_not raise_error }
       it { expect( artist ).to be_nil }
     end
 
@@ -61,50 +63,78 @@ describe MusicBrainz::Client do
       it { expect( artist.relationships[0].artist ).to be_a MusicBrainz::Artist }
     end
 
-
-  #   describe '#release_groups' do
-  #     context 'without subquery' do
-  #       it { expect( artist.release_groups    ).to have(25).items }
-  #       it { expect( artist.release_groups[0] ).to be_a MusicBrainz::ReleaseGroup }
-  #     end
-
-  #     context 'with subquery' do
-  #       let(:artist) { client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da', includes: 'release-groups' }
-
-  #       it { expect( artist.release_groups    ).to have(25).items }
-  #       it { expect( artist.release_groups[0] ).to be_a MusicBrainz::ReleaseGroup }
-  #     end
-  #   end
   end
 
+
   describe '#artists' do
-    let(:results) { client.artists 'Nirvana' }
+    context 'using string' do
+      let(:results) { client.artists 'Nirvana' }
 
-    it { expect{ results }.to_not raise_error }
-    it { expect( results ).to be_an Array }
+      it { expect{ results }.to_not raise_error }
+      it { expect( results ).to be_an Array }
 
-    it { expect( results ).to have_at_least(1).artist }
-    it { expect( results ).to have_at_most(10).artists }
+      it { expect( results ).to have_at_least(1).artist }
+      it { expect( results ).to have_at_most(25).artists }
 
-    it { expect( results[0]                 ).to be_a MusicBrainz::Artist }
-    it { expect( results[0].id              ).to eq '9282c8b4-ca0b-4c6b-b7e3-4f7762dfc4d6' }
-    it { expect( results[0].name            ).to eq 'Nirvana' }
-    it { expect( results[0].sort_name       ).to eq 'Nirvana' }
-    it { expect( results[0].type            ).to eq 'Group' }
-    it { expect( results[0].country         ).to eq 'GB' }
-    it { expect( results[0].disambiguation  ).to eq '60s band from the UK' }
+      it { expect( results[0]         ).to be_a MusicBrainz::Artist }
+      it { expect( results[0].name    ).to eq 'Nirvana' }
+      it { expect( results[0].score   ).to eq 100 }
 
-    it { expect( results[0].score           ).to eq 100 }
+      context 'with limit' do
+        let(:results) { client.artists 'Nirvana', limit: 2 }
+
+        it { expect( results ).to have(2).artists }
+
+        it { expect( results[0]       ).to be_a MusicBrainz::Artist }
+        it { expect( results[0].name  ).to eq 'Nirvana' }
+        it { expect( results[0].score ).to eq 100 }
+      end
+    end
 
 
-    context 'with a limit' do
-      let(:results) { client.artists 'Nirvana', limit: 2 }
+    context 'using indexed search' do
+      let(:results) { client.artists q: { artist: 'Nirvana', country: 'fi' }}
 
-      it { expect( results ).to have(2).artists }
+      it { expect{ results }.to_not raise_error }
+      it { expect( results ).to be_an Array }
 
-      it { expect( results[0]       ).to be_a MusicBrainz::Artist }
-      it { expect( results[0].name  ).to eq 'Nirvana' }
-      it { expect( results[0].score ).to eq 100 }
+      it { expect( results ).to have(1).artist }
+
+      it { expect( results[0]                ).to be_a MusicBrainz::Artist }
+      it { expect( results[0].name           ).to eq 'Nirvana' }
+      it { expect( results[0].score          ).to eq 100 }
+      it { expect( results[0].disambiguation ).to eq "Early 1980's Finnish punk band" }
+
+      context 'with limit' do
+        let(:results) { client.artists q: { artist: 'Nirvana' }, limit: 2 }
+
+        it { expect( results ).to have(2).artists }
+
+        it { expect( results[0]       ).to be_a MusicBrainz::Artist }
+        it { expect( results[0].name  ).to eq 'Nirvana' }
+        it { expect( results[0].score ).to eq 100 }
+      end
+    end
+
+
+    context 'using browse syntax' do
+      let(:results) { client.artists release: '7a7b7bb2-5abe-3088-9e3e-6bfd54035138' }
+
+      it { expect{ results }.to_not raise_error }
+      it { expect( results ).to be_an Array }
+
+      it { expect( results ).to have(15).artist }
+
+      it { expect( results[0]          ).to be_a MusicBrainz::Artist }
+      it { expect( results.map(&:name) ).to include 'Dick Dale and His Del-Tones' }
+
+      context 'with limit' do
+        let(:results) { client.artists release: '7a7b7bb2-5abe-3088-9e3e-6bfd54035138', limit: 2 }
+
+        it { expect( results ).to have(2).artists }
+
+        it { expect( results[0] ).to be_a MusicBrainz::Artist }
+      end
     end
   end
 end

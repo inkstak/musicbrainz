@@ -25,14 +25,14 @@ module MusicBrainz
     end
 
     def artist *args
-      lookup 'artist', *args do |json|
+      lookup('artist', *args) do |json|
         Artist.new json
       end
     end
 
     def artists *args
       search 'artist', *args do |json|
-        json['artist'].map {|j| Artist.new j }
+        (json['artists'] || json['artist']).map {|j| Artist.new j }
       end
     end
 
@@ -53,6 +53,8 @@ module MusicBrainz
 
     def get url, options={}
       options = build_options(options)
+
+      # p http.build_url(url, options)
       data    = http.get(url, options)
 
       case data.status
@@ -68,12 +70,15 @@ module MusicBrainz
       get "#{path}/#{uid}", includes: includes, &block
     end
 
-    def search path, query, limit: 10, &block
-      get path, query: build_query(query), limit: limit, &block
-    end
+    def search path, query, *args, &block
+      case query
+      when String then data = build_search_from_string(query, *args)
+      when Hash   then data = build_search_from_hash(query)
+      else
+        raise ArgumentError, "#{ query.inpsect } is not a valid search query"
+      end
 
-    def browse path, data, limit: 25, &block
-      get path, data.merge(limit: limit), &block
+      get path, data, &block
     end
 
     def build_options options
@@ -83,13 +88,22 @@ module MusicBrainz
       ).delete_if {|k,v| v.nil? }
     end
 
-    def build_query query
-      case query
-      when Hash
-        query.map {|k,v| "#{k}:\"#{v}\"" }.join(' AND ')
-      else
-        query.to_s
+    def build_search_from_string value, limit: nil, offset:  nil
+      { query: value, limit: limit, offset: offset }
+    end
+
+    def build_search_from_hash hash
+      hash      = hash.dup
+      operator  = hash.delete(:operator) || 'AND'
+      query     = hash.delete(:q)
+
+      if query
+        hash[:query] = query.map {|k,v|
+          "#{k.to_s.gsub('_', '')}:\"#{v}\""
+        }.join(" #{operator} ")
       end
+
+      hash
     end
   end
 end
