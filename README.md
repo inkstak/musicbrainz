@@ -139,22 +139,32 @@ client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da'
 client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da', includes: 'url-rels'
 client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da', includes: %w(url-rels artist-rels)
 
-# Artist search
+# Artists search
 client.artists 'Nirvana'
 client.artists 'Nirvana', limit: 10
 
-# Artist indexed search
+# Artists indexed search
 client.artists q: { artist: 'Nirvana', country: 'se' }
 client.artists q: { artist: '30 seconds to mars', alias: '30 seconds to mars' }, operator: 'OR'
 client.artists q: { tag: 'Punk' }, limit: 2
 
-# Artist browse
+# Artists browse
 client.artists release: '7a7b7bb2-5abe-3088-9e3e-6bfd54035138'
 ```
 
 ##### Release groups
 
 ```ruby
+# Release lookup
+client.release_group 'fb3770f6-83fb-32b7-85c4-1f522a92287e'
+client.release_group 'fb3770f6-83fb-32b7-85c4-1f522a92287e', includes: %w(url-rels)
+
+# Releases search
+client.release_groups 'MTV Unplugged in New York'
+client.release_groups q: { release_group: 'Bleach', arid: '5b11f4ce-a62d-471e-81fc-a69a8278c7da', status: 'official' }
+
+# Releases browse
+client.release_groups artist: '5b11f4ce-a62d-471e-81fc-a69a8278c7da'
 ```
 
 
