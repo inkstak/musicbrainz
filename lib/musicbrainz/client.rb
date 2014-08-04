@@ -89,7 +89,7 @@ module MusicBrainz
     end
 
     def build_search_from_string value, limit: nil, offset:  nil
-      { query: value, limit: limit, offset: offset }
+      { query: "\"#{ value }\"", limit: limit, offset: offset }
     end
 
     def build_search_from_hash hash
