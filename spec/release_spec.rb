@@ -87,23 +87,24 @@ describe MusicBrainz::Client do
 
 
     context 'using browse syntax' do
-      let(:results) { client.releases artist: '5b11f4ce-a62d-471e-81fc-a69a8278c7da' }
+      let(:results) { client.releases release_group: '6845bbd5-6af9-3bbf-9235-d8beea55da1a' }
 
       it { expect{ results }.to_not raise_error }
       it { expect( results ).to be_an Array }
-      it { expect( results ).to have(25).releases }
+      it { expect( results ).to have(5).releases }
 
       it { expect( results[0]           ).to be_a MusicBrainz::Release }
-      it { expect( results.map(&:title) ).to include 'Nevermind' }
+      it { expect( results.map(&:title) ).to include 'A Snow Capped Romance' }
 
 
       context 'with limit' do
-        let(:results) { client.releases artist: '5b11f4ce-a62d-471e-81fc-a69a8278c7da', limit: 2 }
+        let(:results) { client.releases release_group: '6845bbd5-6af9-3bbf-9235-d8beea55da1a', limit: 2 }
 
         it { expect{ results }.to_not raise_error }
         it { expect( results ).to have(2).releases }
 
         it { expect( results[0] ).to be_a MusicBrainz::Release }
+        it { expect( results.map(&:title) ).to include 'A Snow Capped Romance' }
       end
     end
   end
