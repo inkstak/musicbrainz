@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://musicbrainz.org/ws/2/artist?fmt=json&inc=&release=7a7b7bb2-5abe-3088-9e3e-6bfd54035138
+    uri: http://musicbrainz.org/ws/2/artist/5b11f4ce-a62d-471e-81fc-a69a8278c7da?fmt=json&inc=
     body:
       encoding: US-ASCII
       string: ''
@@ -21,81 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 01 Aug 2014 17:37:54 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-      Server:
-      - nginx/1.1.19
-      Etag:
-      - '"5c8b57344d66f06bc71efcefc1753787"'
-      Access-Control-Allow-Origin:
-      - "*"
-    body:
-      encoding: UTF-8
-      string: '{"artists":[{"country":"US","ipis":["00063929258"],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
-        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Nelson,
-        Ricky","name":"Ricky Nelson","disambiguation":"rock n roll artist","life-span":{"ended":true,"begin":"1940-05-08","end":"1985-12-31"},"end_area":null,"id":"0b511854-c21c-4af1-9c31-e3fc178ded61","type":"Person","begin_area":null},{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
-        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Urge
-        Overkill","name":"Urge Overkill","disambiguation":"","life-span":{"ended":false,"begin":"1986","end":null},"end_area":null,"id":"120e728a-4078-47b7-a31c-d581ade28bde","type":"Group","begin_area":null},{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
-        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Kool
-        & Gang, The","name":"Kool & The Gang","disambiguation":"","life-span":{"ended":false,"begin":"1964","end":null},"end_area":null,"id":"2469950a-f0ca-425a-bfbc-baf55ea3afde","type":"Group","begin_area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Jersey
-        City","name":"Jersey City","id":"88458f70-6ca9-4a4a-ad8e-e8053e18b981","iso_3166_2_codes":[],"iso_3166_1_codes":[]}},{"country":null,"ipis":[],"area":null,"sort-name":"[dialogue]","name":"[dialogue]","disambiguation":"Special
-        Purpose Artist","life-span":{"ended":false,"begin":null,"end":null},"end_area":null,"id":"314e1c25-dde7-4e4d-b2f4-0a7b9f7c56dc","type":"Other","begin_area":null},{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
-        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Centurions,
-        The","name":"The Centurions","disambiguation":"Californian Surf Rock band","life-span":{"ended":true,"begin":null,"end":null},"end_area":null,"id":"441b8d20-8f8e-4d02-985e-b0e69936b7b7","type":"Group","begin_area":null},{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
-        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Lively
-        Ones, The","name":"The Lively Ones","disambiguation":"","life-span":{"ended":false,"begin":null,"end":null},"end_area":null,"id":"519ffb10-8132-4403-a4fd-7b5d00c4e52f","type":"Group","begin_area":null},{"country":"US","ipis":["00000896007","00002948497"],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
-        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Berry,
-        Chuck","name":"Chuck Berry","disambiguation":"","life-span":{"ended":false,"begin":"1926-10-18","end":null},"end_area":null,"id":"592a3b6d-c42b-4567-99c9-ecf63bd66499","type":"Person","begin_area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"St.
-        Louis","name":"St. Louis","id":"759f9567-9107-40ef-a825-e57824a62e70","iso_3166_2_codes":[],"iso_3166_1_codes":[]}},{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
-        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Dale,
-        Dick and His Del-Tones","name":"Dick Dale and His Del-Tones","disambiguation":"","life-span":{"ended":false,"begin":null,"end":null},"end_area":null,"id":"820263ae-ab51-426d-85e9-bed5a74f00e1","type":"Group","begin_area":null},{"country":null,"ipis":[],"area":null,"sort-name":"Various
-        Artists","name":"Various Artists","disambiguation":"add compilations to this
-        artist","life-span":{"ended":false,"begin":null,"end":null},"end_area":null,"id":"89ad4ac3-39f7-470e-963a-56509c546377","type":"Other","begin_area":null},{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
-        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Statler
-        Brothers, The","name":"The Statler Brothers","disambiguation":"","life-span":{"ended":true,"begin":"1955","end":"2002"},"end_area":null,"id":"8f0c7db9-6d1c-446b-913c-b5c6811ca6fc","type":"Group","begin_area":null},{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
-        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Revels,
-        The","name":"The Revels","disambiguation":"","life-span":{"ended":false,"begin":null,"end":null},"end_area":null,"id":"91d44319-f666-4605-9926-8d26bac3416f","type":"Group","begin_area":null},{"country":"GB","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
-        Kingdom","name":"United Kingdom","id":"8a754a16-0027-3a29-b6d7-2b40ea0481ed","iso_3166_2_codes":[],"iso_3166_1_codes":["GB"]},"sort-name":"Springfield,
-        Dusty","name":"Dusty Springfield","disambiguation":"","life-span":{"ended":true,"begin":"1939-04-16","end":"1999-03-02"},"end_area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Oxfordshire","name":"Oxfordshire","id":"44e5e20e-8fbc-4b07-b3f2-22f2199186fd","iso_3166_2_codes":["GB-OXF"],"iso_3166_1_codes":[]},"id":"b896aa8c-2761-40ce-b485-0e1fffd26167","type":"Person","begin_area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"West
-        Hampstead","name":"West Hampstead","id":"3e881d8b-ac7b-409c-ac99-924fea7563c6","iso_3166_2_codes":[],"iso_3166_1_codes":[]}},{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
-        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Tornadoes,
-        The","name":"The Tornadoes","disambiguation":"US surf rock band","life-span":{"ended":true,"begin":"1960","end":"2007"},"end_area":null,"id":"d557c4bb-253c-4f3b-967f-b6fef3e6db37","type":"Group","begin_area":null},{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
-        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"McKee,
-        Maria","name":"Maria McKee","disambiguation":"","life-span":{"ended":false,"begin":"1964-08-17","end":null},"end_area":null,"id":"f8276a46-0c87-4d2f-a0d3-f22900f9cbfe","type":"Person","begin_area":null},{"country":"US","ipis":["00055306003"],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
-        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Green,
-        Al","name":"Al Green","disambiguation":"","life-span":{"ended":false,"begin":"1946-04-13","end":null},"end_area":null,"id":"fb7272ba-f130-4f0a-934d-6eeea4c18c9a","type":"Person","begin_area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Forrest
-        City","name":"Forrest City","id":"c4d48bca-3716-4533-8966-a25b8c7b50a5","iso_3166_2_codes":[],"iso_3166_1_codes":[]}}],"artist-offset":0,"artist-count":15}'
-    http_version: 
-  recorded_at: Fri, 01 Aug 2014 17:37:54 GMT
-- request:
-    method: get
-    uri: http://musicbrainz.org/ws/2/artist?fmt=json&inc=&limit=2&release=7a7b7bb2-5abe-3088-9e3e-6bfd54035138
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
-      Accept:
-      - application/json
-      Via:
-      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Fri, 01 Aug 2014 17:37:54 GMT
+      - Tue, 19 Aug 2014 14:07:26 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -105,23 +31,21 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Content-Length:
-      - '946'
+      - '622'
       Etag:
-      - '"9592663c68d38c6b1238c5dbbb18b106"'
+      - '"3f5e9749258cb6bb87a6b93c15caa485"'
       Access-Control-Allow-Origin:
       - "*"
     body:
       encoding: UTF-8
-      string: '{"artists":[{"country":null,"ipis":[],"area":null,"sort-name":"[dialogue]","name":"[dialogue]","disambiguation":"Special
-        Purpose Artist","life-span":{"ended":false,"begin":null,"end":null},"end_area":null,"id":"314e1c25-dde7-4e4d-b2f4-0a7b9f7c56dc","type":"Other","begin_area":null},{"country":"US","ipis":["00055306003"],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
-        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Green,
-        Al","name":"Al Green","disambiguation":"","life-span":{"ended":false,"begin":"1946-04-13","end":null},"end_area":null,"id":"fb7272ba-f130-4f0a-934d-6eeea4c18c9a","type":"Person","begin_area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Forrest
-        City","name":"Forrest City","id":"c4d48bca-3716-4533-8966-a25b8c7b50a5","iso_3166_2_codes":[],"iso_3166_1_codes":[]}}],"artist-offset":0,"artist-count":15}'
+      string: '{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Nirvana","name":"Nirvana","disambiguation":"90s
+        US grunge band","life-span":{"ended":true,"begin":"1988-01","end":"1994-04-05"},"end_area":null,"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","type":"Group","begin_area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Aberdeen","name":"Aberdeen","id":"a640b45c-c173-49b1-8030-973603e895b5","iso_3166_2_codes":[],"iso_3166_1_codes":[]}}'
     http_version: 
-  recorded_at: Fri, 01 Aug 2014 17:37:55 GMT
+  recorded_at: Tue, 19 Aug 2014 14:07:26 GMT
 - request:
     method: get
-    uri: http://musicbrainz.org/ws/2/artist?fmt=json&inc=&query=artist:%22Nirvana%22%20AND%20country:%22fi%22
+    uri: http://musicbrainz.org/ws/2/artist/01234567-0123-0123-0123-012345678901?fmt=json&inc=
     body:
       encoding: US-ASCII
       string: ''
@@ -136,11 +60,11 @@ http_interactions:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
-      code: 200
-      message: OK
+      code: 404
+      message: Not Found
     headers:
       Date:
-      - Fri, 01 Aug 2014 17:37:55 GMT
+      - Tue, 19 Aug 2014 14:07:37 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -150,20 +74,19 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Content-Length:
-      - '432'
+      - '21'
       Etag:
-      - '"52333506c15eea303a0ef53e82d897c1"'
+      - '"75421e5814f8b1c17a20c760d653a9be"'
       Access-Control-Allow-Origin:
       - "*"
     body:
       encoding: UTF-8
-      string: '{"created":"2014-08-01T12:37:58.355Z","count":1,"offset":0,"artist":[{"id":"85af0709-95db-4fbc-801a-120e9f4766d0","type":"Group","score":"100","name":"Nirvana","sort-name":"Nirvana","country":"FI","area":{"id":"6a264f94-6ff1-30b1-9a81-41f7bfabd616","name":"Finland","sort-name":"Finland"},"disambiguation":"Early
-        1980''s Finnish punk band","life-span":{"ended":null},"tags":[{"count":1,"name":"punk"},{"count":1,"name":"finland"}]}]}'
+      string: '{"error":"Not Found"}'
     http_version: 
-  recorded_at: Fri, 01 Aug 2014 17:37:55 GMT
+  recorded_at: Tue, 19 Aug 2014 14:07:37 GMT
 - request:
     method: get
-    uri: http://musicbrainz.org/ws/2/artist?fmt=json&inc=&limit=2&query=artist:%22Nirvana%22
+    uri: http://musicbrainz.org/ws/2/artist/5b11f4ce-a62d-471e-81fc-a69a8278c7da?fmt=json&inc=url-rels
     body:
       encoding: US-ASCII
       string: ''
@@ -182,7 +105,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 01 Aug 2014 17:37:56 GMT
+      - Tue, 19 Aug 2014 14:07:39 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -194,58 +117,28 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Etag:
-      - '"59d332f05d8cb7242dd265f9f78e401e"'
+      - '"ce090bd9d9c27093796029ff02aa032a"'
       Access-Control-Allow-Origin:
       - "*"
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJjcmVhdGVkIjoiMjAxNC0wOC0wMVQxMjozNzo1OC4zNTVaIiwiY291bnQi
-        OjEwLCJvZmZzZXQiOjAsImFydGlzdCI6W3siaWQiOiI1YjExZjRjZS1hNjJk
-        LTQ3MWUtODFmYy1hNjlhODI3OGM3ZGEiLCJ0eXBlIjoiR3JvdXAiLCJzY29y
-        ZSI6IjEwMCIsIm5hbWUiOiJOaXJ2YW5hIiwic29ydC1uYW1lIjoiTmlydmFu
-        YSIsImNvdW50cnkiOiJVUyIsImFyZWEiOnsiaWQiOiI0ODljZTkxYi02NjU4
-        LTMzMDctOTg3Ny03OTViNjg1NTRjOTgiLCJuYW1lIjoiVW5pdGVkIFN0YXRl
-        cyIsInNvcnQtbmFtZSI6IlVuaXRlZCBTdGF0ZXMifSwiYmVnaW4tYXJlYSI6
-        eyJpZCI6ImE2NDBiNDVjLWMxNzMtNDliMS04MDMwLTk3MzYwM2U4OTViNSIs
-        Im5hbWUiOiJBYmVyZGVlbiIsInNvcnQtbmFtZSI6IkFiZXJkZWVuIn0sImRp
-        c2FtYmlndWF0aW9uIjoiOTBzIFVTIGdydW5nZSBiYW5kIiwibGlmZS1zcGFu
-        Ijp7ImJlZ2luIjoiMTk4OC0wMSIsImVuZCI6IjE5OTQtMDQtMDUiLCJlbmRl
-        ZCI6dHJ1ZX0sImFsaWFzZXMiOlt7InNvcnQtbmFtZSI6Ik5pcnZhbmEgVVMi
-        LCJuYW1lIjoiTmlydmFuYSBVUyIsImxvY2FsZSI6bnVsbCwidHlwZSI6bnVs
-        bCwicHJpbWFyeSI6bnVsbCwiYmVnaW4tZGF0ZSI6bnVsbCwiZW5kLWRhdGUi
-        Om51bGx9XSwidGFncyI6W3siY291bnQiOjIsIm5hbWUiOiJwdW5rIn0seyJj
-        b3VudCI6MSwibmFtZSI6ImxlZ2VuZGFyeSJ9LHsiY291bnQiOjEsIm5hbWUi
-        OiI5MCJ9LHsiY291bnQiOjIsIm5hbWUiOiJzZWF0dGxlIn0seyJjb3VudCI6
-        MSwibmFtZSI6Im5vcnRod2VzdCJ9LHsiY291bnQiOjEsIm5hbWUiOiJhbHRl
-        cm5hdGl2ZSJ9LHsiY291bnQiOjEsIm5hbWUiOiJyb2NrIGFuZCBpbmRpZSJ9
-        LHsiY291bnQiOjEsIm5hbWUiOiJhbcOpcmljYWluIn0seyJjb3VudCI6Miwi
-        bmFtZSI6InVzYSJ9LHsiY291bnQiOjcsIm5hbWUiOiJhbWVyaWNhbiJ9LHsi
-        Y291bnQiOjEsIm5hbWUiOiJ1bml0ZWQgc3RhdGVzIn0seyJjb3VudCI6MSwi
-        bmFtZSI6Imt1cnQgY29iYWluIn0seyJjb3VudCI6MiwibmFtZSI6IjkwcyJ9
-        LHsiY291bnQiOjMsIm5hbWUiOiJhbHRlcm5hdGl2ZSByb2NrIn0seyJjb3Vu
-        dCI6MSwibmFtZSI6Im5pcnZhbmEifSx7ImNvdW50IjoxLCJuYW1lIjoiYmFu
-        ZCJ9LHsiY291bnQiOjcsIm5hbWUiOiJyb2NrIn0seyJjb3VudCI6MTIsIm5h
-        bWUiOiJncnVuZ2UifV19LHsiaWQiOiI5MjgyYzhiNC1jYTBiLTRjNmItYjdl
-        My00Zjc3NjJkZmM0ZDYiLCJ0eXBlIjoiR3JvdXAiLCJzY29yZSI6IjEwMCIs
-        Im5hbWUiOiJOaXJ2YW5hIiwic29ydC1uYW1lIjoiTmlydmFuYSIsImNvdW50
-        cnkiOiJHQiIsImFyZWEiOnsiaWQiOiI4YTc1NGExNi0wMDI3LTNhMjktYjZk
-        Ny0yYjQwZWEwNDgxZWQiLCJuYW1lIjoiVW5pdGVkIEtpbmdkb20iLCJzb3J0
-        LW5hbWUiOiJVbml0ZWQgS2luZ2RvbSJ9LCJkaXNhbWJpZ3VhdGlvbiI6IjYw
-        cyBiYW5kIGZyb20gdGhlIFVLIiwibGlmZS1zcGFuIjp7ImJlZ2luIjoiMTk2
-        NyIsImVuZGVkIjpudWxsfSwidGFncyI6W3siY291bnQiOjEsIm5hbWUiOiJy
-        b2NrIn0seyJjb3VudCI6MSwibmFtZSI6InBvcCJ9LHsiY291bnQiOjEsIm5h
-        bWUiOiJwcm9ncmVzc2l2ZSByb2NrIn0seyJjb3VudCI6MSwibmFtZSI6Im9y
-        Y2hlc3RyYWwifSx7ImNvdW50IjoxLCJuYW1lIjoiYnJpdGlzaCJ9LHsiY291
-        bnQiOjEsIm5hbWUiOiJwb3dlciBwb3AifSx7ImNvdW50IjoxLCJuYW1lIjoi
-        cHN5Y2hlZGVsaWMgcm9jayJ9LHsiY291bnQiOjEsIm5hbWUiOiJzb2Z0IHJv
-        Y2sifSx7ImNvdW50IjoxLCJuYW1lIjoic3ltcGhvbmljIHJvY2sifSx7ImNv
-        dW50IjoxLCJuYW1lIjoiZW5nbGlzaCJ9XX1dfQ==
+      encoding: UTF-8
+      string: '{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"relations":[{"type-id":"e4d73442-3762-45a8-905c-401da65544ed","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://decoda.com/nirvana-lyrics","relations":[],"id":"2759d810-5a97-446e-b168-09d2dec389a9"},"type":"lyrics","begin":null,"attributes":[]},{"type-id":"29651736-fa6d-48e4-aadc-a557c6add1cb","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://en.wikipedia.org/wiki/Nirvana_(band)","relations":[],"id":"d99c5574-096b-45af-bf20-c3dc3e94fde5"},"type":"wikipedia","begin":null,"attributes":[]},{"type-id":"e4d73442-3762-45a8-905c-401da65544ed","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://lyrics.wikia.com/Nirvana","relations":[],"id":"47e69f92-e4b3-46ca-9f95-28cc11bedf34"},"type":"lyrics","begin":null,"attributes":[]},{"type-id":"d94fb61c-fa20-4e3c-a19a-71a949fb2c55","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://musicmoz.org/Bands_and_Artists/N/Nirvana/","relations":[],"id":"21daaa31-4c41-4fc9-b07d-e77b3f01d3e6"},"type":"other
+        databases","begin":null,"attributes":[]},{"type-id":"e4d73442-3762-45a8-905c-401da65544ed","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://muzikum.eu/en/122-4216/nirvana/lyrics.html","relations":[],"id":"740505c7-3a30-4482-8ca6-10183b37d308"},"type":"lyrics","begin":null,"attributes":[]},{"type-id":"d94fb61c-fa20-4e3c-a19a-71a949fb2c55","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://rateyourmusic.com/artist/nirvana","relations":[],"id":"07a468c6-3ceb-4e44-b0b9-f46cca1151dc"},"type":"other
+        databases","begin":null,"attributes":[]},{"type-id":"4fb0eeec-a6eb-4ae3-ad52-b55765b94e8f","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://sliver.it/nirvana/test/index.html","relations":[],"id":"cca2fe38-99c2-4f4d-a3e0-6d84945b7861"},"type":"discography","begin":null,"attributes":[]},{"type-id":"e8571dcc-35d4-4e91-a577-a3382fd84460","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://viaf.org/viaf/138573893","relations":[],"id":"421a959a-c50f-4a52-99e4-3c603dd37145"},"type":"VIAF","begin":null,"attributes":[]},{"type-id":"6b3e3c85-0002-4f34-aca6-80ace0d7e846","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.allmusic.com/artist/mn0000357406","relations":[],"id":"4a425cd3-641d-409c-a282-2334935bf1bd"},"type":"allmusic","begin":null,"attributes":[]},{"type-id":"d028a975-000c-4525-9333-d3c8425e4b54","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.bbc.co.uk/music/artists/5b11f4ce-a62d-471e-81fc-a69a8278c7da","relations":[],"id":"627ce98c-0eef-41c7-b28f-cc3387b98aab"},"type":"BBC
+        Music page","begin":null,"attributes":[]},{"type-id":"04a5b104-a4c2-4bac-99a1-7b837c37d9e4","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.discogs.com/artist/125246","relations":[],"id":"81846eca-af41-43d0-bcae-b62dbf5cfa2f"},"type":"discogs","begin":null,"attributes":[]},{"type-id":"fe33d22f-c3b0-4d68-bd53-a856badf2b15","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.hereisnirvana.com/","relations":[],"id":"9e31ece5-9275-489c-a197-065a3c466474"},"type":"official
+        homepage","begin":null,"attributes":[]},{"type-id":"94c8b0cc-4477-4106-932c-da60e63de61c","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.imdb.com/name/nm1110321/","relations":[],"id":"85229dcd-cc79-4ce8-a3be-4b0539e9148a"},"type":"IMDb","begin":null,"attributes":[]},{"type-id":"99429741-f3f6-484b-84f8-23af51991770","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.last.fm/music/Nirvana","relations":[],"id":"36dc918b-2a58-4d31-9ccd-10af003e7386"},"type":"social
+        network","begin":null,"attributes":[]},{"type-id":"4fb0eeec-a6eb-4ae3-ad52-b55765b94e8f","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.livenirvana.com/bootography/listing85a9.html?listingquery=all","relations":[],"id":"73a6779b-8aaa-42ff-9833-e550ad974be4"},"type":"discography","begin":null,"attributes":[]},{"type-id":"4fb0eeec-a6eb-4ae3-ad52-b55765b94e8f","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.livenirvana.com/digitalnirvana/discography/index.html","relations":[],"id":"aa2f9928-f2d0-4ce3-9714-af7566b9df94"},"type":"discography","begin":null,"attributes":[]},{"type-id":"f484f897-81cc-406e-96f9-cd799a04ee24","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.livenirvana.com/","relations":[],"id":"74c7fc4f-cb3d-45ef-9c83-f7a1061f0272"},"type":"fanpage","begin":null,"attributes":[]},{"type-id":"d94fb61c-fa20-4e3c-a19a-71a949fb2c55","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.musik-sammler.de/artist/2597","relations":[],"id":"e88eb245-f5f5-4173-afb7-378f950644c2"},"type":"other
+        databases","begin":null,"attributes":[]},{"type-id":"4fb0eeec-a6eb-4ae3-ad52-b55765b94e8f","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.nirvanaarchive.com/","relations":[],"id":"d0498330-0679-4174-a145-273dd974e09e"},"type":"discography","begin":null,"attributes":[]},{"type-id":"f484f897-81cc-406e-96f9-cd799a04ee24","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.nirvanaclub.com/","relations":[],"id":"e42476ce-e923-498e-8e98-d11ae200aebb"},"type":"fanpage","begin":null,"attributes":[]},{"type-id":"b6f02157-a9d3-4f24-9057-0675b2dbc581","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.purevolume.com/Nirvana109A","relations":[],"id":"61139a11-0318-481d-b305-bf569e400e50"},"type":"purevolume","begin":null,"attributes":[]},{"type-id":"79c5b84d-a206-4f4c-9832-78c028c312c3","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.secondhandsongs.com/artist/169","relations":[],"id":"5f33ae58-aa56-40bd-ad14-ab7db9b3d3fd"},"type":"secondhandsongs","begin":null,"attributes":[]},{"type-id":"689870a4-a1e4-4912-b17f-7b2664215698","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.wikidata.org/wiki/Q11649","relations":[],"id":"1221730c-3a48-49fa-8001-beaa6e93c892"},"type":"wikidata","begin":null,"attributes":[]},{"type-id":"d94fb61c-fa20-4e3c-a19a-71a949fb2c55","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.worldcat.org/wcidentities/lccn-n92-11111","relations":[],"id":"2127a8c5-befb-401c-a6f0-057b4f4a4581"},"type":"other
+        databases","begin":null,"attributes":[]},{"type-id":"6a540e5b-58c6-4192-b6ba-dbc71ec8fcf0","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.youtube.com/user/NirvanaVEVO","relations":[],"id":"c8d415be-b993-4ade-bd28-d3ab4806fcbd"},"type":"youtube","begin":null,"attributes":[]},{"type-id":"221132e9-e30e-43f2-a741-15afc4c5fa7c","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"https://commons.wikimedia.org/wiki/File:Nirvana_around_1992.jpg","relations":[],"id":"88867281-e540-4b37-9fce-870dda1bfd8b"},"type":"image","begin":null,"attributes":[]},{"type-id":"bac47923-ecde-4b59-822e-d08f0cd10156","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"https://myspace.com/nirvana","relations":[],"id":"706cb178-5d5c-49e0-a07f-149751b94043"},"type":"myspace","begin":null,"attributes":[]},{"type-id":"89e4a949-0976-440d-bda1-5f772c1e5710","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"https://soundcloud.com/nirvana","relations":[],"id":"14c6ec03-4bd8-4f12-bfef-f2450746adab"},"type":"soundcloud","begin":null,"attributes":[]},{"type-id":"99429741-f3f6-484b-84f8-23af51991770","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"https://twitter.com/Nirvana","relations":[],"id":"f5cfd704-b99a-45fc-9aed-8747257cad03"},"type":"social
+        network","begin":null,"attributes":[]},{"type-id":"99429741-f3f6-484b-84f8-23af51991770","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"https://www.facebook.com/Nirvana","relations":[],"id":"a9cec2d1-0544-4dc9-a4b2-640751654573"},"type":"social
+        network","begin":null,"attributes":[]}],"sort-name":"Nirvana","name":"Nirvana","disambiguation":"90s
+        US grunge band","life-span":{"ended":true,"begin":"1988-01","end":"1994-04-05"},"end_area":null,"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","type":"Group","begin_area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Aberdeen","name":"Aberdeen","id":"a640b45c-c173-49b1-8030-973603e895b5","iso_3166_2_codes":[],"iso_3166_1_codes":[]}}'
     http_version: 
-  recorded_at: Fri, 01 Aug 2014 17:37:56 GMT
+  recorded_at: Tue, 19 Aug 2014 14:07:39 GMT
 - request:
     method: get
-    uri: http://musicbrainz.org/ws/2/artist?fmt=json&inc=&query=Nirvana
+    uri: http://musicbrainz.org/ws/2/artist/5b11f4ce-a62d-471e-81fc-a69a8278c7da?fmt=json&inc=artist-rels
     body:
       encoding: US-ASCII
       string: ''
@@ -264,7 +157,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 01 Aug 2014 17:37:56 GMT
+      - Tue, 19 Aug 2014 14:07:46 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -276,13 +169,82 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Etag:
-      - '"bcc4cef747e1d89f1a3aa3dbf7370235"'
+      - '"734b22fd5c8808c762ec1aa64a4ade7e"'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"relations":[{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1993-09","direction":"backward","artist":{"disambiguation":"Guitarist","relations":[],"sort-name":"Duncan,
+        John","name":"John Duncan","id":"258e917c-4cf0-4a1a-a07d-dacfe6b93398"},"ended":true,"type":"member
+        of band","begin":"1993-07-23","attributes":[]},{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1994-01","direction":"backward","artist":{"disambiguation":"","relations":[],"sort-name":"Goldston,
+        Lori","name":"Lori Goldston","id":"279575ec-fe30-455f-adb1-7a627a0badba"},"ended":true,"type":"member
+        of band","begin":"1993-07-23","attributes":[]},{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1990-09-24","direction":"backward","artist":{"disambiguation":"","relations":[],"sort-name":"Peters,
+        Dan","name":"Dan Peters","id":"3402566b-20dc-47f1-973b-2af1dedae702"},"ended":true,"type":"member
+        of band","begin":"1990-07","attributes":[]},{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1994-04-05","direction":"backward","artist":{"disambiguation":"","relations":[],"sort-name":"Cobain,
+        Kurt","name":"Kurt Cobain","id":"3c9b356d-d1db-4f4e-a7a3-2d00c1d70255"},"ended":true,"type":"member
+        of band","begin":"1988-01","attributes":["founder"]},{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1994-04-05","direction":"backward","artist":{"disambiguation":"","relations":[],"sort-name":"Smear,
+        Pat","name":"Pat Smear","id":"3da65013-dfdd-40c7-b9c7-e4c829862c66"},"ended":true,"type":"member
+        of band","begin":"1993-08-09","attributes":[]},{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1994-04-05","direction":"backward","artist":{"disambiguation":"","relations":[],"sort-name":"Grohl,
+        Dave","name":"Dave Grohl","id":"4d5f891d-9bce-45ae-ad86-912dd27252fa"},"ended":true,"type":"member
+        of band","begin":"1990-09-24","attributes":[]},{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1988","direction":"backward","artist":{"disambiguation":"Nirvana''s
+        3rd drummer","relations":[],"sort-name":"Foster, Dave","name":"Dave Foster","id":"6740416b-a0ab-4a46-9ee5-8cd9c69c6442"},"ended":true,"type":"member
+        of band","begin":"1988","attributes":[]},{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1990-08","direction":"backward","artist":{"disambiguation":"","relations":[],"sort-name":"Everman,
+        Jason","name":"Jason Everman","id":"797dc323-fc39-4597-98cc-d10493f67326"},"ended":true,"type":"member
+        of band","begin":"1990-08","attributes":[]},{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1988-05","direction":"backward","artist":{"disambiguation":"","relations":[],"sort-name":"Burckhard,
+        Aaron","name":"Aaron Burckhard","id":"86d3f2c7-2a19-4249-ad7c-6feec74118d7"},"ended":true,"type":"member
+        of band","begin":"1988-02","attributes":[]},{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1988-01","direction":"backward","artist":{"disambiguation":"","relations":[],"sort-name":"Crover,
+        Dale","name":"Dale Crover","id":"9b93a71b-1484-4bea-b096-f660c1161f8a"},"ended":true,"type":"member
+        of band","begin":"1988-01","attributes":[]},{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1990","direction":"backward","artist":{"disambiguation":"","relations":[],"sort-name":"Crover,
+        Dale","name":"Dale Crover","id":"9b93a71b-1484-4bea-b096-f660c1161f8a"},"ended":true,"type":"member
+        of band","begin":"1990","attributes":[]},{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1994-04-05","direction":"backward","artist":{"disambiguation":"","relations":[],"sort-name":"Novoselic,
+        Krist","name":"Krist Novoselic","id":"ac05e29f-0561-4445-bb26-5562d2389531"},"ended":true,"type":"member
+        of band","begin":"1988-01","attributes":["founder"]},{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1990-06","direction":"backward","artist":{"disambiguation":"","relations":[],"sort-name":"Channing,
+        Chad","name":"Chad Channing","id":"e2f28104-72bb-4c8f-b0f9-78d4eaf492fd"},"ended":true,"type":"member
+        of band","begin":"1988-05","attributes":[]}],"sort-name":"Nirvana","name":"Nirvana","disambiguation":"90s
+        US grunge band","life-span":{"ended":true,"begin":"1988-01","end":"1994-04-05"},"end_area":null,"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","type":"Group","begin_area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Aberdeen","name":"Aberdeen","id":"a640b45c-c173-49b1-8030-973603e895b5","iso_3166_2_codes":[],"iso_3166_1_codes":[]}}'
+    http_version: 
+  recorded_at: Tue, 19 Aug 2014 14:07:46 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/artist?fmt=json&inc=&query=%22Nirvana%22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 19 Aug 2014 14:07:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Etag:
+      - '"207f7f447fde2fe45984ec35a5b267ab"'
       Access-Control-Allow-Origin:
       - "*"
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        eyJjcmVhdGVkIjoiMjAxNC0wOC0wMVQxMjozNzo1OC4zNTVaIiwiY291bnQi
+        eyJjcmVhdGVkIjoiMjAxNC0wOC0xOVQwOTowNDoxMS4yMDhaIiwiY291bnQi
         OjEzLCJvZmZzZXQiOjAsImFydGlzdCI6W3siaWQiOiI5MjgyYzhiNC1jYTBi
         LTRjNmItYjdlMy00Zjc3NjJkZmM0ZDYiLCJ0eXBlIjoiR3JvdXAiLCJzY29y
         ZSI6IjEwMCIsIm5hbWUiOiJOaXJ2YW5hIiwic29ydC1uYW1lIjoiTmlydmFu
@@ -507,10 +469,10 @@ http_interactions:
         MDQzIiwibmFtZSI6Ik1hc3NhY2h1c2V0dHMiLCJzb3J0LW5hbWUiOiJNYXNz
         YWNodXNldHRzIn0sImxpZmUtc3BhbiI6eyJlbmRlZCI6bnVsbH19XX0=
     http_version: 
-  recorded_at: Fri, 01 Aug 2014 17:37:56 GMT
+  recorded_at: Tue, 19 Aug 2014 14:07:52 GMT
 - request:
     method: get
-    uri: http://musicbrainz.org/ws/2/artist?fmt=json&inc=&limit=2&query=Nirvana
+    uri: http://musicbrainz.org/ws/2/artist?fmt=json&inc=&limit=2&query=%22Nirvana%22
     body:
       encoding: US-ASCII
       string: ''
@@ -529,7 +491,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 01 Aug 2014 17:37:57 GMT
+      - Tue, 19 Aug 2014 14:08:02 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -541,12 +503,12 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Etag:
-      - '"fe8354439521f765227273cf787d2517"'
+      - '"5f83a48a9212e0be233ecef25f5d617f"'
       Access-Control-Allow-Origin:
       - "*"
     body:
       encoding: UTF-8
-      string: '{"created":"2014-08-01T12:37:58.355Z","count":13,"offset":0,"artist":[{"id":"9282c8b4-ca0b-4c6b-b7e3-4f7762dfc4d6","type":"Group","score":"100","name":"Nirvana","sort-name":"Nirvana","country":"GB","area":{"id":"8a754a16-0027-3a29-b6d7-2b40ea0481ed","name":"United
+      string: '{"created":"2014-08-19T09:04:11.208Z","count":13,"offset":0,"artist":[{"id":"9282c8b4-ca0b-4c6b-b7e3-4f7762dfc4d6","type":"Group","score":"100","name":"Nirvana","sort-name":"Nirvana","country":"GB","area":{"id":"8a754a16-0027-3a29-b6d7-2b40ea0481ed","name":"United
         Kingdom","sort-name":"United Kingdom"},"disambiguation":"60s band from the
         UK","life-span":{"begin":"1967","ended":null},"tags":[{"count":1,"name":"rock"},{"count":1,"name":"pop"},{"count":1,"name":"progressive
         rock"},{"count":1,"name":"orchestral"},{"count":1,"name":"british"},{"count":1,"name":"power
@@ -554,10 +516,10 @@ http_interactions:
         rock"},{"count":1,"name":"english"}]},{"id":"85af0709-95db-4fbc-801a-120e9f4766d0","type":"Group","score":"100","name":"Nirvana","sort-name":"Nirvana","country":"FI","area":{"id":"6a264f94-6ff1-30b1-9a81-41f7bfabd616","name":"Finland","sort-name":"Finland"},"disambiguation":"Early
         1980''s Finnish punk band","life-span":{"ended":null},"tags":[{"count":1,"name":"punk"},{"count":1,"name":"finland"}]}]}'
     http_version: 
-  recorded_at: Fri, 01 Aug 2014 17:37:57 GMT
+  recorded_at: Tue, 19 Aug 2014 14:08:02 GMT
 - request:
     method: get
-    uri: http://musicbrainz.org/ws/2/artist/5b11f4ce-a62d-471e-81fc-a69a8278c7da?fmt=json&inc=
+    uri: http://musicbrainz.org/ws/2/artist?fmt=json&inc=&query=artist:%22Nirvana%22%20AND%20country:%22fi%22
     body:
       encoding: US-ASCII
       string: ''
@@ -576,7 +538,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 01 Aug 2014 17:37:58 GMT
+      - Tue, 19 Aug 2014 14:08:09 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -586,21 +548,20 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Content-Length:
-      - '622'
+      - '432'
       Etag:
-      - '"3f5e9749258cb6bb87a6b93c15caa485"'
+      - '"7d63d7b62a5afffecb4bd4edbe97e9af"'
       Access-Control-Allow-Origin:
       - "*"
     body:
       encoding: UTF-8
-      string: '{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
-        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Nirvana","name":"Nirvana","disambiguation":"90s
-        US grunge band","life-span":{"ended":true,"begin":"1988-01","end":"1994-04-05"},"end_area":null,"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","type":"Group","begin_area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Aberdeen","name":"Aberdeen","id":"a640b45c-c173-49b1-8030-973603e895b5","iso_3166_2_codes":[],"iso_3166_1_codes":[]}}'
+      string: '{"created":"2014-08-19T09:04:11.208Z","count":1,"offset":0,"artist":[{"id":"85af0709-95db-4fbc-801a-120e9f4766d0","type":"Group","score":"100","name":"Nirvana","sort-name":"Nirvana","country":"FI","area":{"id":"6a264f94-6ff1-30b1-9a81-41f7bfabd616","name":"Finland","sort-name":"Finland"},"disambiguation":"Early
+        1980''s Finnish punk band","life-span":{"ended":null},"tags":[{"count":1,"name":"punk"},{"count":1,"name":"finland"}]}]}'
     http_version: 
-  recorded_at: Fri, 01 Aug 2014 17:37:58 GMT
+  recorded_at: Tue, 19 Aug 2014 14:08:10 GMT
 - request:
     method: get
-    uri: http://musicbrainz.org/ws/2/artist/5b11f4ce-a62d-471e-81fc-a69a8278c7da?fmt=json&inc=artist-rels
+    uri: http://musicbrainz.org/ws/2/artist?fmt=json&inc=&limit=2&query=artist:%22Nirvana%22
     body:
       encoding: US-ASCII
       string: ''
@@ -619,7 +580,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 01 Aug 2014 17:37:58 GMT
+      - Tue, 19 Aug 2014 14:08:16 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -631,46 +592,58 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Etag:
-      - '"fd8a09908c8cd9ce0d4f5cbe3c7516ec"'
+      - '"25e6dc7444297f06c0ae4299af02b18d"'
       Access-Control-Allow-Origin:
       - "*"
     body:
-      encoding: UTF-8
-      string: '{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
-        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"relations":[{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1993-09","direction":"backward","artist":{"disambiguation":"Guitarist
-        with The Exploited, Goodbye Mr. Mackenzie and Nirvana","relations":[],"sort-name":"Duncan,
-        John","name":"John Duncan","id":"258e917c-4cf0-4a1a-a07d-dacfe6b93398"},"ended":true,"type":"member
-        of band","begin":"1993-07-23","attributes":[]},{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1994-01","direction":"backward","artist":{"disambiguation":"","relations":[],"sort-name":"Goldston,
-        Lori","name":"Lori Goldston","id":"279575ec-fe30-455f-adb1-7a627a0badba"},"ended":true,"type":"member
-        of band","begin":"1993-07-23","attributes":[]},{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1990-09-24","direction":"backward","artist":{"disambiguation":"","relations":[],"sort-name":"Peters,
-        Dan","name":"Dan Peters","id":"3402566b-20dc-47f1-973b-2af1dedae702"},"ended":true,"type":"member
-        of band","begin":"1990-07","attributes":[]},{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1994-04-05","direction":"backward","artist":{"disambiguation":"","relations":[],"sort-name":"Cobain,
-        Kurt","name":"Kurt Cobain","id":"3c9b356d-d1db-4f4e-a7a3-2d00c1d70255"},"ended":true,"type":"member
-        of band","begin":"1988-01","attributes":["founder"]},{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1994-04-05","direction":"backward","artist":{"disambiguation":"","relations":[],"sort-name":"Smear,
-        Pat","name":"Pat Smear","id":"3da65013-dfdd-40c7-b9c7-e4c829862c66"},"ended":true,"type":"member
-        of band","begin":"1993-08-09","attributes":[]},{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1994-04-05","direction":"backward","artist":{"disambiguation":"","relations":[],"sort-name":"Grohl,
-        Dave","name":"Dave Grohl","id":"4d5f891d-9bce-45ae-ad86-912dd27252fa"},"ended":true,"type":"member
-        of band","begin":"1990-09-24","attributes":[]},{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1988","direction":"backward","artist":{"disambiguation":"Nirvana''s
-        3rd drummer","relations":[],"sort-name":"Foster, Dave","name":"Dave Foster","id":"6740416b-a0ab-4a46-9ee5-8cd9c69c6442"},"ended":true,"type":"member
-        of band","begin":"1988","attributes":[]},{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1990-08","direction":"backward","artist":{"disambiguation":"","relations":[],"sort-name":"Everman,
-        Jason","name":"Jason Everman","id":"797dc323-fc39-4597-98cc-d10493f67326"},"ended":true,"type":"member
-        of band","begin":"1990-08","attributes":[]},{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1988-05","direction":"backward","artist":{"disambiguation":"","relations":[],"sort-name":"Burckhard,
-        Aaron","name":"Aaron Burckhard","id":"86d3f2c7-2a19-4249-ad7c-6feec74118d7"},"ended":true,"type":"member
-        of band","begin":"1988-02","attributes":[]},{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1988-01","direction":"backward","artist":{"disambiguation":"","relations":[],"sort-name":"Crover,
-        Dale","name":"Dale Crover","id":"9b93a71b-1484-4bea-b096-f660c1161f8a"},"ended":true,"type":"member
-        of band","begin":"1988-01","attributes":[]},{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1990","direction":"backward","artist":{"disambiguation":"","relations":[],"sort-name":"Crover,
-        Dale","name":"Dale Crover","id":"9b93a71b-1484-4bea-b096-f660c1161f8a"},"ended":true,"type":"member
-        of band","begin":"1990","attributes":[]},{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1994-04-05","direction":"backward","artist":{"disambiguation":"","relations":[],"sort-name":"Novoselic,
-        Krist","name":"Krist Novoselic","id":"ac05e29f-0561-4445-bb26-5562d2389531"},"ended":true,"type":"member
-        of band","begin":"1988-01","attributes":["founder"]},{"type-id":"5be4c609-9afa-4ea0-910b-12ffb71e3821","attribute-values":{},"end":"1990-06","direction":"backward","artist":{"disambiguation":"","relations":[],"sort-name":"Channing,
-        Chad","name":"Chad Channing","id":"e2f28104-72bb-4c8f-b0f9-78d4eaf492fd"},"ended":true,"type":"member
-        of band","begin":"1988-05","attributes":[]}],"sort-name":"Nirvana","name":"Nirvana","disambiguation":"90s
-        US grunge band","life-span":{"ended":true,"begin":"1988-01","end":"1994-04-05"},"end_area":null,"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","type":"Group","begin_area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Aberdeen","name":"Aberdeen","id":"a640b45c-c173-49b1-8030-973603e895b5","iso_3166_2_codes":[],"iso_3166_1_codes":[]}}'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjcmVhdGVkIjoiMjAxNC0wOC0xOVQwOTowNDoxMS4yMDhaIiwiY291bnQi
+        OjEwLCJvZmZzZXQiOjAsImFydGlzdCI6W3siaWQiOiI1YjExZjRjZS1hNjJk
+        LTQ3MWUtODFmYy1hNjlhODI3OGM3ZGEiLCJ0eXBlIjoiR3JvdXAiLCJzY29y
+        ZSI6IjEwMCIsIm5hbWUiOiJOaXJ2YW5hIiwic29ydC1uYW1lIjoiTmlydmFu
+        YSIsImNvdW50cnkiOiJVUyIsImFyZWEiOnsiaWQiOiI0ODljZTkxYi02NjU4
+        LTMzMDctOTg3Ny03OTViNjg1NTRjOTgiLCJuYW1lIjoiVW5pdGVkIFN0YXRl
+        cyIsInNvcnQtbmFtZSI6IlVuaXRlZCBTdGF0ZXMifSwiYmVnaW4tYXJlYSI6
+        eyJpZCI6ImE2NDBiNDVjLWMxNzMtNDliMS04MDMwLTk3MzYwM2U4OTViNSIs
+        Im5hbWUiOiJBYmVyZGVlbiIsInNvcnQtbmFtZSI6IkFiZXJkZWVuIn0sImRp
+        c2FtYmlndWF0aW9uIjoiOTBzIFVTIGdydW5nZSBiYW5kIiwibGlmZS1zcGFu
+        Ijp7ImJlZ2luIjoiMTk4OC0wMSIsImVuZCI6IjE5OTQtMDQtMDUiLCJlbmRl
+        ZCI6dHJ1ZX0sImFsaWFzZXMiOlt7InNvcnQtbmFtZSI6Ik5pcnZhbmEgVVMi
+        LCJuYW1lIjoiTmlydmFuYSBVUyIsImxvY2FsZSI6bnVsbCwidHlwZSI6bnVs
+        bCwicHJpbWFyeSI6bnVsbCwiYmVnaW4tZGF0ZSI6bnVsbCwiZW5kLWRhdGUi
+        Om51bGx9XSwidGFncyI6W3siY291bnQiOjIsIm5hbWUiOiJwdW5rIn0seyJj
+        b3VudCI6MSwibmFtZSI6ImxlZ2VuZGFyeSJ9LHsiY291bnQiOjEsIm5hbWUi
+        OiI5MCJ9LHsiY291bnQiOjIsIm5hbWUiOiJzZWF0dGxlIn0seyJjb3VudCI6
+        MSwibmFtZSI6Im5vcnRod2VzdCJ9LHsiY291bnQiOjEsIm5hbWUiOiJhbHRl
+        cm5hdGl2ZSJ9LHsiY291bnQiOjEsIm5hbWUiOiJyb2NrIGFuZCBpbmRpZSJ9
+        LHsiY291bnQiOjEsIm5hbWUiOiJhbcOpcmljYWluIn0seyJjb3VudCI6Miwi
+        bmFtZSI6InVzYSJ9LHsiY291bnQiOjcsIm5hbWUiOiJhbWVyaWNhbiJ9LHsi
+        Y291bnQiOjEsIm5hbWUiOiJ1bml0ZWQgc3RhdGVzIn0seyJjb3VudCI6MSwi
+        bmFtZSI6Imt1cnQgY29iYWluIn0seyJjb3VudCI6MiwibmFtZSI6IjkwcyJ9
+        LHsiY291bnQiOjMsIm5hbWUiOiJhbHRlcm5hdGl2ZSByb2NrIn0seyJjb3Vu
+        dCI6MSwibmFtZSI6Im5pcnZhbmEifSx7ImNvdW50IjoxLCJuYW1lIjoiYmFu
+        ZCJ9LHsiY291bnQiOjcsIm5hbWUiOiJyb2NrIn0seyJjb3VudCI6MTIsIm5h
+        bWUiOiJncnVuZ2UifV19LHsiaWQiOiI5MjgyYzhiNC1jYTBiLTRjNmItYjdl
+        My00Zjc3NjJkZmM0ZDYiLCJ0eXBlIjoiR3JvdXAiLCJzY29yZSI6IjEwMCIs
+        Im5hbWUiOiJOaXJ2YW5hIiwic29ydC1uYW1lIjoiTmlydmFuYSIsImNvdW50
+        cnkiOiJHQiIsImFyZWEiOnsiaWQiOiI4YTc1NGExNi0wMDI3LTNhMjktYjZk
+        Ny0yYjQwZWEwNDgxZWQiLCJuYW1lIjoiVW5pdGVkIEtpbmdkb20iLCJzb3J0
+        LW5hbWUiOiJVbml0ZWQgS2luZ2RvbSJ9LCJkaXNhbWJpZ3VhdGlvbiI6IjYw
+        cyBiYW5kIGZyb20gdGhlIFVLIiwibGlmZS1zcGFuIjp7ImJlZ2luIjoiMTk2
+        NyIsImVuZGVkIjpudWxsfSwidGFncyI6W3siY291bnQiOjEsIm5hbWUiOiJy
+        b2NrIn0seyJjb3VudCI6MSwibmFtZSI6InBvcCJ9LHsiY291bnQiOjEsIm5h
+        bWUiOiJwcm9ncmVzc2l2ZSByb2NrIn0seyJjb3VudCI6MSwibmFtZSI6Im9y
+        Y2hlc3RyYWwifSx7ImNvdW50IjoxLCJuYW1lIjoiYnJpdGlzaCJ9LHsiY291
+        bnQiOjEsIm5hbWUiOiJwb3dlciBwb3AifSx7ImNvdW50IjoxLCJuYW1lIjoi
+        cHN5Y2hlZGVsaWMgcm9jayJ9LHsiY291bnQiOjEsIm5hbWUiOiJzb2Z0IHJv
+        Y2sifSx7ImNvdW50IjoxLCJuYW1lIjoic3ltcGhvbmljIHJvY2sifSx7ImNv
+        dW50IjoxLCJuYW1lIjoiZW5nbGlzaCJ9XX1dfQ==
     http_version: 
-  recorded_at: Fri, 01 Aug 2014 17:37:58 GMT
+  recorded_at: Tue, 19 Aug 2014 14:08:16 GMT
 - request:
     method: get
-    uri: http://musicbrainz.org/ws/2/artist/5b11f4ce-a62d-471e-81fc-a69a8278c7da?fmt=json&inc=url-rels
+    uri: http://musicbrainz.org/ws/2/artist?fmt=json&inc=&release=7a7b7bb2-5abe-3088-9e3e-6bfd54035138
     body:
       encoding: US-ASCII
       string: ''
@@ -689,7 +662,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 01 Aug 2014 17:38:00 GMT
+      - Tue, 19 Aug 2014 14:08:24 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -701,28 +674,50 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Etag:
-      - '"ce090bd9d9c27093796029ff02aa032a"'
+      - '"5c8b57344d66f06bc71efcefc1753787"'
       Access-Control-Allow-Origin:
       - "*"
     body:
       encoding: UTF-8
-      string: '{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
-        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"relations":[{"type-id":"e4d73442-3762-45a8-905c-401da65544ed","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://decoda.com/nirvana-lyrics","relations":[],"id":"2759d810-5a97-446e-b168-09d2dec389a9"},"type":"lyrics","begin":null,"attributes":[]},{"type-id":"29651736-fa6d-48e4-aadc-a557c6add1cb","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://en.wikipedia.org/wiki/Nirvana_(band)","relations":[],"id":"d99c5574-096b-45af-bf20-c3dc3e94fde5"},"type":"wikipedia","begin":null,"attributes":[]},{"type-id":"e4d73442-3762-45a8-905c-401da65544ed","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://lyrics.wikia.com/Nirvana","relations":[],"id":"47e69f92-e4b3-46ca-9f95-28cc11bedf34"},"type":"lyrics","begin":null,"attributes":[]},{"type-id":"d94fb61c-fa20-4e3c-a19a-71a949fb2c55","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://musicmoz.org/Bands_and_Artists/N/Nirvana/","relations":[],"id":"21daaa31-4c41-4fc9-b07d-e77b3f01d3e6"},"type":"other
-        databases","begin":null,"attributes":[]},{"type-id":"e4d73442-3762-45a8-905c-401da65544ed","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://muzikum.eu/en/122-4216/nirvana/lyrics.html","relations":[],"id":"740505c7-3a30-4482-8ca6-10183b37d308"},"type":"lyrics","begin":null,"attributes":[]},{"type-id":"d94fb61c-fa20-4e3c-a19a-71a949fb2c55","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://rateyourmusic.com/artist/nirvana","relations":[],"id":"07a468c6-3ceb-4e44-b0b9-f46cca1151dc"},"type":"other
-        databases","begin":null,"attributes":[]},{"type-id":"4fb0eeec-a6eb-4ae3-ad52-b55765b94e8f","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://sliver.it/nirvana/test/index.html","relations":[],"id":"cca2fe38-99c2-4f4d-a3e0-6d84945b7861"},"type":"discography","begin":null,"attributes":[]},{"type-id":"e8571dcc-35d4-4e91-a577-a3382fd84460","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://viaf.org/viaf/138573893","relations":[],"id":"421a959a-c50f-4a52-99e4-3c603dd37145"},"type":"VIAF","begin":null,"attributes":[]},{"type-id":"6b3e3c85-0002-4f34-aca6-80ace0d7e846","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.allmusic.com/artist/mn0000357406","relations":[],"id":"4a425cd3-641d-409c-a282-2334935bf1bd"},"type":"allmusic","begin":null,"attributes":[]},{"type-id":"d028a975-000c-4525-9333-d3c8425e4b54","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.bbc.co.uk/music/artists/5b11f4ce-a62d-471e-81fc-a69a8278c7da","relations":[],"id":"627ce98c-0eef-41c7-b28f-cc3387b98aab"},"type":"BBC
-        Music page","begin":null,"attributes":[]},{"type-id":"04a5b104-a4c2-4bac-99a1-7b837c37d9e4","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.discogs.com/artist/125246","relations":[],"id":"81846eca-af41-43d0-bcae-b62dbf5cfa2f"},"type":"discogs","begin":null,"attributes":[]},{"type-id":"fe33d22f-c3b0-4d68-bd53-a856badf2b15","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.hereisnirvana.com/","relations":[],"id":"9e31ece5-9275-489c-a197-065a3c466474"},"type":"official
-        homepage","begin":null,"attributes":[]},{"type-id":"94c8b0cc-4477-4106-932c-da60e63de61c","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.imdb.com/name/nm1110321/","relations":[],"id":"85229dcd-cc79-4ce8-a3be-4b0539e9148a"},"type":"IMDb","begin":null,"attributes":[]},{"type-id":"99429741-f3f6-484b-84f8-23af51991770","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.last.fm/music/Nirvana","relations":[],"id":"36dc918b-2a58-4d31-9ccd-10af003e7386"},"type":"social
-        network","begin":null,"attributes":[]},{"type-id":"4fb0eeec-a6eb-4ae3-ad52-b55765b94e8f","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.livenirvana.com/bootography/listing85a9.html?listingquery=all","relations":[],"id":"73a6779b-8aaa-42ff-9833-e550ad974be4"},"type":"discography","begin":null,"attributes":[]},{"type-id":"4fb0eeec-a6eb-4ae3-ad52-b55765b94e8f","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.livenirvana.com/digitalnirvana/discography/index.html","relations":[],"id":"aa2f9928-f2d0-4ce3-9714-af7566b9df94"},"type":"discography","begin":null,"attributes":[]},{"type-id":"f484f897-81cc-406e-96f9-cd799a04ee24","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.livenirvana.com/","relations":[],"id":"74c7fc4f-cb3d-45ef-9c83-f7a1061f0272"},"type":"fanpage","begin":null,"attributes":[]},{"type-id":"d94fb61c-fa20-4e3c-a19a-71a949fb2c55","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.musik-sammler.de/artist/2597","relations":[],"id":"e88eb245-f5f5-4173-afb7-378f950644c2"},"type":"other
-        databases","begin":null,"attributes":[]},{"type-id":"4fb0eeec-a6eb-4ae3-ad52-b55765b94e8f","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.nirvanaarchive.com/","relations":[],"id":"d0498330-0679-4174-a145-273dd974e09e"},"type":"discography","begin":null,"attributes":[]},{"type-id":"f484f897-81cc-406e-96f9-cd799a04ee24","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.nirvanaclub.com/","relations":[],"id":"e42476ce-e923-498e-8e98-d11ae200aebb"},"type":"fanpage","begin":null,"attributes":[]},{"type-id":"b6f02157-a9d3-4f24-9057-0675b2dbc581","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.purevolume.com/Nirvana109A","relations":[],"id":"61139a11-0318-481d-b305-bf569e400e50"},"type":"purevolume","begin":null,"attributes":[]},{"type-id":"79c5b84d-a206-4f4c-9832-78c028c312c3","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.secondhandsongs.com/artist/169","relations":[],"id":"5f33ae58-aa56-40bd-ad14-ab7db9b3d3fd"},"type":"secondhandsongs","begin":null,"attributes":[]},{"type-id":"689870a4-a1e4-4912-b17f-7b2664215698","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.wikidata.org/wiki/Q11649","relations":[],"id":"1221730c-3a48-49fa-8001-beaa6e93c892"},"type":"wikidata","begin":null,"attributes":[]},{"type-id":"d94fb61c-fa20-4e3c-a19a-71a949fb2c55","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.worldcat.org/wcidentities/lccn-n92-11111","relations":[],"id":"2127a8c5-befb-401c-a6f0-057b4f4a4581"},"type":"other
-        databases","begin":null,"attributes":[]},{"type-id":"6a540e5b-58c6-4192-b6ba-dbc71ec8fcf0","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"http://www.youtube.com/user/NirvanaVEVO","relations":[],"id":"c8d415be-b993-4ade-bd28-d3ab4806fcbd"},"type":"youtube","begin":null,"attributes":[]},{"type-id":"221132e9-e30e-43f2-a741-15afc4c5fa7c","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"https://commons.wikimedia.org/wiki/File:Nirvana_around_1992.jpg","relations":[],"id":"88867281-e540-4b37-9fce-870dda1bfd8b"},"type":"image","begin":null,"attributes":[]},{"type-id":"bac47923-ecde-4b59-822e-d08f0cd10156","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"https://myspace.com/nirvana","relations":[],"id":"706cb178-5d5c-49e0-a07f-149751b94043"},"type":"myspace","begin":null,"attributes":[]},{"type-id":"89e4a949-0976-440d-bda1-5f772c1e5710","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"https://soundcloud.com/nirvana","relations":[],"id":"14c6ec03-4bd8-4f12-bfef-f2450746adab"},"type":"soundcloud","begin":null,"attributes":[]},{"type-id":"99429741-f3f6-484b-84f8-23af51991770","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"https://twitter.com/Nirvana","relations":[],"id":"f5cfd704-b99a-45fc-9aed-8747257cad03"},"type":"social
-        network","begin":null,"attributes":[]},{"type-id":"99429741-f3f6-484b-84f8-23af51991770","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"https://www.facebook.com/Nirvana","relations":[],"id":"a9cec2d1-0544-4dc9-a4b2-640751654573"},"type":"social
-        network","begin":null,"attributes":[]}],"sort-name":"Nirvana","name":"Nirvana","disambiguation":"90s
-        US grunge band","life-span":{"ended":true,"begin":"1988-01","end":"1994-04-05"},"end_area":null,"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","type":"Group","begin_area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Aberdeen","name":"Aberdeen","id":"a640b45c-c173-49b1-8030-973603e895b5","iso_3166_2_codes":[],"iso_3166_1_codes":[]}}'
+      string: '{"artists":[{"country":"US","ipis":["00063929258"],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Nelson,
+        Ricky","name":"Ricky Nelson","disambiguation":"rock n roll artist","life-span":{"ended":true,"begin":"1940-05-08","end":"1985-12-31"},"end_area":null,"id":"0b511854-c21c-4af1-9c31-e3fc178ded61","type":"Person","begin_area":null},{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Urge
+        Overkill","name":"Urge Overkill","disambiguation":"","life-span":{"ended":false,"begin":"1986","end":null},"end_area":null,"id":"120e728a-4078-47b7-a31c-d581ade28bde","type":"Group","begin_area":null},{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Kool
+        & Gang, The","name":"Kool & The Gang","disambiguation":"","life-span":{"ended":false,"begin":"1964","end":null},"end_area":null,"id":"2469950a-f0ca-425a-bfbc-baf55ea3afde","type":"Group","begin_area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Jersey
+        City","name":"Jersey City","id":"88458f70-6ca9-4a4a-ad8e-e8053e18b981","iso_3166_2_codes":[],"iso_3166_1_codes":[]}},{"country":null,"ipis":[],"area":null,"sort-name":"[dialogue]","name":"[dialogue]","disambiguation":"Special
+        Purpose Artist","life-span":{"ended":false,"begin":null,"end":null},"end_area":null,"id":"314e1c25-dde7-4e4d-b2f4-0a7b9f7c56dc","type":"Other","begin_area":null},{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Centurions,
+        The","name":"The Centurions","disambiguation":"Californian Surf Rock band","life-span":{"ended":true,"begin":null,"end":null},"end_area":null,"id":"441b8d20-8f8e-4d02-985e-b0e69936b7b7","type":"Group","begin_area":null},{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Lively
+        Ones, The","name":"The Lively Ones","disambiguation":"","life-span":{"ended":false,"begin":null,"end":null},"end_area":null,"id":"519ffb10-8132-4403-a4fd-7b5d00c4e52f","type":"Group","begin_area":null},{"country":"US","ipis":["00000896007","00002948497"],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Berry,
+        Chuck","name":"Chuck Berry","disambiguation":"","life-span":{"ended":false,"begin":"1926-10-18","end":null},"end_area":null,"id":"592a3b6d-c42b-4567-99c9-ecf63bd66499","type":"Person","begin_area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"St.
+        Louis","name":"St. Louis","id":"759f9567-9107-40ef-a825-e57824a62e70","iso_3166_2_codes":[],"iso_3166_1_codes":[]}},{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Dale,
+        Dick and His Del-Tones","name":"Dick Dale and His Del-Tones","disambiguation":"","life-span":{"ended":false,"begin":null,"end":null},"end_area":null,"id":"820263ae-ab51-426d-85e9-bed5a74f00e1","type":"Group","begin_area":null},{"country":null,"ipis":[],"area":null,"sort-name":"Various
+        Artists","name":"Various Artists","disambiguation":"add compilations to this
+        artist","life-span":{"ended":false,"begin":null,"end":null},"end_area":null,"id":"89ad4ac3-39f7-470e-963a-56509c546377","type":"Other","begin_area":null},{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Statler
+        Brothers, The","name":"The Statler Brothers","disambiguation":"","life-span":{"ended":true,"begin":"1955","end":"2002"},"end_area":null,"id":"8f0c7db9-6d1c-446b-913c-b5c6811ca6fc","type":"Group","begin_area":null},{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Revels,
+        The","name":"The Revels","disambiguation":"","life-span":{"ended":false,"begin":null,"end":null},"end_area":null,"id":"91d44319-f666-4605-9926-8d26bac3416f","type":"Group","begin_area":null},{"country":"GB","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        Kingdom","name":"United Kingdom","id":"8a754a16-0027-3a29-b6d7-2b40ea0481ed","iso_3166_2_codes":[],"iso_3166_1_codes":["GB"]},"sort-name":"Springfield,
+        Dusty","name":"Dusty Springfield","disambiguation":"","life-span":{"ended":true,"begin":"1939-04-16","end":"1999-03-02"},"end_area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Oxfordshire","name":"Oxfordshire","id":"44e5e20e-8fbc-4b07-b3f2-22f2199186fd","iso_3166_2_codes":["GB-OXF"],"iso_3166_1_codes":[]},"id":"b896aa8c-2761-40ce-b485-0e1fffd26167","type":"Person","begin_area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"West
+        Hampstead","name":"West Hampstead","id":"3e881d8b-ac7b-409c-ac99-924fea7563c6","iso_3166_2_codes":[],"iso_3166_1_codes":[]}},{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Tornadoes,
+        The","name":"The Tornadoes","disambiguation":"US surf rock band","life-span":{"ended":true,"begin":"1960","end":"2007"},"end_area":null,"id":"d557c4bb-253c-4f3b-967f-b6fef3e6db37","type":"Group","begin_area":null},{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"McKee,
+        Maria","name":"Maria McKee","disambiguation":"","life-span":{"ended":false,"begin":"1964-08-17","end":null},"end_area":null,"id":"f8276a46-0c87-4d2f-a0d3-f22900f9cbfe","type":"Person","begin_area":null},{"country":"US","ipis":["00055306003"],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Green,
+        Al","name":"Al Green","disambiguation":"","life-span":{"ended":false,"begin":"1946-04-13","end":null},"end_area":null,"id":"fb7272ba-f130-4f0a-934d-6eeea4c18c9a","type":"Person","begin_area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Forrest
+        City","name":"Forrest City","id":"c4d48bca-3716-4533-8966-a25b8c7b50a5","iso_3166_2_codes":[],"iso_3166_1_codes":[]}}],"artist-offset":0,"artist-count":15}'
     http_version: 
-  recorded_at: Fri, 01 Aug 2014 17:38:00 GMT
+  recorded_at: Tue, 19 Aug 2014 14:08:24 GMT
 - request:
     method: get
-    uri: http://musicbrainz.org/ws/2/artist/01234567-0123-0123-0123-012345678901?fmt=json&inc=
+    uri: http://musicbrainz.org/ws/2/artist?fmt=json&inc=&limit=2&release=7a7b7bb2-5abe-3088-9e3e-6bfd54035138
     body:
       encoding: US-ASCII
       string: ''
@@ -737,11 +732,11 @@ http_interactions:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 200
+      message: OK
     headers:
       Date:
-      - Fri, 01 Aug 2014 17:38:00 GMT
+      - Tue, 19 Aug 2014 14:08:25 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -751,14 +746,18 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Content-Length:
-      - '21'
+      - '946'
       Etag:
-      - '"75421e5814f8b1c17a20c760d653a9be"'
+      - '"9592663c68d38c6b1238c5dbbb18b106"'
       Access-Control-Allow-Origin:
       - "*"
     body:
       encoding: UTF-8
-      string: '{"error":"Not Found"}'
+      string: '{"artists":[{"country":null,"ipis":[],"area":null,"sort-name":"[dialogue]","name":"[dialogue]","disambiguation":"Special
+        Purpose Artist","life-span":{"ended":false,"begin":null,"end":null},"end_area":null,"id":"314e1c25-dde7-4e4d-b2f4-0a7b9f7c56dc","type":"Other","begin_area":null},{"country":"US","ipis":["00055306003"],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Green,
+        Al","name":"Al Green","disambiguation":"","life-span":{"ended":false,"begin":"1946-04-13","end":null},"end_area":null,"id":"fb7272ba-f130-4f0a-934d-6eeea4c18c9a","type":"Person","begin_area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Forrest
+        City","name":"Forrest City","id":"c4d48bca-3716-4533-8966-a25b8c7b50a5","iso_3166_2_codes":[],"iso_3166_1_codes":[]}}],"artist-offset":0,"artist-count":15}'
     http_version: 
-  recorded_at: Fri, 01 Aug 2014 17:38:00 GMT
+  recorded_at: Tue, 19 Aug 2014 14:08:25 GMT
 recorded_with: VCR 2.9.2

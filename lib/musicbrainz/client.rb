@@ -1,6 +1,7 @@
 require 'faraday'
 require 'faraday_middleware'
 require 'musicbrainz/errors'
+require 'active_support/inflector'
 
 module MusicBrainz
 
@@ -24,38 +25,31 @@ module MusicBrainz
       end
     end
 
-    def artist *args
-      lookup('artist', *args) do |json|
-        Artist.new json
+    %w(artist release_group release).each do |type|
+      dashed = type.gsub('_', '-')
+
+      define_method type do |*args|
+        lookup dashed, *args do |json|
+          "MusicBrainz::#{ type.classify }".constantize.new json
+        end
+      end
+
+      define_method type.pluralize do |*args|
+        search dashed, *args do |json|
+          (json[dashed.pluralize] || json[dashed]).map do |json_item|
+            "MusicBrainz::#{ type.classify }".constantize.new json_item
+          end
+        end
       end
     end
-
-    def artists *args
-      search 'artist', *args do |json|
-        (json['artists'] || json['artist']).map {|j| Artist.new j }
-      end
-    end
-
-    def release_group *args
-      lookup 'release-group', *args do |json|
-        ReleaseGroup.new json
-      end
-    end
-
-    def release_groups *args
-      search 'release-group', *args do |json|
-        json['release-groups'].map {|j| ReleaseGroup.new j }
-      end
-    end
-
 
   private
 
     def get url, options={}
       options = build_options(options)
+      data    = http.get(url, options)
 
       # p http.build_url(url, options)
-      data    = http.get(url, options)
 
       case data.status
       when 503 then raise RequestFailed, data.body['error']

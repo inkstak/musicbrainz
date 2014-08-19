@@ -1,0 +1,512 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/release/c1ef70f1-f88d-311f-87d4-b2766d8ca0ae?fmt=json&inc=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 19 Aug 2014 14:01:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Content-Length:
+      - '615'
+      Etag:
+      - '"bef80057eed3a5e808580d0a6eabc924"'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"country":"US","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"2004-03-16","cover-art-archive":{"count":1,"front":true,"artwork":true,"back":false,"darkened":false},"barcode":"016861837426","release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"date":"2004-03-16"}],"packaging":null,"disambiguation":"","id":"c1ef70f1-f88d-311f-87d4-b2766d8ca0ae","title":"A
+        Snow Capped Romance","asin":"B00015U6EY","quality":"normal"}'
+    http_version: 
+  recorded_at: Tue, 19 Aug 2014 14:01:20 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/release/01234567-0123-0123-0123-012345678901?fmt=json&inc=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Tue, 19 Aug 2014 14:01:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Content-Length:
+      - '21'
+      Etag:
+      - '"75421e5814f8b1c17a20c760d653a9be"'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"error":"Not Found"}'
+    http_version: 
+  recorded_at: Tue, 19 Aug 2014 14:01:27 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/release?fmt=json&inc=&query=%22MTV%20Unplugged%20in%20New%20York%22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 19 Aug 2014 14:01:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Etag:
+      - '"a5d779d4f5946b3d3536305d2e363141"'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"created":"2014-08-19T08:45:23.51Z","count":16,"offset":0,"releases":[{"id":"38c769e9-570a-3282-843f-f4dc3d4d156f","score":"100","count":1,"title":"MTV
+        Unplugged in New York","status":"Official","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"fb3770f6-83fb-32b7-85c4-1f522a92287e","primary-type":"Album","secondary-types":["Live"]},"date":"2009-06-24","country":"JP","release-events":[{"date":"2009-06-24","area":{"id":"2db42837-c832-3c27-b4a3-08198f75693c","name":"Japan","sort-name":"Japan","iso-3166-1-codes":["JP"]}}],"barcode":"4988005560865","asin":"B001VA11KG","label-info":[{"catalog-number":"UICY-91435","label":{"id":"0fadc2ce-f7de-4e27-bbe6-612b317e716b","name":"Geffen
+        Records"}}],"track-count":14,"media":[{"format":"CD","disc-count":42,"track-count":14}]},{"id":"b527f0f7-7735-3c77-add1-09a9e4a20abb","score":"100","count":1,"title":"MTV
+        Unplugged in New York","status":"Official","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"fb3770f6-83fb-32b7-85c4-1f522a92287e","primary-type":"Album","secondary-types":["Live"]},"date":"2009","country":"US","release-events":[{"date":"2009","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+        States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"barcode":"892001002332","label-info":[{"catalog-number":"ORG
+        034","label":{"id":"09e4a634-831e-443f-b938-bf9ccba7a37e","name":"Original
+        Recordings Group"}}],"track-count":14,"media":[{"format":"12\" Vinyl","disc-count":0,"track-count":14}]},{"id":"61fc2733-07da-44c9-b2fe-5669e497e1ae","score":"100","count":2,"title":"MTV
+        Unplugged in New York","status":"Official","text-representation":{"language":"deu","script":"Latn"},"artist-credit":[{"artist":{"id":"35581de7-591f-424f-9c64-7b22fd45605e","name":"Sportfreunde
+        Stiller","sort-name":"Sportfreunde Stiller"}}],"release-group":{"id":"f81f334b-69d6-3fc1-87d3-d4d7d19d9cc5","primary-type":"Album","secondary-types":["Live"]},"date":"2009-05-22","country":"DE","release-events":[{"date":"2009-05-22","area":{"id":"85752fda-13c4-31a3-bee5-0e5cb1f51dad","name":"Germany","sort-name":"Germany","iso-3166-1-codes":["DE"]}}],"barcode":"0602527042138","asin":"B0023PR8RS","label-info":[{"catalog-number":"270
+        421 3","label":{"id":"bb7f25ac-2da7-4484-ae39-8db7df9a6c17","name":"Vertigo
+        Berlin"}}],"track-count":26,"media":[{"format":"CD","disc-count":2,"track-count":15},{"format":"CD","disc-count":1,"track-count":11}]},{"id":"bb68c769-ee97-4f9a-b28f-3bbf944c6d92","score":"100","count":1,"title":"MTV
+        Unplugged in New York","status":"Official","text-representation":{"language":"deu","script":"Latn"},"artist-credit":[{"artist":{"id":"35581de7-591f-424f-9c64-7b22fd45605e","name":"Sportfreunde
+        Stiller","sort-name":"Sportfreunde Stiller"}}],"release-group":{"id":"f81f334b-69d6-3fc1-87d3-d4d7d19d9cc5","primary-type":"Album","secondary-types":["Live"]},"date":"2009-05-22","country":"DE","release-events":[{"date":"2009-05-22","area":{"id":"85752fda-13c4-31a3-bee5-0e5cb1f51dad","name":"Germany","sort-name":"Germany","iso-3166-1-codes":["DE"]}}],"barcode":"0602527043326","asin":"B0023PR8S2","label-info":[{"catalog-number":"270
+        433 2","label":{"id":"bb7f25ac-2da7-4484-ae39-8db7df9a6c17","name":"Vertigo
+        Berlin"}}],"track-count":13,"media":[{"format":"CD","disc-count":3,"track-count":13}]},{"id":"2ff3be28-f74f-40c9-bdde-c19b6e4384ee","score":"100","count":1,"title":"MTV
+        Unplugged in New York","status":"Official","packaging":"Jewel Case","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"fb3770f6-83fb-32b7-85c4-1f522a92287e","primary-type":"Album","secondary-types":["Live"]},"date":"1994","country":"US","release-events":[{"date":"1994","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+        States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"barcode":"","label-info":[{"catalog-number":"D
+        106284","label":{"id":"9a7d39a4-a887-40f3-a645-a9a136d1f13f","name":"BMG Direct
+        Marketing, Inc."}},{"catalog-number":"DGCD-24727","label":{"id":"68803e28-86fe-4a95-985f-8e493795ab31","name":"DGC
+        Records"}}],"track-count":14,"media":[{"format":"CD","disc-count":0,"track-count":14}]},{"id":"dd5e127c-3046-47f4-b8f5-11cc25716834","score":"100","count":1,"title":"MTV
+        Unplugged in New York","status":"Official","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"fb3770f6-83fb-32b7-85c4-1f522a92287e","primary-type":"Album","secondary-types":["Live"]},"date":"2007-11-20","country":"US","release-events":[{"date":"2007-11-20","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+        States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"barcode":"602517506305","label-info":[{"catalog-number":"0602517506305","label":{"id":"0fadc2ce-f7de-4e27-bbe6-612b317e716b","name":"Geffen
+        Records"}}],"track-count":14,"media":[{"format":"DVD-Video","disc-count":0,"track-count":14}]},{"id":"bc1dec8f-aa31-391c-bae7-5fcd5563a0f0","score":"100","count":1,"title":"MTV
+        Unplugged in New York","status":"Official","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"fb3770f6-83fb-32b7-85c4-1f522a92287e","primary-type":"Album","secondary-types":["Live"]},"date":"1994","country":"XE","release-events":[{"date":"1994","area":{"id":"89a675c2-3e37-3518-b83c-418bad59a85a","name":"Europe","sort-name":"Europe","iso-3166-1-codes":["XE"]}}],"barcode":"720642472743","label-info":[{"catalog-number":"GEC
+        24727","label":{"id":"0fadc2ce-f7de-4e27-bbe6-612b317e716b","name":"Geffen
+        Records"}}],"track-count":14,"media":[{"format":"Cassette","disc-count":0,"track-count":14}]},{"id":"924f3fc8-4f4c-337c-bd9b-7b30250cb11d","score":"100","count":1,"title":"MTV
+        Unplugged in New York","status":"Official","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"fb3770f6-83fb-32b7-85c4-1f522a92287e","primary-type":"Album","secondary-types":["Live"]},"date":"1994-11-01","country":"US","release-events":[{"date":"1994-11-01","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+        States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"label-info":[{"catalog-number":"DGCC
+        24727","label":{"id":"68803e28-86fe-4a95-985f-8e493795ab31","name":"DGC Records"}}],"track-count":14,"media":[{"format":"Cassette","disc-count":0,"track-count":14}]},{"id":"856045e3-162f-39ef-80ab-0cb13d054b96","score":"100","count":1,"title":"MTV
+        Unplugged in New York","status":"Official","packaging":"Jewel Case","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"fb3770f6-83fb-32b7-85c4-1f522a92287e","primary-type":"Album","secondary-types":["Live"]},"date":"1994-11-01","country":"US","release-events":[{"date":"1994-11-01","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+        States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"barcode":"720642472729","asin":"B000003TB9","label-info":[{"catalog-number":"DGCD
+        24727","label":{"id":"68803e28-86fe-4a95-985f-8e493795ab31","name":"DGC Records"}}],"track-count":14,"media":[{"format":"CD","disc-count":43,"track-count":14}]},{"id":"34749ba4-c4c7-3354-9619-1b0f88d8222b","score":"100","count":1,"title":"MTV
+        Unplugged in New York","status":"Official","packaging":"Jewel Case","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"fb3770f6-83fb-32b7-85c4-1f522a92287e","primary-type":"Album","secondary-types":["Live"]},"date":"1994","country":"XE","release-events":[{"date":"1994","area":{"id":"89a675c2-3e37-3518-b83c-418bad59a85a","name":"Europe","sort-name":"Europe","iso-3166-1-codes":["XE"]}}],"barcode":"720642472729","asin":"B000003TB9","label-info":[{"catalog-number":"424
+        727-2","label":{"id":"0fadc2ce-f7de-4e27-bbe6-612b317e716b","name":"Geffen
+        Records"}},{"catalog-number":"GED 24727","label":{"id":"0fadc2ce-f7de-4e27-bbe6-612b317e716b","name":"Geffen
+        Records"}}],"track-count":14,"media":[{"format":"CD","disc-count":42,"track-count":14}]},{"id":"e5edb300-0df6-4089-87ae-ab4bfd20b66d","score":"100","count":1,"title":"MTV
+        Unplugged in New York","status":"Official","packaging":"Cardboard/Paper Sleeve","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"fb3770f6-83fb-32b7-85c4-1f522a92287e","primary-type":"Album","secondary-types":["Live"]},"date":"1994-11-01","country":"US","release-events":[{"date":"1994-11-01","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+        States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"barcode":"720642472712","label-info":[{"catalog-number":"DGC
+        24727","label":{"id":"68803e28-86fe-4a95-985f-8e493795ab31","name":"DGC Records"}}],"track-count":14,"media":[{"format":"12\"
+        Vinyl","disc-count":0,"track-count":14}]},{"id":"453e5e8d-65ed-4670-b58b-7cb51dd9607d","score":"100","count":1,"title":"MTV
+        Unplugged in New York","status":"Official","disambiguation":"limited edition","packaging":"Cardboard/Paper
+        Sleeve","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"fb3770f6-83fb-32b7-85c4-1f522a92287e","primary-type":"Album","secondary-types":["Live"]},"date":"2011-10-05","country":"JP","release-events":[{"date":"2011-10-05","area":{"id":"2db42837-c832-3c27-b4a3-08198f75693c","name":"Japan","sort-name":"Japan","iso-3166-1-codes":["JP"]}}],"barcode":"4988005677068","asin":"B00599UFES","label-info":[{"catalog-number":"UICY-75128","label":{"id":"68803e28-86fe-4a95-985f-8e493795ab31","name":"DGC
+        Records"}}],"track-count":14,"media":[{"format":"SHM-CD","disc-count":0,"track-count":14}]},{"id":"d59a31a6-8bb4-4f9d-8692-f61025730905","score":"100","count":1,"title":"MTV
+        Unplugged in New York","status":"Official","packaging":"Jewel Case","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"fb3770f6-83fb-32b7-85c4-1f522a92287e","primary-type":"Album","secondary-types":["Live"]},"date":"1994","country":"JP","release-events":[{"date":"1994","area":{"id":"2db42837-c832-3c27-b4a3-08198f75693c","name":"Japan","sort-name":"Japan","iso-3166-1-codes":["JP"]}}],"barcode":"4988067017277","asin":"B00005GRXX","label-info":[{"catalog-number":"MVCG-163","label":{"id":"0fadc2ce-f7de-4e27-bbe6-612b317e716b","name":"Geffen
+        Records"}}],"track-count":14,"media":[{"format":"CD","disc-count":0,"track-count":14}]},{"id":"846058c1-751f-44dc-8ff4-b801c2b82b4b","score":"100","count":1,"title":"MTV
+        Unplugged in New York","status":"Official","packaging":"Jewel Case","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"fb3770f6-83fb-32b7-85c4-1f522a92287e","primary-type":"Album","secondary-types":["Live"]},"date":"1994","country":"AU","release-events":[{"date":"1994","area":{"id":"106e0bec-b638-3b37-b731-f53d507dc00e","name":"Australia","sort-name":"Australia","iso-3166-1-codes":["AU"]}}],"barcode":"720642472729","label-info":[{"catalog-number":"GEFD-24727","label":{"id":"0fadc2ce-f7de-4e27-bbe6-612b317e716b","name":"Geffen
+        Records"}}],"track-count":14,"media":[{"format":"CD","disc-count":2,"track-count":14}]},{"id":"47e459c9-ad7f-4f64-8b2e-1421d9e1e78f","score":"100","count":1,"title":"MTV
+        Unplugged in New York","status":"Official","disambiguation":"limited edition","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"fb3770f6-83fb-32b7-85c4-1f522a92287e","primary-type":"Album","secondary-types":["Live"]},"date":"2009-03-02","country":"JP","release-events":[{"date":"2009-03-02","area":{"id":"2db42837-c832-3c27-b4a3-08198f75693c","name":"Japan","sort-name":"Japan","iso-3166-1-codes":["JP"]}}],"barcode":"4988005525352","label-info":[{"catalog-number":"UICY-91062","label":{"id":"0fadc2ce-f7de-4e27-bbe6-612b317e716b","name":"Geffen
+        Records"}}],"track-count":14,"media":[{"format":"SHM-CD","disc-count":0,"track-count":14}]},{"id":"342ff802-26fb-4a7d-9623-1d613a4700f4","score":"71","count":1,"title":"Ein
+        Kompliment - MTV Unplugged In New York","status":"Official","packaging":"Slim
+        Jewel Case","text-representation":{"language":"deu","script":"Latn"},"artist-credit":[{"artist":{"id":"35581de7-591f-424f-9c64-7b22fd45605e","name":"Sportfreunde
+        Stiller","sort-name":"Sportfreunde Stiller"}}],"release-group":{"id":"ccfcf245-b2a9-485c-8fe8-cc131f00786f","primary-type":"Single","secondary-types":["Live"]},"date":"2009","country":"DE","release-events":[{"date":"2009","area":{"id":"85752fda-13c4-31a3-bee5-0e5cb1f51dad","name":"Germany","sort-name":"Germany","iso-3166-1-codes":["DE"]}}],"barcode":"0602527042091","label-info":[{"label":{"id":"f98a92ef-7557-4291-bc9f-9f6ab93cbb4f","name":"Universal
+        Music Domestic Division"}}],"track-count":1,"media":[{"format":"CD","disc-count":1,"track-count":1}]}]}'
+    http_version: 
+  recorded_at: Tue, 19 Aug 2014 14:01:36 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/release?fmt=json&inc=&limit=2&query=%22MTV%20Unplugged%20in%20New%20York%22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 19 Aug 2014 14:01:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Etag:
+      - '"34cba073865fb39ec44ef29724e8da9d"'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"created":"2014-08-19T08:45:23.51Z","count":16,"offset":0,"releases":[{"id":"38c769e9-570a-3282-843f-f4dc3d4d156f","score":"100","count":1,"title":"MTV
+        Unplugged in New York","status":"Official","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"fb3770f6-83fb-32b7-85c4-1f522a92287e","primary-type":"Album","secondary-types":["Live"]},"date":"2009-06-24","country":"JP","release-events":[{"date":"2009-06-24","area":{"id":"2db42837-c832-3c27-b4a3-08198f75693c","name":"Japan","sort-name":"Japan","iso-3166-1-codes":["JP"]}}],"barcode":"4988005560865","asin":"B001VA11KG","label-info":[{"catalog-number":"UICY-91435","label":{"id":"0fadc2ce-f7de-4e27-bbe6-612b317e716b","name":"Geffen
+        Records"}}],"track-count":14,"media":[{"format":"CD","disc-count":42,"track-count":14}]},{"id":"b527f0f7-7735-3c77-add1-09a9e4a20abb","score":"100","count":1,"title":"MTV
+        Unplugged in New York","status":"Official","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"fb3770f6-83fb-32b7-85c4-1f522a92287e","primary-type":"Album","secondary-types":["Live"]},"date":"2009","country":"US","release-events":[{"date":"2009","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+        States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"barcode":"892001002332","label-info":[{"catalog-number":"ORG
+        034","label":{"id":"09e4a634-831e-443f-b938-bf9ccba7a37e","name":"Original
+        Recordings Group"}}],"track-count":14,"media":[{"format":"12\" Vinyl","disc-count":0,"track-count":14}]}]}'
+    http_version: 
+  recorded_at: Tue, 19 Aug 2014 14:01:53 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/release?fmt=json&inc=&query=release:%22Bleach%22%20AND%20rgid:%22f1afec0b-26dd-3db5-9aa1-c91229a74a24%22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 19 Aug 2014 14:02:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Etag:
+      - '"9f6a00d523c72b68353f2e2316786d52"'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"created":"2014-08-19T08:45:23.51Z","count":15,"offset":0,"releases":[{"id":"c3c5442f-7d7b-349c-99fe-c94debae5e77","score":"100","count":1,"title":"Bleach","status":"Official","packaging":"Jewel
+        Case","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"f1afec0b-26dd-3db5-9aa1-c91229a74a24","primary-type":"Album"},"date":"1992-08-31","country":"DE","release-events":[{"date":"1992-08-31","area":{"id":"85752fda-13c4-31a3-bee5-0e5cb1f51dad","name":"Germany","sort-name":"Germany","iso-3166-1-codes":["DE"]}}],"barcode":"720642443323","asin":"B000025812","label-info":[{"catalog-number":"GED24433","label":{"id":"0fadc2ce-f7de-4e27-bbe6-612b317e716b","name":"Geffen
+        Records"}},{"catalog-number":"GEFD24433","label":{"id":"0fadc2ce-f7de-4e27-bbe6-612b317e716b","name":"Geffen
+        Records"}},{"label":{"id":"38dc88de-7720-4100-9d5b-3cdc41b0c474","name":"Sub
+        Pop Records"}}],"track-count":13,"media":[{"format":"CD","disc-count":20,"track-count":13}]},{"id":"7c2b193e-532d-4beb-90f0-6f8dd3034461","score":"100","count":2,"title":"Bleach","status":"Official","disambiguation":"20th
+        anniversary edition","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"f1afec0b-26dd-3db5-9aa1-c91229a74a24","primary-type":"Album"},"date":"2009-11-02","country":"US","release-events":[{"date":"2009-11-02","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+        States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"label-info":[{"label":{"id":"38dc88de-7720-4100-9d5b-3cdc41b0c474","name":"Sub
+        Pop Records"}}],"track-count":25,"media":[{"format":"Digital Media","disc-count":0,"track-count":13},{"format":"Digital
+        Media","disc-count":0,"track-count":12}]},{"id":"fec5e33a-6e87-48d1-9fb4-c40969313924","score":"100","count":1,"title":"Bleach","status":"Official","disambiguation":"20th
+        anniversary edition","packaging":"Digipak","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"f1afec0b-26dd-3db5-9aa1-c91229a74a24","primary-type":"Album"},"date":"2009-11-02","country":"GB","release-events":[{"date":"2009-11-02","area":{"id":"8a754a16-0027-3a29-b6d7-2b40ea0481ed","name":"United
+        Kingdom","sort-name":"United Kingdom","iso-3166-1-codes":["GB"]}}],"barcode":"5051865614623","asin":"B002NXSTS2","label-info":[{"catalog-number":"5051865614623","label":{"id":"38dc88de-7720-4100-9d5b-3cdc41b0c474","name":"Sub
+        Pop Records"}},{"catalog-number":"SP834","label":{"id":"38dc88de-7720-4100-9d5b-3cdc41b0c474","name":"Sub
+        Pop Records"}}],"track-count":25,"media":[{"format":"CD","disc-count":2,"track-count":25}]},{"id":"ca69bae7-9191-3bca-ba91-c65bd968b4fc","score":"100","count":1,"title":"Bleach","status":"Official","disambiguation":"20th
+        anniversary edition","packaging":"Digipak","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"f1afec0b-26dd-3db5-9aa1-c91229a74a24","primary-type":"Album"},"date":"2009-11-03","country":"US","release-events":[{"date":"2009-11-03","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+        States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"barcode":"098787083422","asin":"B002JN74VY","label-info":[{"catalog-number":"SPCD
+        834","label":{"id":"38dc88de-7720-4100-9d5b-3cdc41b0c474","name":"Sub Pop
+        Records"}}],"track-count":25,"media":[{"format":"CD","disc-count":2,"track-count":25}]},{"id":"91bb7212-fc0c-401c-b8b4-5a7ae398d928","score":"100","count":1,"title":"Bleach","status":"Bootleg","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"f1afec0b-26dd-3db5-9aa1-c91229a74a24","primary-type":"Album"},"country":"GB","release-events":[{"area":{"id":"8a754a16-0027-3a29-b6d7-2b40ea0481ed","name":"United
+        Kingdom","sort-name":"United Kingdom","iso-3166-1-codes":["GB"]}}],"label-info":[{"catalog-number":"011","label":{"id":"ea6e35dc-a113-47b1-b37b-300d8a5b7db0","name":"Matrix"}}],"track-count":19,"media":[{"format":"CD","disc-count":1,"track-count":19}]},{"id":"202368dc-5497-47a3-953e-bfa631b2a0cb","score":"100","count":1,"title":"Bleach","status":"Bootleg","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"f1afec0b-26dd-3db5-9aa1-c91229a74a24","primary-type":"Album"},"date":"1990","country":"PL","release-events":[{"date":"1990","area":{"id":"dd7f80c8-f017-3d01-8608-2a8c9c32b954","name":"Poland","sort-name":"Poland","iso-3166-1-codes":["PL"]}}],"label-info":[{"catalog-number":"ES
+        931","label":{"id":"69e80d81-0232-44d3-b657-ef9276c58592","name":"Euro Star"}}],"track-count":13,"media":[{"format":"Cassette","disc-count":0,"track-count":13}]},{"id":"e5fa1cc5-3693-455a-821f-5ace2690aff1","score":"100","count":1,"title":"Bleach","status":"Official","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"f1afec0b-26dd-3db5-9aa1-c91229a74a24","primary-type":"Album"},"date":"1989-08-08","country":"US","release-events":[{"date":"1989-08-08","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+        States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"label-info":[{"catalog-number":"SP34","label":{"id":"38dc88de-7720-4100-9d5b-3cdc41b0c474","name":"Sub
+        Pop Records"}}],"track-count":11,"media":[{"format":"Vinyl","disc-count":0,"track-count":11}]},{"id":"7d166a44-cfb5-4b08-aacb-6863bbe677d6","score":"100","count":1,"title":"Bleach","status":"Official","packaging":"Jewel
+        Case","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"f1afec0b-26dd-3db5-9aa1-c91229a74a24","primary-type":"Album"},"date":"1989-06-01","country":"US","release-events":[{"date":"1989-06-01","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+        States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"barcode":"098787003420","asin":"B0000035E7","label-info":[{"catalog-number":"SP34b","label":{"id":"38dc88de-7720-4100-9d5b-3cdc41b0c474","name":"Sub
+        Pop Records"}}],"track-count":13,"media":[{"format":"CD","disc-count":20,"track-count":13}]},{"id":"d3d44548-b2ed-3ddc-a9e0-3f5ee544c1c9","score":"100","count":1,"title":"Bleach","status":"Official","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"f1afec0b-26dd-3db5-9aa1-c91229a74a24","primary-type":"Album"},"date":"1989","country":"GB","release-events":[{"date":"1989","area":{"id":"8a754a16-0027-3a29-b6d7-2b40ea0481ed","name":"United
+        Kingdom","sort-name":"United Kingdom","iso-3166-1-codes":["GB"]}}],"barcode":"5018615200628","asin":"B000092DLJ","label-info":[{"catalog-number":"TUPCD6","label":{"id":"7b9743cf-2e6b-40e3-8e3a-1bc5a88c8b8d","name":"Tupelo"}}],"track-count":13,"media":[{"format":"CD","disc-count":19,"track-count":13}]},{"id":"8b87cbcd-00e8-4056-893c-96c2146baf0d","score":"100","count":1,"title":"Bleach","status":"Official","disambiguation":"remaster","packaging":"Jewel
+        Case","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"f1afec0b-26dd-3db5-9aa1-c91229a74a24","primary-type":"Album"},"date":"1992","country":"US","release-events":[{"date":"1992","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+        States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"barcode":"098787003444","asin":"B0000035E8","label-info":[{"catalog-number":"SP34a","label":{"id":"38dc88de-7720-4100-9d5b-3cdc41b0c474","name":"Sub
+        Pop Records"}}],"track-count":12,"media":[{"format":"Cassette","disc-count":0,"track-count":12}]},{"id":"b7184186-6884-44cd-91ed-62370f880e5d","score":"100","count":1,"title":"Bleach","status":"Official","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"f1afec0b-26dd-3db5-9aa1-c91229a74a24","primary-type":"Album"},"asin":"B00004WRP2","track-count":11,"media":[{"disc-count":1,"track-count":11}]},{"id":"a96b59a5-4185-4d87-899a-a0d944385811","score":"100","count":1,"title":"Bleach","status":"Official","packaging":"Jewel
+        Case","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"f1afec0b-26dd-3db5-9aa1-c91229a74a24","primary-type":"Album"},"date":"1989","release-events":[{"date":"1989"}],"barcode":"008811929121","asin":"B0000035E7","label-info":[{"catalog-number":"GFLD
+        19291","label":{"id":"0fadc2ce-f7de-4e27-bbe6-612b317e716b","name":"Geffen
+        Records"}},{"catalog-number":"GFLD 19291","label":{"id":"38dc88de-7720-4100-9d5b-3cdc41b0c474","name":"Sub
+        Pop Records"}}],"track-count":13,"media":[{"format":"CD","disc-count":1,"track-count":13}]},{"id":"1fc1731f-d18c-4818-b808-bf4b3c32c6e3","score":"100","count":1,"title":"Bleach","status":"Official","packaging":"Jewel
+        Case","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"f1afec0b-26dd-3db5-9aa1-c91229a74a24","primary-type":"Album"},"date":"1992","country":"DE","release-events":[{"date":"1992","area":{"id":"85752fda-13c4-31a3-bee5-0e5cb1f51dad","name":"Germany","sort-name":"Germany","iso-3166-1-codes":["DE"]}}],"barcode":"720642443323","label-info":[{"catalog-number":"424
+        433-2","label":{"id":"0fadc2ce-f7de-4e27-bbe6-612b317e716b","name":"Geffen
+        Records"}},{"catalog-number":"GED24433","label":{"id":"0fadc2ce-f7de-4e27-bbe6-612b317e716b","name":"Geffen
+        Records"}},{"catalog-number":"GEFD24433","label":{"id":"0fadc2ce-f7de-4e27-bbe6-612b317e716b","name":"Geffen
+        Records"}},{"label":{"id":"38dc88de-7720-4100-9d5b-3cdc41b0c474","name":"Sub
+        Pop Records"}}],"track-count":13,"media":[{"format":"CD","disc-count":1,"track-count":13}]},{"id":"a631cad6-50dc-4c07-aa64-479c7ffb8611","score":"100","count":1,"title":"Bleach","status":"Official","packaging":"Jewel
+        Case","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"f1afec0b-26dd-3db5-9aa1-c91229a74a24","primary-type":"Album"},"date":"1995","country":"AU","release-events":[{"date":"1995","area":{"id":"106e0bec-b638-3b37-b731-f53d507dc00e","name":"Australia","sort-name":"Australia","iso-3166-1-codes":["AU"]}}],"barcode":"720642443323","label-info":[{"catalog-number":"GEFD-24433","label":{"id":"0fadc2ce-f7de-4e27-bbe6-612b317e716b","name":"Geffen
+        Records"}},{"label":{"id":"38dc88de-7720-4100-9d5b-3cdc41b0c474","name":"Sub
+        Pop Records"}}],"track-count":13,"media":[{"format":"CD","disc-count":1,"track-count":13}]},{"id":"acfe96a7-e135-4183-8f24-f2cce6d872f1","score":"100","count":1,"title":"Bleach","status":"Official","disambiguation":"limited
+        edition","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"f1afec0b-26dd-3db5-9aa1-c91229a74a24","primary-type":"Album"},"date":"2009-06-09","country":"JP","release-events":[{"date":"2009-06-09","area":{"id":"2db42837-c832-3c27-b4a3-08198f75693c","name":"Japan","sort-name":"Japan","iso-3166-1-codes":["JP"]}}],"barcode":"4943674085736","label-info":[{"catalog-number":"WPCR-13269","label":{"id":"38dc88de-7720-4100-9d5b-3cdc41b0c474","name":"Sub
+        Pop Records"}}],"track-count":13,"media":[{"format":"SHM-CD","disc-count":1,"track-count":13}]}]}'
+    http_version: 
+  recorded_at: Tue, 19 Aug 2014 14:02:01 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/release?fmt=json&inc=&limit=2&query=release:%22Bleach%22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 19 Aug 2014 14:02:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Etag:
+      - '"f6ab3d5413d4b17a27a8b28cad12dce4"'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"created":"2014-08-19T08:45:23.51Z","count":80,"offset":0,"releases":[{"id":"c3c5442f-7d7b-349c-99fe-c94debae5e77","score":"100","count":1,"title":"Bleach","status":"Official","packaging":"Jewel
+        Case","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"f1afec0b-26dd-3db5-9aa1-c91229a74a24","primary-type":"Album"},"date":"1992-08-31","country":"DE","release-events":[{"date":"1992-08-31","area":{"id":"85752fda-13c4-31a3-bee5-0e5cb1f51dad","name":"Germany","sort-name":"Germany","iso-3166-1-codes":["DE"]}}],"barcode":"720642443323","asin":"B000025812","label-info":[{"catalog-number":"GED24433","label":{"id":"0fadc2ce-f7de-4e27-bbe6-612b317e716b","name":"Geffen
+        Records"}},{"catalog-number":"GEFD24433","label":{"id":"0fadc2ce-f7de-4e27-bbe6-612b317e716b","name":"Geffen
+        Records"}},{"label":{"id":"38dc88de-7720-4100-9d5b-3cdc41b0c474","name":"Sub
+        Pop Records"}}],"track-count":13,"media":[{"format":"CD","disc-count":20,"track-count":13}]},{"id":"7c2b193e-532d-4beb-90f0-6f8dd3034461","score":"100","count":2,"title":"Bleach","status":"Official","disambiguation":"20th
+        anniversary edition","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"artist":{"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","name":"Nirvana","sort-name":"Nirvana","disambiguation":"90s
+        US grunge band","aliases":[{"sort-name":"Nirvana US","name":"Nirvana US","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"release-group":{"id":"f1afec0b-26dd-3db5-9aa1-c91229a74a24","primary-type":"Album"},"date":"2009-11-02","country":"US","release-events":[{"date":"2009-11-02","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+        States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"label-info":[{"label":{"id":"38dc88de-7720-4100-9d5b-3cdc41b0c474","name":"Sub
+        Pop Records"}}],"track-count":25,"media":[{"format":"Digital Media","disc-count":0,"track-count":13},{"format":"Digital
+        Media","disc-count":0,"track-count":12}]}]}'
+    http_version: 
+  recorded_at: Tue, 19 Aug 2014 14:02:53 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/release?artist=5b11f4ce-a62d-471e-81fc-a69a8278c7da&fmt=json&inc=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 19 Aug 2014 14:10:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Etag:
+      - '"0a29dd46a33bb94f17aadcf8d6872524"'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"release-count":865,"releases":[{"country":"GB","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1989-12","cover-art-archive":{"count":0,"front":false,"artwork":false,"back":false,"darkened":false},"barcode":"5018615200826","release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        Kingdom","name":"United Kingdom","id":"8a754a16-0027-3a29-b6d7-2b40ea0481ed","iso_3166_2_codes":[],"iso_3166_1_codes":["GB"]},"date":"1989-12"}],"packaging":null,"disambiguation":"","id":"180abab4-8480-4d1b-9a9c-db3d5e864390","title":"Blew","asin":"B000B6TRO8","quality":"normal"},{"country":"PL","text-representation":{"script":"Latn","language":"eng"},"status":"Bootleg","date":"1990","cover-art-archive":{"count":1,"front":true,"artwork":true,"back":false,"darkened":false},"barcode":null,"release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Poland","name":"Poland","id":"dd7f80c8-f017-3d01-8608-2a8c9c32b954","iso_3166_2_codes":[],"iso_3166_1_codes":["PL"]},"date":"1990"}],"packaging":null,"disambiguation":"","id":"202368dc-5497-47a3-953e-bfa631b2a0cb","title":"Bleach","asin":null,"quality":"normal"},{"country":"US","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1990-09","cover-art-archive":{"count":0,"front":false,"artwork":false,"back":false,"darkened":false},"barcode":null,"release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"date":"1990-09"}],"packaging":null,"disambiguation":"","id":"21c3ed4e-3961-3fa3-9541-e4f02a980858","title":"Sliver","asin":null,"quality":"normal"},{"country":"US","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1988-11","cover-art-archive":{"count":4,"front":true,"artwork":true,"back":true,"darkened":false},"barcode":null,"release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"date":"1988-11"}],"packaging":null,"disambiguation":"","id":"2c84c9b3-d1d4-48c0-a825-a360f26a5dde","title":"Love
+        Buzz / Big Cheese","asin":null,"quality":"normal"},{"country":"US","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1991-09-10","cover-art-archive":{"count":0,"front":false,"artwork":false,"back":false,"darkened":false},"barcode":null,"release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"date":"1991-09-10"}],"packaging":null,"disambiguation":"","id":"2f03daed-36e6-4b17-8df3-6dc49556f438","title":"Smells
+        Like Teen Spirit","asin":null,"quality":"normal"},{"country":"DE","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1991-09","cover-art-archive":{"count":0,"front":false,"artwork":false,"back":false,"darkened":false},"barcode":null,"release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Germany","name":"Germany","id":"85752fda-13c4-31a3-bee5-0e5cb1f51dad","iso_3166_2_codes":[],"iso_3166_1_codes":["DE"]},"date":"1991-09"}],"packaging":null,"disambiguation":"","id":"3ca965b4-9d85-301d-ad92-f21ce5b62aea","title":"Smells
+        Like Teen Spirit","asin":null,"quality":"normal"},{"country":"US","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1991-06","cover-art-archive":{"count":1,"front":true,"artwork":true,"back":false,"darkened":false},"barcode":null,"release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"date":"1991-06"}],"packaging":null,"disambiguation":"","id":"3fce74e6-2898-478e-81b3-c72a8fb4cb89","title":"Here
+        She Comes Now / Venus in Furs","asin":null,"quality":"normal"},{"country":"CA","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1991","cover-art-archive":{"count":0,"front":false,"artwork":false,"back":false,"darkened":false},"barcode":"777497492006","release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Canada","name":"Canada","id":"71bbafaa-e825-3e15-8ca9-017dcad1748b","iso_3166_2_codes":[],"iso_3166_1_codes":["CA"]},"date":"1991"}],"packaging":null,"disambiguation":"","id":"4cbf7629-4695-3885-9aca-a639e62ba4ab","title":"Nevermind","asin":"B000003TA4","quality":"normal"},{"country":"DE","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1991-09-10","cover-art-archive":{"count":0,"front":false,"artwork":false,"back":false,"darkened":false},"barcode":"720642167328","release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Germany","name":"Germany","id":"85752fda-13c4-31a3-bee5-0e5cb1f51dad","iso_3166_2_codes":[],"iso_3166_1_codes":["DE"]},"date":"1991-09-10"}],"packaging":null,"disambiguation":"","id":"68f9fe0a-23c2-3975-8310-7f675b4ec0e6","title":"Smells
+        Like Teen Spirit","asin":"B000000OO6","quality":"normal"},{"country":"US","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1991-09-10","cover-art-archive":{"count":1,"front":true,"artwork":true,"back":false,"darkened":false},"barcode":"720642167328","release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"date":"1991-09-10"}],"packaging":"Digipak","disambiguation":"","id":"6a3e3fe7-3cc5-3a6d-b3aa-6fbb12d5b9b2","title":"Smells
+        Like Teen Spirit","asin":"B000000OO6","quality":"normal"},{"country":"US","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1989-06-01","cover-art-archive":{"count":7,"front":true,"artwork":true,"back":true,"darkened":false},"barcode":"098787003420","release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"date":"1989-06-01"}],"packaging":"Jewel
+        Case","disambiguation":"","id":"7d166a44-cfb5-4b08-aacb-6863bbe677d6","title":"Bleach","asin":"B0000035E7","quality":"normal"},{"country":"GB","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1991-01","cover-art-archive":{"count":1,"front":true,"artwork":true,"back":false,"darkened":false},"barcode":"5018615202523","release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        Kingdom","name":"United Kingdom","id":"8a754a16-0027-3a29-b6d7-2b40ea0481ed","iso_3166_2_codes":[],"iso_3166_1_codes":["GB"]},"date":"1991-01"}],"packaging":"Slim
+        Jewel Case","disambiguation":"","id":"7f183c32-4a79-4873-ac38-215cde83e0ce","title":"Sliver","asin":null,"quality":"normal"},{"country":"US","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1991-09-10","cover-art-archive":{"count":0,"front":false,"artwork":false,"back":false,"darkened":false},"barcode":null,"release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"date":"1991-09-10"}],"packaging":null,"disambiguation":"","id":"8d771949-da8f-36df-8d4a-c3cb194cf21d","title":"Smells
+        Like Teen Spirit","asin":null,"quality":"normal"},{"country":"US","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1991-09-24","cover-art-archive":{"count":1,"front":true,"artwork":true,"back":false,"darkened":false},"barcode":"0720642442524","release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"date":"1991-09-24"}],"packaging":"Jewel
+        Case","disambiguation":"","id":"8e061dc4-790e-4587-ba53-011e7852f88d","title":"Nevermind","asin":"B000003TA4","quality":"normal"},{"country":"US","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1991-09-24","cover-art-archive":{"count":1,"front":true,"artwork":true,"back":false,"darkened":false},"barcode":"720642442524","release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"date":"1991-09-24"}],"packaging":"Jewel
+        Case","disambiguation":"","id":"a146429a-cedc-3ab0-9e41-1aaf5f6cdc2d","title":"Nevermind","asin":"B000003TA4","quality":"normal"},{"country":"GB","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1989-12","cover-art-archive":{"count":0,"front":false,"artwork":false,"back":false,"darkened":false},"barcode":"5018615200819","release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        Kingdom","name":"United Kingdom","id":"8a754a16-0027-3a29-b6d7-2b40ea0481ed","iso_3166_2_codes":[],"iso_3166_1_codes":["GB"]},"date":"1989-12"}],"packaging":null,"disambiguation":"","id":"a5829c6e-ad99-38cf-bf98-2dcbee359c09","title":"Blew","asin":null,"quality":"normal"},{"country":null,"text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1989","cover-art-archive":{"count":0,"front":false,"artwork":false,"back":false,"darkened":false},"barcode":"008811929121","release-events":[{"area":null,"date":"1989"}],"packaging":"Jewel
+        Case","disambiguation":"","id":"a96b59a5-4185-4d87-899a-a0d944385811","title":"Bleach","asin":"B0000035E7","quality":"normal"},{"country":"US","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1990-09","cover-art-archive":{"count":0,"front":false,"artwork":false,"back":false,"darkened":false},"barcode":null,"release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"date":"1990-09"}],"packaging":null,"disambiguation":"","id":"acebbf06-a948-46e7-ae3c-730894e08067","title":"Sliver","asin":null,"quality":"normal"},{"country":"GB","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1991-09-10","cover-art-archive":{"count":1,"front":true,"artwork":true,"back":false,"darkened":false},"barcode":"5021509000525","release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        Kingdom","name":"United Kingdom","id":"8a754a16-0027-3a29-b6d7-2b40ea0481ed","iso_3166_2_codes":[],"iso_3166_1_codes":["GB"]},"date":"1991-09-10"}],"packaging":"Digipak","disambiguation":"","id":"b0dd957a-4dd0-40e3-920c-3aac782fad14","title":"Smells
+        Like Teen Spirit","asin":"B00005Q0MD","quality":"normal"},{"country":"XE","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1991-09-23","cover-art-archive":{"count":6,"front":true,"artwork":true,"back":true,"darkened":false},"barcode":"720642442524","release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Europe","name":"Europe","id":"89a675c2-3e37-3518-b83c-418bad59a85a","iso_3166_2_codes":[],"iso_3166_1_codes":["XE"]},"date":"1991-09-23"}],"packaging":"Jewel
+        Case","disambiguation":"","id":"b52a8f31-b5ab-34e9-92f4-f5b7110220f0","title":"Nevermind","asin":"B000003TA4","quality":"normal"},{"country":"DE","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1991-09","cover-art-archive":{"count":0,"front":false,"artwork":false,"back":false,"darkened":false},"barcode":null,"release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Germany","name":"Germany","id":"85752fda-13c4-31a3-bee5-0e5cb1f51dad","iso_3166_2_codes":[],"iso_3166_1_codes":["DE"]},"date":"1991-09"}],"packaging":null,"disambiguation":"","id":"bf2d0424-3b47-31db-a225-eb7b5c3e7d71","title":"Smells
+        Like Teen Spirit","asin":null,"quality":"normal"},{"country":"US","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1991-09-24","cover-art-archive":{"count":0,"front":false,"artwork":false,"back":false,"darkened":false},"barcode":"720642442524","release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"date":"1991-09-24"}],"packaging":"Jewel
+        Case","disambiguation":"","id":"c12262e2-7185-4942-87ee-da27ddd45ddf","title":"Nevermind","asin":"B000003TA4","quality":"normal"},{"country":"GB","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1989","cover-art-archive":{"count":1,"front":true,"artwork":true,"back":false,"darkened":false},"barcode":"5018615200628","release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        Kingdom","name":"United Kingdom","id":"8a754a16-0027-3a29-b6d7-2b40ea0481ed","iso_3166_2_codes":[],"iso_3166_1_codes":["GB"]},"date":"1989"}],"packaging":null,"disambiguation":"","id":"d3d44548-b2ed-3ddc-a9e0-3f5ee544c1c9","title":"Bleach","asin":"B000092DLJ","quality":"normal"},{"country":"US","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1991-09-10","cover-art-archive":{"count":0,"front":false,"artwork":false,"back":false,"darkened":false},"barcode":null,"release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"date":"1991-09-10"}],"packaging":null,"disambiguation":"","id":"e1c5d5fa-b1cb-388b-9027-055aa29a382b","title":"Smells
+        Like Teen Spirit","asin":null,"quality":"normal"},{"country":"US","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1989-08-08","cover-art-archive":{"count":0,"front":false,"artwork":false,"back":false,"darkened":false},"barcode":null,"release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"date":"1989-08-08"}],"packaging":null,"disambiguation":"","id":"e5fa1cc5-3693-455a-821f-5ace2690aff1","title":"Bleach","asin":null,"quality":"normal"}],"release-offset":0}'
+    http_version: 
+  recorded_at: Tue, 19 Aug 2014 14:10:53 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/release?artist=5b11f4ce-a62d-471e-81fc-a69a8278c7da&fmt=json&inc=&limit=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 19 Aug 2014 14:10:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Etag:
+      - '"2df23ab3ebfdf12c6b3c752c320cee54"'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"release-count":865,"releases":[{"country":"US","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1988-11","cover-art-archive":{"count":4,"front":true,"artwork":true,"back":true,"darkened":false},"barcode":null,"release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"date":"1988-11"}],"packaging":null,"disambiguation":"","id":"2c84c9b3-d1d4-48c0-a825-a360f26a5dde","title":"Love
+        Buzz / Big Cheese","asin":null,"quality":"normal"},{"country":"US","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"1989-06-01","cover-art-archive":{"count":7,"front":true,"artwork":true,"back":true,"darkened":false},"barcode":"098787003420","release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"date":"1989-06-01"}],"packaging":"Jewel
+        Case","disambiguation":"","id":"7d166a44-cfb5-4b08-aacb-6863bbe677d6","title":"Bleach","asin":"B0000035E7","quality":"normal"}],"release-offset":0}'
+    http_version: 
+  recorded_at: Tue, 19 Aug 2014 14:10:54 GMT
+recorded_with: VCR 2.9.2

@@ -43,6 +43,7 @@ describe MusicBrainz::Client do
 
     it do
       expect{ request }.to_not raise_error
+      VCR.eject_cassette
       expect{ request }.to raise_error(VCR::Errors::UnhandledHTTPRequestError)
     end
 
@@ -62,6 +63,11 @@ describe MusicBrainz::Client do
     context 'with bad request' do
       it { expect{ bad_request }.to raise_error(MusicBrainz::BadRequest, %r{#{ 'not a valid inc parameter' }}) }
     end
+
+    # You must edit the VCR cassette
+    # to return a Service Unavailable instead of a Bad Request:
+    #   code: 503
+    #   message: Service Unavailable
 
     context 'with request throttled' do
       it { expect{ throttled_request }.to raise_error(MusicBrainz::RequestFailed, %r{#{ 'exceeding the allowable rate limit' }}) }

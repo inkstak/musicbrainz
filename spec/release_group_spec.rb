@@ -57,9 +57,11 @@ describe MusicBrainz::Client do
       it { expect( results[0].secondary_types ).to eq ['Live'] }
       it { expect( results[0].score           ).to eq 100 }
 
+
       context 'with limit' do
         let(:results) { client.release_groups 'MTV Unplugged in New York', limit: 2 }
 
+        it { expect{ results }.to_not raise_error }
         it { expect( results ).to have(2).releases }
 
         it { expect( results[0]       ).to be_a MusicBrainz::ReleaseGroup }
@@ -74,17 +76,18 @@ describe MusicBrainz::Client do
 
       it { expect{ results }.to_not raise_error }
       it { expect( results ).to be_an Array }
-
       it { expect( results ).to have(1).release }
 
       it { expect( results[0]       ).to be_a MusicBrainz::ReleaseGroup }
       it { expect( results[0].title ).to eq 'Bleach' }
       it { expect( results[0].score ).to eq 100 }
 
+
       context 'with limit' do
         let(:results) { client.release_groups q: { release_group: 'Bleach' }, limit: 2 }
 
-        it { expect( results ).to have(2).artists }
+        it { expect{ results }.to_not raise_error }
+        it { expect( results ).to have(2).releases }
 
         it { expect( results[0]       ).to be_a MusicBrainz::ReleaseGroup }
         it { expect( results[0].title ).to eq 'Bleach' }
@@ -98,16 +101,17 @@ describe MusicBrainz::Client do
 
       it { expect{ results }.to_not raise_error }
       it { expect( results ).to be_an Array }
-
       it { expect( results ).to have(25).releases }
 
       it { expect( results[0]           ).to be_a MusicBrainz::ReleaseGroup }
       it { expect( results.map(&:title) ).to include 'Nevermind' }
 
+
       context 'with limit' do
         let(:results) { client.release_groups artist: '5b11f4ce-a62d-471e-81fc-a69a8278c7da', limit: 2 }
 
-        it { expect( results ).to have(2).artists }
+        it { expect{ results }.to_not raise_error }
+        it { expect( results ).to have(2).releases }
 
         it { expect( results[0] ).to be_a MusicBrainz::ReleaseGroup }
       end
