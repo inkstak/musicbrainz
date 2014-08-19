@@ -170,7 +170,18 @@ client.release_groups artist: '5b11f4ce-a62d-471e-81fc-a69a8278c7da'
 
 ##### Releases
 
+
 ```ruby
+# Release lookup
+client.release 'c1ef70f1-f88d-311f-87d4-b2766d8ca0ae'
+
+# Releases search
+client.releases 'MTV Unplugged in New York'
+client.releases q: { release: 'Bleach', rgid: 'f1afec0b-26dd-3db5-9aa1-c91229a74a24' }
+
+# Releases browse
+client.releases artist: '5b11f4ce-a62d-471e-81fc-a69a8278c7da'
+client.releases release_group: '6845bbd5-6af9-3bbf-9235-d8beea55da1a'
 ```
 
 
