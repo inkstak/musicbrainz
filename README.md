@@ -7,22 +7,14 @@ A simple client for the [MusicBrainz](http://musicbrainz.org) web service, large
 
 ## Installation
 
-Add this line to your application's Gemfile:
+This gem is a work in progress, which use the next version of hashie (3.2.1).
+
+Add these line to your application's Gemfile:
 
 ```ruby
 gem 'musicbrainz', github: 'inkstak/musicbrainz'
-```
-
-######## Important ########
-
-This branch use the next version of hashie (3.2.1), so you have to specify in your Gemfile:
-
-```ruby
-gem 'musicbrainz', github: 'inkstak/musicbrainz', branch: 'next-hashie'
 gem 'hashie'     , github: 'intridea/hashie'
 ```
-
-########
 
 ### Requirements
 
@@ -184,6 +176,7 @@ client.release_groups artist: '5b11f4ce-a62d-471e-81fc-a69a8278c7da'
 ```ruby
 # Release lookup
 client.release 'c1ef70f1-f88d-311f-87d4-b2766d8ca0ae'
+client.release 'c1ef70f1-f88d-311f-87d4-b2766d8ca0ae', includes: %w(recordings)
 
 # Releases search
 client.releases 'MTV Unplugged in New York'
