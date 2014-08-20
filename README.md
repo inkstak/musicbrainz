@@ -18,7 +18,7 @@ gem 'musicbrainz', github: 'inkstak/musicbrainz'
 This branch use the next version of hashie (3.2.1), so you have to specify in your Gemfile:
 
 ```ruby
-gem 'musicbrainz', github: 'inkstak/musicbrainz'
+gem 'musicbrainz', github: 'inkstak/musicbrainz', branch: 'next-hashie'
 gem 'hashie'     , github: 'intridea/hashie'
 ```
 
