@@ -1113,4 +1113,46 @@ http_interactions:
         Is the Peace"},{"disambiguation":"","length":331733,"video":0,"id":"f57ef736-ebfc-46d6-ab9b-419efe56ff31","title":"Narina"},{"disambiguation":"","length":53306,"video":0,"id":"fefdae95-86f7-41bc-ae56-42b044e2f297","title":"Zumba"}],"recording-offset":0,"recording-count":16}'
     http_version: 
   recorded_at: Wed, 20 Aug 2014 11:36:49 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/recording/1de4184d-a3a2-4f1b-9e6e-d65e649bbc74?fmt=json&inc=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Aug 2014 11:51:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Content-Length:
+      - '117'
+      Etag:
+      - '"a698a0cd7c6423da87529756042578df"'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"disambiguation":"video","length":"199000","video":1,"id":"1de4184d-a3a2-4f1b-9e6e-d65e649bbc74","title":"Some
+        Say"}'
+    http_version: 
+  recorded_at: Wed, 20 Aug 2014 11:51:21 GMT
 recorded_with: VCR 2.9.2

@@ -7,12 +7,7 @@ module MusicBrainz
     property :length
     property :disambiguation
 
-    # FIXME Need hashie 3.2.1
-    # coerce_key :length, Integer
-
-    def initialize json
-      json['length'] = json['length'].to_i
-      super
-    end
+    coerce_key :length, Integer
+    coerce_key :video, ->(v) { v.to_i != 0 }
   end
 end

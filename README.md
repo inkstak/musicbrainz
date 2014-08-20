@@ -13,6 +13,16 @@ Add this line to your application's Gemfile:
 gem 'musicbrainz', github: 'inkstak/musicbrainz'
 ```
 
+######## Important ########
+
+This branch use the next version of hashie (3.2.1), so you have to specify in your Gemfile:
+
+```ruby
+gem 'musicbrainz', github: 'inkstak/musicbrainz'
+gem 'hashie'     , github: 'intridea/hashie'
+```
+
+########
 
 ### Requirements
 
