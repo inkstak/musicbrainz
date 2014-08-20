@@ -29,6 +29,30 @@ describe MusicBrainz::Client do
       let(:release) { client.release '01234567-0123-0123-0123-012345678901' }
       it { expect( release ).to be_nil }
     end
+
+
+    describe '#media' do
+      let(:release) { client.release '52dcdb00-c7ec-4446-b3d2-5da31833efc7', includes: %w(recordings) }
+
+      it { expect( release       ).to be_a MusicBrainz::Release }
+      it { expect( release.title ).to eq '45 or 46 Songs That Weren’t Good Enough to Go on Our Other Records' }
+
+      it { expect( release.media    ).to be_an Array }
+      it { expect( release.media    ).to have(2).media }
+
+      it { expect( release.media[0]          ).to be_a MusicBrainz::Medium }
+      it { expect( release.media[0].title    ).to eq 'Counting Sheep' }
+      it { expect( release.media[0].position ).to eq 1 }
+
+      it { expect( release.media[0].recordings ).to be_an Array }
+      it { expect( release.media[0].recordings ).to have(22).recordings }
+
+      it { expect( release.media[0].recordings[0]              ).to be_a MusicBrainz::Recording }
+      it { expect( release.media[0].recordings[0].id           ).to eq '81d740c8-caab-4890-b213-2c0eb4ab7304' }
+      it { expect( release.media[0].recordings[0].title        ).to eq 'Pimps and Hookers' }
+      it { expect( release.media[0].recordings[0].track_number ).to eq '1' }
+      it { expect( release.media[0].recordings[0].position     ).to eq 1 }
+    end
   end
 
 

@@ -13,11 +13,13 @@ module MusicBrainz
   autoload :Recording    , 'musicbrainz/models/recording'
   autoload :Area         , 'musicbrainz/models/area'
   autoload :Relationship , 'musicbrainz/models/relationship'
+  autoload :Medium       , 'musicbrainz/models/medium'
 
   module Binding
     autoload :Score         , 'musicbrainz/binding/score'
     autoload :LifeSpan      , 'musicbrainz/binding/life_span'
     autoload :Urls          , 'musicbrainz/binding/urls'
     autoload :Relationships , 'musicbrainz/binding/relationships'
+    autoload :Tracks        , 'musicbrainz/binding/tracks'
   end
 end

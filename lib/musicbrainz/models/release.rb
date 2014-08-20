@@ -8,5 +8,7 @@ module MusicBrainz
     property :date
     property :status
     property :disambiguation
+
+    coerce_key :media, Array[Medium]
   end
 end
