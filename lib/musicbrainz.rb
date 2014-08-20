@@ -10,6 +10,7 @@ module MusicBrainz
   autoload :Artist       , 'musicbrainz/models/artist'
   autoload :ReleaseGroup , 'musicbrainz/models/release_group'
   autoload :Release      , 'musicbrainz/models/release'
+  autoload :Recording    , 'musicbrainz/models/recording'
   autoload :Area         , 'musicbrainz/models/area'
   autoload :Relationship , 'musicbrainz/models/relationship'
 

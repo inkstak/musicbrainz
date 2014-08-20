@@ -25,7 +25,7 @@ module MusicBrainz
       end
     end
 
-    %w(artist release_group release).each do |type|
+    %w(artist release_group release recording label).each do |type|
       dashed = type.gsub('_', '-')
 
       define_method type do |*args|

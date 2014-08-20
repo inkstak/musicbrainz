@@ -188,6 +188,16 @@ client.releases release_group: '6845bbd5-6af9-3bbf-9235-d8beea55da1a'
 ##### Records
 
 ```ruby
+# Record lookup
+client.recording 'd6243d55-bb4f-4518-9c1c-d507a5d3843a'
+
+# Records search
+client.recordings 'Devil on my shoulder'
+client.recordings 'Devil on my shoulder', limit: 2
+client.recordings q: { recording: 'State of the Union', arid: '606bf117-494f-4864-891f-09d63ff6aa4b' }}
+
+# Records browse
+client.recordings release: 'e5acb0c3-3a10-48b8-ade0-62d9db1a947b' }
 ```
 
 
