@@ -7,13 +7,10 @@ A simple client for the [MusicBrainz](http://musicbrainz.org) web service, large
 
 ## Installation
 
-This gem is a work in progress, which use the next version of hashie (3.2.1).
-
 Add these line to your application's Gemfile:
 
 ```ruby
 gem 'musicbrainz', github: 'inkstak/musicbrainz'
-gem 'hashie'     , github: 'intridea/hashie'
 ```
 
 ### Requirements
