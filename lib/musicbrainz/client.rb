@@ -6,6 +6,7 @@ require 'active_support/inflector'
 module MusicBrainz
 
   Faraday::Request.register_middleware musicbrainz: lambda { Middleware }
+  Faraday::Request.register_middleware throttler:   lambda { Throttler }
 
   class Client
     ENDPOINT = 'http://musicbrainz.org/ws/2/'

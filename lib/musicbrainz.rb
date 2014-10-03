@@ -5,6 +5,7 @@ module MusicBrainz
 
   autoload :Client    , 'musicbrainz/client'
   autoload :Middleware, 'musicbrainz/middleware'
+  autoload :Throttler , 'musicbrainz/throttler'
 
   autoload :Model        , 'musicbrainz/model'
   autoload :Artist       , 'musicbrainz/models/artist'
