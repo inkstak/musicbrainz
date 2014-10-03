@@ -205,17 +205,6 @@ client.recordings release: 'e5acb0c3-3a10-48b8-ade0-62d9db1a947b' }
 
 The `MusicBrainz::Client` uses Faraday middlewares to control requests cycle.
 
-
-#### Query Interval & Retry
-
-To be sure your client won't spam the API accordingly to the [MusicBrainz best practises](http://musicbrainz.org/doc/XML_Web_Service/Rate_Limiting#How_can_I_be_a_good_citizen_and_be_smart_about_using_the_Web_Service.3F)
-
-```ruby
-client = MusicBrainz::Client.new do |c|
-  c.request :retry, max: 2, interval: 1
-end
-```
-
 #### Caching
 
 Take a look at [faraday_middleware](https://github.com/lostisland/faraday_middleware).  
@@ -232,5 +221,17 @@ Inside a Rails app, it will look like:
 ```ruby
 client = MusicBrainz::Client.new do |c|
   c.response :caching, Rails.cache
+end
+```
+
+#### Throttler
+
+To ensure your client won't spam the API as required by [MusicBrainz good practices](http://musicbrainz.org/doc/XML_Web_Service/Rate_Limiting#How_can_I_be_a_good_citizen_and_be_smart_about_using_the_Web_Service.3F),
+this gem provides a Throttler middleware that requires an interval between each request.
+This middleware needs cache.
+
+```ruby
+client = MusicBrainz::Client.new do |c|
+  f.request :throttler, Rails.cache, interval: 1.second
 end
 ```
