@@ -5,6 +5,8 @@
 require 'musicbrainz'
 require 'awesome_print'
 
+raise MusicBrainz::InvalidConfiguration unless %x{git config --get user.email}.to_s.length > 0
+
 MusicBrainz.configure do |c|
   c.app_name    = "MusicBrainz Test"
   c.app_version = MusicBrainz::VERSION
