@@ -235,3 +235,33 @@ client = MusicBrainz::Client.new do |c|
   f.request :throttler, Rails.cache, interval: 1.second
 end
 ```
+
+
+## Contributing
+
+1. Don't hesitate to submit your feature/idea/fix in [issues](https://github.com/inkstak/musicbrainz)
+2. Fork the [repository](https://github.com/inkstak/musicbrainz)
+3. Create your feature branch
+4. Create a pull request
+
+### Tests
+
+```
+bundle exec rspec
+```
+
+### Console
+
+To quickly run a console:
+
+```
+bundle exec irb -r './console.rb'
+```
+
+
+## License & credits
+
+Copyright (c) 2014 Savater Sebastien.  
+See [LICENSE](https://github.com/inkstak/musicbrainz/blob/master/LICENSE) for further details.
+
+Largely inspired by the [musicbrainz gem](https://github.com/localhots/musicbrainz) by [Gregory Eremin](https://github.com/localhots)
