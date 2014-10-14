@@ -96,7 +96,7 @@ module MusicBrainz
         hash[:query] = query.map {|k,v| "#{k.to_s.gsub('_', '')}:\"#{v}\"" }.join(" #{operator} ")
       end
 
-      hash.keys.each do |key|
+      hash.except(:includes, :limit, :offset).keys.each do |key|
         hash[key.to_s.gsub('_', '-')] = hash.delete(key)
       end
 

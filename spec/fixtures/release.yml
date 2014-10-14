@@ -987,4 +987,112 @@ http_interactions:
         In0=
     http_version: 
   recorded_at: Wed, 20 Aug 2014 18:21:37 GMT
-recorded_with: VCR 2.9.2
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/release/52dcdb00-c7ec-4446-b3d2-5da31833efc7?fmt=json&inc=media
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 14 Oct 2014 13:45:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Content-Length:
+      - '824'
+      Etag:
+      - '"53b7c0be2be1b32c40a6b0188a203865"'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjb3VudHJ5IjoiVVMiLCJ0ZXh0LXJlcHJlc2VudGF0aW9uIjp7InNjcmlw
+        dCI6IkxhdG4iLCJsYW5ndWFnZSI6ImVuZyJ9LCJzdGF0dXMiOiJPZmZpY2lh
+        bCIsImRhdGUiOiIyMDAyLTA1LTIxIiwiY292ZXItYXJ0LWFyY2hpdmUiOnsi
+        Y291bnQiOjEsImZyb250Ijp0cnVlLCJhcnR3b3JrIjp0cnVlLCJiYWNrIjpm
+        YWxzZSwiZGFya2VuZWQiOmZhbHNlfSwiYmFyY29kZSI6Ijc1MTA5NzA2NDEy
+        MiIsInJlbGVhc2UtZXZlbnRzIjpbeyJhcmVhIjp7ImRpc2FtYmlndWF0aW9u
+        IjoiIiwiaXNvXzMxNjZfM19jb2RlcyI6W10sInNvcnQtbmFtZSI6IlVuaXRl
+        ZCBTdGF0ZXMiLCJuYW1lIjoiVW5pdGVkIFN0YXRlcyIsImlkIjoiNDg5Y2U5
+        MWItNjY1OC0zMzA3LTk4NzctNzk1YjY4NTU0Yzk4IiwiaXNvXzMxNjZfMl9j
+        b2RlcyI6W10sImlzb18zMTY2XzFfY29kZXMiOlsiVVMiXX0sImRhdGUiOiIy
+        MDAyLTA1LTIxIn1dLCJwYWNrYWdpbmciOiJKZXdlbCBDYXNlIiwiZGlzYW1i
+        aWd1YXRpb24iOiIiLCJtZWRpYSI6W3sidHJhY2stY291bnQiOjIyLCJmb3Jt
+        YXQiOiJDRCIsInBvc2l0aW9uIjoxLCJ0aXRsZSI6IkNvdW50aW5nIFNoZWVw
+        In0seyJ0cmFjay1jb3VudCI6MjUsImZvcm1hdCI6IkNEIiwicG9zaXRpb24i
+        OjIsInRpdGxlIjoiQ2F0Y2hpbmcgWlpa4oCZcyJ9XSwiaWQiOiI1MmRjZGIw
+        MC1jN2VjLTQ0NDYtYjNkMi01ZGEzMTgzM2VmYzciLCJ0aXRsZSI6IjQ1IG9y
+        IDQ2IFNvbmdzIFRoYXQgV2VyZW7igJl0IEdvb2QgRW5vdWdoIHRvIEdvIG9u
+        IE91ciBPdGhlciBSZWNvcmRzIiwiYXNpbiI6IkIwMDAwNjVWNU8iLCJxdWFs
+        aXR5Ijoibm9ybWFsIn0=
+    http_version: 
+  recorded_at: Tue, 14 Oct 2014 13:45:48 GMT
+- request:
+    method: get
+    uri: http://musicbrainz.org/ws/2/release?fmt=json&inc=media&release-group=6845bbd5-6af9-3bbf-9235-d8beea55da1a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      Accept:
+      - application/json
+      Via:
+      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 14 Oct 2014 13:47:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Server:
+      - nginx/1.1.19
+      Etag:
+      - '"b672ce36453ea954961047fb383b8ee2"'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"release-count":5,"releases":[{"country":"XE","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"2003","cover-art-archive":{"count":1,"front":true,"artwork":true,"back":false,"darkened":false},"barcode":null,"release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Europe","name":"Europe","id":"89a675c2-3e37-3518-b83c-418bad59a85a","iso_3166_2_codes":[],"iso_3166_1_codes":["XE"]},"date":"2003"}],"packaging":null,"disambiguation":"","media":[{"track-count":11,"format":"CD","position":1,"title":null}],"id":"15afe807-58e8-3359-91bc-8129f0c49b1e","title":"A
+        Snow Capped Romance","asin":null,"quality":"normal"},{"country":"GB","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"2004-03-15","cover-art-archive":{"count":0,"front":false,"artwork":false,"back":false,"darkened":false},"barcode":"016861837426","release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        Kingdom","name":"United Kingdom","id":"8a754a16-0027-3a29-b6d7-2b40ea0481ed","iso_3166_2_codes":[],"iso_3166_1_codes":["GB"]},"date":"2004-03-15"}],"packaging":null,"disambiguation":"","media":[{"track-count":11,"format":"CD","position":1,"title":null}],"id":"3b4abfdc-2531-4014-bba7-f946f087a117","title":"A
+        Snow Capped Romance","asin":"B00015U6EY","quality":"normal"},{"country":"JP","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"2004-03-10","cover-art-archive":{"count":0,"front":false,"artwork":false,"back":false,"darkened":false},"barcode":"4527583005117","release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Japan","name":"Japan","id":"2db42837-c832-3c27-b4a3-08198f75693c","iso_3166_2_codes":[],"iso_3166_1_codes":["JP"]},"date":"2004-03-10"}],"packaging":null,"disambiguation":"","media":[{"track-count":13,"format":"CD","position":1,"title":null}],"id":"5b683ade-3014-4116-8878-bebf27daf608","title":"A
+        Snow Capped Romance","asin":"B000197I64","quality":"normal"},{"country":"CA","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"2004-03-23","cover-art-archive":{"count":0,"front":false,"artwork":false,"back":false,"darkened":false},"barcode":null,"release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Canada","name":"Canada","id":"71bbafaa-e825-3e15-8ca9-017dcad1748b","iso_3166_2_codes":[],"iso_3166_1_codes":["CA"]},"date":"2004-03-23"}],"packaging":null,"disambiguation":"","media":[{"track-count":11,"format":null,"position":1,"title":null}],"id":"87e56c56-12b7-38ff-8063-65ebabc914e7","title":"A
+        Snow Capped Romance","asin":null,"quality":"normal"},{"country":"US","text-representation":{"script":"Latn","language":"eng"},"status":"Official","date":"2004-03-16","cover-art-archive":{"count":1,"front":true,"artwork":true,"back":false,"darkened":false},"barcode":"016861837426","release-events":[{"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
+        States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"date":"2004-03-16"}],"packaging":null,"disambiguation":"","media":[{"track-count":11,"format":"CD","position":1,"title":null}],"id":"c1ef70f1-f88d-311f-87d4-b2766d8ca0ae","title":"A
+        Snow Capped Romance","asin":"B00015U6EY","quality":"normal"}],"release-offset":0}'
+    http_version: 
+  recorded_at: Tue, 14 Oct 2014 13:47:18 GMT
+recorded_with: VCR 2.9.3

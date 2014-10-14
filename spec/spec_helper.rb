@@ -18,7 +18,8 @@ VCR.configure do |c|
   c.debug_logger
 
   c.default_cassette_options = {
-    match_requests_on: [:method, :uri, :headers]
+    record:             :new_episodes,
+    match_requests_on:  [:method, :uri, :headers]
   }
 end
 
@@ -30,9 +31,15 @@ MUSICBRAINZ_CONFIG = lambda {|config|
   config.contact     = "test@inkstak.me"
 }
 
+
+
 RSpec.configure do |config|
   # config.order = 'random'
   config.expect_with :rspec do |c|
     c.syntax = :expect
+  end
+
+  config.before :each do
+    MusicBrainz.configure &MUSICBRAINZ_CONFIG
   end
 end
