@@ -19,15 +19,14 @@ module MusicBrainz
     end
 
     def call env
+      @time = read_last_query_time
+      write_last_query_time
+      time_passed = Time.now.to_f - read_last_query_time
+
       wait = @options.interval - time_passed
       sleep(env['throttler_wait_time'] = wait) if wait > 0
 
-      write_last_query_time
       @app.call(env)
-    end
-
-    def time_passed
-      Time.now.to_f - read_last_query_time
     end
 
     def read_last_query_time
