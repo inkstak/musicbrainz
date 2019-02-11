@@ -38,7 +38,7 @@ http_interactions:
       - "*"
     body:
       encoding: UTF-8
-      string: '{"disambiguation":"","length":"272266","video":0,"id":"d6243d55-bb4f-4518-9c1c-d507a5d3843a","title":"Rot"}'
+      string: '{"disambiguation":"","length":"272266","video":null,"id":"d6243d55-bb4f-4518-9c1c-d507a5d3843a","title":"Rot"}'
     http_version: 
   recorded_at: Wed, 20 Aug 2014 11:32:23 GMT
 - request:
@@ -1100,17 +1100,17 @@ http_interactions:
       - "*"
     body:
       encoding: UTF-8
-      string: '{"recordings":[{"disambiguation":"","length":239800,"video":0,"id":"0bffd057-67ca-4f07-b13d-de643b365e7a","title":"Cinema"},{"disambiguation":"","length":225906,"video":0,"id":"1760f104-09db-4bfd-843a-087aeabb301d","title":"Leave
-        Melody Counting Fear"},{"disambiguation":"","length":31426,"video":0,"id":"1c4d62e4-6fa1-4057-8a7a-8444070ad095","title":"Metal
-        Shock"},{"disambiguation":"","length":247973,"video":0,"id":"525abb49-2e66-47b7-8af6-57f6d3a6e381","title":"Devil''s
-        Wedding"},{"disambiguation":"","length":96360,"video":0,"id":"5e20ad57-c546-48f4-ba20-ce8ca99aebe5","title":"Claustrophobia"},{"disambiguation":"","length":246467,"video":0,"id":"767b3d28-2871-452d-9d2e-9ef6093f25b1","title":"I
-        Don''t Want to Go Back Empty Handed"},{"disambiguation":"","length":213400,"video":0,"id":"91ea212e-8db6-46f5-8aea-03212b9ee180","title":"The
-        Walking Xperiment"},{"disambiguation":"","length":70600,"video":0,"id":"a9eb04a8-178d-40d5-829f-db489d66db03","title":"Gee-tar"},{"disambiguation":"","length":216333,"video":0,"id":"ae05e043-f5e5-4299-b61a-50c7cae903f5","title":"Black
-        Melon"},{"disambiguation":"","length":194840,"video":0,"id":"c006759d-71c3-4587-ad6f-8f07f418665e","title":"Save
-        the Blonde"},{"disambiguation":"","length":226426,"video":0,"id":"c32e5de4-ec82-4c8c-affe-3b17e792e6c5","title":"Facing
-        the Plastic"},{"disambiguation":"","length":32960,"video":0,"id":"d292f854-4acd-4e99-b79e-4d8b117007fe","title":"Intro"},{"disambiguation":"","length":63373,"video":0,"id":"db8b3991-1d2b-43d5-a092-551f5d7157f6","title":"If
-        You Can''t Catch Me"},{"disambiguation":"","length":152093,"video":0,"id":"ef51c910-3235-4fbc-8b3c-68d6350c3c2c","title":"Love
-        Is the Peace"},{"disambiguation":"","length":331733,"video":0,"id":"f57ef736-ebfc-46d6-ab9b-419efe56ff31","title":"Narina"},{"disambiguation":"","length":53306,"video":0,"id":"fefdae95-86f7-41bc-ae56-42b044e2f297","title":"Zumba"}],"recording-offset":0,"recording-count":16}'
+      string: '{"recordings":[{"disambiguation":"","length":239800,"video":null,"id":"0bffd057-67ca-4f07-b13d-de643b365e7a","title":"Cinema"},{"disambiguation":"","length":225906,"video":null,"id":"1760f104-09db-4bfd-843a-087aeabb301d","title":"Leave
+        Melody Counting Fear"},{"disambiguation":"","length":31426,"video":null,"id":"1c4d62e4-6fa1-4057-8a7a-8444070ad095","title":"Metal
+        Shock"},{"disambiguation":"","length":247973,"video":null,"id":"525abb49-2e66-47b7-8af6-57f6d3a6e381","title":"Devil''s
+        Wedding"},{"disambiguation":"","length":96360,"video":null,"id":"5e20ad57-c546-48f4-ba20-ce8ca99aebe5","title":"Claustrophobia"},{"disambiguation":"","length":246467,"video":null,"id":"767b3d28-2871-452d-9d2e-9ef6093f25b1","title":"I
+        Don''t Want to Go Back Empty Handed"},{"disambiguation":"","length":213400,"video":null,"id":"91ea212e-8db6-46f5-8aea-03212b9ee180","title":"The
+        Walking Xperiment"},{"disambiguation":"","length":70600,"video":null,"id":"a9eb04a8-178d-40d5-829f-db489d66db03","title":"Gee-tar"},{"disambiguation":"","length":216333,"video":null,"id":"ae05e043-f5e5-4299-b61a-50c7cae903f5","title":"Black
+        Melon"},{"disambiguation":"","length":194840,"video":null,"id":"c006759d-71c3-4587-ad6f-8f07f418665e","title":"Save
+        the Blonde"},{"disambiguation":"","length":226426,"video":null,"id":"c32e5de4-ec82-4c8c-affe-3b17e792e6c5","title":"Facing
+        the Plastic"},{"disambiguation":"","length":32960,"video":null,"id":"d292f854-4acd-4e99-b79e-4d8b117007fe","title":"Intro"},{"disambiguation":"","length":63373,"video":null,"id":"db8b3991-1d2b-43d5-a092-551f5d7157f6","title":"If
+        You Can''t Catch Me"},{"disambiguation":"","length":152093,"video":null,"id":"ef51c910-3235-4fbc-8b3c-68d6350c3c2c","title":"Love
+        Is the Peace"},{"disambiguation":"","length":331733,"video":null,"id":"f57ef736-ebfc-46d6-ab9b-419efe56ff31","title":"Narina"},{"disambiguation":"","length":53306,"video":null,"id":"fefdae95-86f7-41bc-ae56-42b044e2f297","title":"Zumba"}],"recording-offset":0,"recording-count":16}'
     http_version: 
   recorded_at: Wed, 20 Aug 2014 11:36:49 GMT
 - request:
@@ -1151,7 +1151,7 @@ http_interactions:
       - "*"
     body:
       encoding: UTF-8
-      string: '{"disambiguation":"video","length":"199000","video":1,"id":"1de4184d-a3a2-4f1b-9e6e-d65e649bbc74","title":"Some
+      string: '{"disambiguation":"video","length":"199000","video":true,"id":"1de4184d-a3a2-4f1b-9e6e-d65e649bbc74","title":"Some
         Say"}'
     http_version: 
   recorded_at: Wed, 20 Aug 2014 11:51:21 GMT
