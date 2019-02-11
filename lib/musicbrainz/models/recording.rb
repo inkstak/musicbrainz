@@ -8,6 +8,6 @@ module MusicBrainz
     property :disambiguation
 
     coerce_key :length, Integer
-    coerce_key :video, ->(v) { v.to_i != 0 }
+    coerce_key :video, ->(v) { !v.nil? }
   end
 end

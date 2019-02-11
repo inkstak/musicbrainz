@@ -13,7 +13,7 @@ describe '#recording' do
   it { expect( recording.id                 ).to eq 'd6243d55-bb4f-4518-9c1c-d507a5d3843a' }
   it { expect( recording.title              ).to eq 'Rot' }
   it { expect( recording.length             ).to be_an Integer }
-  it { expect( recording.video              ).to be false }
+  it { expect( recording.video              ).to be nil }
   it { expect( recording.disambiguation     ).to eq '' }
 
 
