@@ -70,7 +70,7 @@ module MusicBrainz
       when String then data = build_search_from_string(query, *args)
       when Hash   then data = build_search_from_hash(query)
       else
-        raise ArgumentError, "#{ query.inpsect } is not a valid search query"
+        raise ArgumentError, "#{ query.inspect } is not a valid search query"
       end
 
       get path, data, &block
