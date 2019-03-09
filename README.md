@@ -268,3 +268,4 @@ Largely inspired by the [musicbrainz gem](https://github.com/localhots/musicbrai
 
 Contributors:
 * James [@PoweredByRobots](https://github.com/PoweredByRobots)
+* Jerimiah Milton [@OBCENEIKON](https://github.com/OBCENEIKON)
