@@ -17,7 +17,7 @@ VCR.configure do |c|
   c.allow_http_connections_when_no_cassette = false
   c.default_cassette_options                = {
     record:            :none,
-    match_requests_on: %i[method uri headers]
+    match_requests_on: %i[method uri]
   }
 end
 
