@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'awesome_print'
+gem 'bump'
 gem 'guard-rspec'
 gem 'guard-rubocop'
 gem 'rspec'
