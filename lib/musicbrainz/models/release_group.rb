@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module MusicBrainz
   class ReleaseGroup < Model
     include MusicBrainz::Binding::Score
@@ -12,11 +14,10 @@ module MusicBrainz
     property :disambiguation
 
     coerce_key :secondary_types, Array
-    coerce_key :artist         , Artist
+    coerce_key :artist,          Artist
 
-    #   if json['artist-credit'] && json['artist-credit'].any?
-    #     self.artist = Artist.new(client, json['artist-credit'][0]['artist'])
-    #   end
+    # if json['artist-credit'] && json['artist-credit'].any?
+    #   self.artist = Artist.new(client, json['artist-credit'][0]['artist'])
     # end
   end
 end

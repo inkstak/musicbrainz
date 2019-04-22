@@ -1,11 +1,14 @@
+# frozen_string_literal: true
+
 module MusicBrainz
   class Config
     attr_accessor :app_name, :app_version, :contact
 
     def options
-      { app_name:     app_name,
-        app_version:  app_version,
-        contact:      contact
+      {
+        app_name:    app_name,
+        app_version: app_version,
+        contact:     contact
       }
     end
 
@@ -17,7 +20,7 @@ module MusicBrainz
   module Configuration
     attr_reader :config
 
-    def configure &block
+    def configure
       yield @config = Config.new
     end
 

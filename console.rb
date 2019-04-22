@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # To run this file over irb:
 #   bundle exec irb -r './console.rb'
 #
@@ -5,12 +7,13 @@
 require 'musicbrainz'
 require 'awesome_print'
 
-raise MusicBrainz::InvalidConfiguration unless %x{git config --get user.email}.to_s.length > 0
+email = `git config --get user.email`.strip
+raise MusicBrainz::InvalidConfiguration if email.nil? || email.length.zero?
 
 MusicBrainz.configure do |c|
-  c.app_name    = "MusicBrainz Test"
+  c.app_name    = 'MusicBrainz Test'
   c.app_version = MusicBrainz::VERSION
-  c.contact     = %x{git config --get user.email}
+  c.contact     = `git config --get user.email`.strip
 
   # c.use :instrumentation
   # f.response :caching, ActiveSupport::Cache.lookup_store(:file_store, './tmp/cache')
@@ -19,7 +22,6 @@ end
 def client
   @client ||= MusicBrainz::Client.new
 end
-
 
 puts "Examples :
 client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da'

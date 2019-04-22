@@ -1,8 +1,9 @@
+# frozen_string_literal: true
+
 module MusicBrainz
   module Binding
     module Tracks
-
-      def initialize json
+      def initialize(json)
         json['recordings'] = (json.delete('tracks') || []).map do |track|
           track['recording'].merge(
             'track_number' => track['number'],
@@ -10,7 +11,7 @@ module MusicBrainz
           )
         end
 
-        super json
+        super(json)
       end
     end
   end

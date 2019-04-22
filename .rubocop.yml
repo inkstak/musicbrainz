@@ -1,0 +1,37 @@
+require: rubocop-performance
+
+Layout/AlignHash:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
+
+Layout/EmptyLinesAroundBlockBody:
+  Exclude:
+    - spec/**/*_spec.rb
+
+Layout/SpaceInsideParens:
+  Exclude:
+    - spec/**/*_spec.rb
+
+Layout/SpaceBeforeBlockBraces:
+  Exclude:
+    - spec/**/*_spec.rb
+
+Style/Documentation:
+  Enabled: false
+
+Style/RegexpLiteral:
+  Exclude:
+    - Guardfile
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/LineLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*_spec.rb

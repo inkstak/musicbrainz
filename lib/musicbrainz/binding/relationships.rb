@@ -1,14 +1,16 @@
+# frozen_string_literal: true
+
 module MusicBrainz
   module Binding
     module Relationships
+      def initialize(json)
+        if json['relations']
+          json['relationships'] = json['relations'].each_with_object([]) do |relation, array|
+            array << relation if relation['artist']
+          end
+        end
 
-      def initialize json
-        json['relationships'] = json['relations'].inject([]) do |array, relation|
-          array << relation if relation['artist']
-          array
-        end if json['relations']
-
-        super json
+        super(json)
       end
     end
   end

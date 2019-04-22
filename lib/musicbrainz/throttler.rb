@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'faraday'
 
 module MusicBrainz
@@ -12,19 +14,19 @@ module MusicBrainz
       end
     end
 
-    def initialize app, cache, options = nil
+    def initialize(app, cache, options = nil)
       super(app)
       @cache   = cache
       @options = Options.from(options)
     end
 
-    def call env
+    def call(env)
       @time = read_last_query_time
       write_last_query_time
       time_passed = Time.now.to_f - read_last_query_time
 
       wait = @options.interval - time_passed
-      sleep(env['throttler_wait_time'] = wait) if wait > 0
+      sleep(env['throttler_wait_time'] = wait) if wait.positive?
 
       @app.call(env)
     end

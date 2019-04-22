@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module MusicBrainz
   class Recording < Model
     include MusicBrainz::Binding::Score

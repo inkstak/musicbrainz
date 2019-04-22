@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module MusicBrainz
   class Artist < Model
     include MusicBrainz::Binding::LifeSpan
@@ -14,9 +16,9 @@ module MusicBrainz
     property :date_end
     property :disambiguation
 
-    coerce_key :area      , Area
+    coerce_key :area,       Area
     coerce_key :begin_area, Area
-    coerce_key :end_area  , Area
+    coerce_key :end_area,   Area
 
     coerce_key :relationships, Array[Relationship]
 

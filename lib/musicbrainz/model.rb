@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'hashie'
 
 module MusicBrainz
@@ -5,21 +7,16 @@ module MusicBrainz
     include Hashie::Extensions::MethodAccess
     include Hashie::Extensions::Coercion
 
-    # attr_accessor :client
-    # private :client
-
-    def self.property name
+    def self.property(name)
       define_method(name) { self[name.to_s] }
     end
 
-    def initialize json
+    def initialize(json)
       json.delete('relations')
 
       json.each_pair do |k, v|
-        self[k.to_s.gsub('-', '_')] = v
+        self[k.to_s.tr('-', '_')] = v
       end
-
-      self
     end
   end
 end

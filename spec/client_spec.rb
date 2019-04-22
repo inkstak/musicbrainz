@@ -1,15 +1,15 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
-describe MusicBrainz::Client do
+RSpec.describe MusicBrainz::Client, vcr: { cassette_name: 'client' } do
 
-  around       {|e| VCR.use_cassette('client') { e.run }}
   before       { MusicBrainz.reset_config }
   let(:client) { MusicBrainz::Client.new }
 
   define_method(:request)           { client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da' }
   define_method(:bad_request)       { client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da', includes: 'unknown' }
   define_method(:throttled_request) { client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da', includes: 'throttled' }
-
 
   context 'without configuration' do
     it { expect{ client }.to raise_error MusicBrainz::MissingConfiguration }
@@ -18,7 +18,7 @@ describe MusicBrainz::Client do
   context 'with incomplete configuration' do
     before do
       MusicBrainz.configure do |config|
-        config.app_name    = "MusicBrainz Test"
+        config.app_name    = 'MusicBrainz Test'
         config.app_version = MusicBrainz::VERSION
       end
     end
@@ -28,12 +28,11 @@ describe MusicBrainz::Client do
 
   context 'with global configuration' do
     before do
-      MusicBrainz.configure &MUSICBRAINZ_CONFIG
+      MusicBrainz.configure(&MUSICBRAINZ_CONFIG)
     end
 
     it { expect{ client  }.to_not raise_error }
     it { expect{ request }.to_not raise_error }
-
 
     # In order to test caching:
     #   VCR should raise on the 2nd request, unless we cached it
@@ -60,7 +59,7 @@ describe MusicBrainz::Client do
     end
 
     context 'with bad request' do
-      it { expect{ bad_request }.to raise_error(MusicBrainz::BadRequest, %r{#{ 'not a valid inc parameter' }}) }
+      it { expect{ bad_request }.to raise_error(MusicBrainz::BadRequest, /not a valid inc parameter/) }
     end
 
     # You must edit the VCR cassette
@@ -69,7 +68,7 @@ describe MusicBrainz::Client do
     #   message: Service Unavailable
 
     context 'with request throttled' do
-      it { expect{ throttled_request }.to raise_error(MusicBrainz::RequestFailed, %r{#{ 'exceeding the allowable rate limit' }}) }
+      it { expect{ throttled_request }.to raise_error(MusicBrainz::RequestFailed, /exceeding the allowable rate limit/) }
     end
   end
 end

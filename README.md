@@ -239,15 +239,17 @@ end
 
 ## Contributing
 
-1. Don't hesitate to submit your feature/idea/fix in [issues](https://github.com/inkstak/musicbrainz)
-2. Fork the [repository](https://github.com/inkstak/musicbrainz)
-3. Create your feature branch
-4. Create a pull request
+1. Fork the [repository](https://github.com/inkstak/musicbrainz)
+2. Create a feature branch
+4. Ensure tests & Rubocop are passing
+5. Create a pull request
 
-### Tests
+### Running tests & analyzing code
+
+RSpec & Rubocop can be launched through guard:
 
 ```
-bundle exec rspec
+bundle exec guard
 ```
 
 ### Console

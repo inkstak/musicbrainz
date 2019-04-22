@@ -8,11 +8,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      - MusicBrainz Test/1.0.2 (inkstak@users.noreply.github.com)
       Accept:
       - application/json
       Via:
-      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      - gem musicbrainz/1.0.2 (http://github.com/inkstak/musicbrainz)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -50,11 +50,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      - MusicBrainz Test/1.0.2 (inkstak@users.noreply.github.com)
       Accept:
       - application/json
       Via:
-      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      - gem musicbrainz/1.0.2 (http://github.com/inkstak/musicbrainz)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -91,11 +91,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      - MusicBrainz Test/1.0.2 (inkstak@users.noreply.github.com)
       Accept:
       - application/json
       Via:
-      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      - gem musicbrainz/1.0.2 (http://github.com/inkstak/musicbrainz)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -135,11 +135,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      - MusicBrainz Test/1.0.2 (inkstak@users.noreply.github.com)
       Accept:
       - application/json
       Via:
-      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      - gem musicbrainz/1.0.2 (http://github.com/inkstak/musicbrainz)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -201,11 +201,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      - MusicBrainz Test/1.0.2 (inkstak@users.noreply.github.com)
       Accept:
       - application/json
       Via:
-      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      - gem musicbrainz/1.0.2 (http://github.com/inkstak/musicbrainz)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -264,11 +264,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      - MusicBrainz Test/1.0.2 (inkstak@users.noreply.github.com)
       Accept:
       - application/json
       Via:
-      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      - gem musicbrainz/1.0.2 (http://github.com/inkstak/musicbrainz)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -309,11 +309,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      - MusicBrainz Test/1.0.2 (inkstak@users.noreply.github.com)
       Accept:
       - application/json
       Via:
-      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      - gem musicbrainz/1.0.2 (http://github.com/inkstak/musicbrainz)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -355,11 +355,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      - MusicBrainz Test/1.0.2 (inkstak@users.noreply.github.com)
       Accept:
       - application/json
       Via:
-      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      - gem musicbrainz/1.0.2 (http://github.com/inkstak/musicbrainz)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -500,11 +500,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      - MusicBrainz Test/1.0.2 (inkstak@users.noreply.github.com)
       Accept:
       - application/json
       Via:
-      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      - gem musicbrainz/1.0.2 (http://github.com/inkstak/musicbrainz)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:

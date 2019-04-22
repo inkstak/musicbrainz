@@ -8,11 +8,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      - MusicBrainz Test/1.0.2 (inkstak@users.noreply.github.com)
       Accept:
       - application/json
       Via:
-      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      - gem musicbrainz/1.0.2 (http://github.com/inkstak/musicbrainz)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -41,7 +41,7 @@ http_interactions:
       string: '{"country":"US","ipis":[],"area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"United
         States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Nirvana","name":"Nirvana","disambiguation":"90s
         US grunge band","life-span":{"ended":true,"begin":"1988-01","end":"1994-04-05"},"end_area":null,"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","type":"Group","begin_area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Aberdeen","name":"Aberdeen","id":"a640b45c-c173-49b1-8030-973603e895b5","iso_3166_2_codes":[],"iso_3166_1_codes":[]}}'
-    http_version: 
+    http_version:
   recorded_at: Tue, 19 Aug 2014 14:07:26 GMT
 - request:
     method: get
@@ -51,11 +51,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      - MusicBrainz Test/1.0.2 (inkstak@users.noreply.github.com)
       Accept:
       - application/json
       Via:
-      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      - gem musicbrainz/1.0.2 (http://github.com/inkstak/musicbrainz)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -82,7 +82,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"error":"Not Found"}'
-    http_version: 
+    http_version:
   recorded_at: Tue, 19 Aug 2014 14:07:37 GMT
 - request:
     method: get
@@ -92,11 +92,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      - MusicBrainz Test/1.0.2 (inkstak@users.noreply.github.com)
       Accept:
       - application/json
       Via:
-      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      - gem musicbrainz/1.0.2 (http://github.com/inkstak/musicbrainz)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -134,7 +134,7 @@ http_interactions:
         network","begin":null,"attributes":[]},{"type-id":"99429741-f3f6-484b-84f8-23af51991770","attribute-values":{},"end":null,"direction":"forward","ended":false,"url":{"resource":"https://www.facebook.com/Nirvana","relations":[],"id":"a9cec2d1-0544-4dc9-a4b2-640751654573"},"type":"social
         network","begin":null,"attributes":[]}],"sort-name":"Nirvana","name":"Nirvana","disambiguation":"90s
         US grunge band","life-span":{"ended":true,"begin":"1988-01","end":"1994-04-05"},"end_area":null,"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","type":"Group","begin_area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Aberdeen","name":"Aberdeen","id":"a640b45c-c173-49b1-8030-973603e895b5","iso_3166_2_codes":[],"iso_3166_1_codes":[]}}'
-    http_version: 
+    http_version:
   recorded_at: Tue, 19 Aug 2014 14:07:39 GMT
 - request:
     method: get
@@ -144,11 +144,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      - MusicBrainz Test/1.0.2 (inkstak@users.noreply.github.com)
       Accept:
       - application/json
       Via:
-      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      - gem musicbrainz/1.0.2 (http://github.com/inkstak/musicbrainz)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -203,7 +203,7 @@ http_interactions:
         Chad","name":"Chad Channing","id":"e2f28104-72bb-4c8f-b0f9-78d4eaf492fd"},"ended":true,"type":"member
         of band","begin":"1988-05","attributes":[]}],"sort-name":"Nirvana","name":"Nirvana","disambiguation":"90s
         US grunge band","life-span":{"ended":true,"begin":"1988-01","end":"1994-04-05"},"end_area":null,"id":"5b11f4ce-a62d-471e-81fc-a69a8278c7da","type":"Group","begin_area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Aberdeen","name":"Aberdeen","id":"a640b45c-c173-49b1-8030-973603e895b5","iso_3166_2_codes":[],"iso_3166_1_codes":[]}}'
-    http_version: 
+    http_version:
   recorded_at: Tue, 19 Aug 2014 14:07:46 GMT
 - request:
     method: get
@@ -213,11 +213,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      - MusicBrainz Test/1.0.2 (inkstak@users.noreply.github.com)
       Accept:
       - application/json
       Via:
-      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      - gem musicbrainz/1.0.2 (http://github.com/inkstak/musicbrainz)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -468,7 +468,7 @@ http_interactions:
         cmVhIjp7ImlkIjoiMDVmNjhiNGMtMTBmMy00OWI1LWIyOGMtMjYwYTFiNzA3
         MDQzIiwibmFtZSI6Ik1hc3NhY2h1c2V0dHMiLCJzb3J0LW5hbWUiOiJNYXNz
         YWNodXNldHRzIn0sImxpZmUtc3BhbiI6eyJlbmRlZCI6bnVsbH19XX0=
-    http_version: 
+    http_version:
   recorded_at: Tue, 19 Aug 2014 14:07:52 GMT
 - request:
     method: get
@@ -478,11 +478,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      - MusicBrainz Test/1.0.2 (inkstak@users.noreply.github.com)
       Accept:
       - application/json
       Via:
-      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      - gem musicbrainz/1.0.2 (http://github.com/inkstak/musicbrainz)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -515,7 +515,7 @@ http_interactions:
         pop"},{"count":1,"name":"psychedelic rock"},{"count":1,"name":"soft rock"},{"count":1,"name":"symphonic
         rock"},{"count":1,"name":"english"}]},{"id":"85af0709-95db-4fbc-801a-120e9f4766d0","type":"Group","score":"100","name":"Nirvana","sort-name":"Nirvana","country":"FI","area":{"id":"6a264f94-6ff1-30b1-9a81-41f7bfabd616","name":"Finland","sort-name":"Finland"},"disambiguation":"Early
         1980''s Finnish punk band","life-span":{"ended":null},"tags":[{"count":1,"name":"punk"},{"count":1,"name":"finland"}]}]}'
-    http_version: 
+    http_version:
   recorded_at: Tue, 19 Aug 2014 14:08:02 GMT
 - request:
     method: get
@@ -525,11 +525,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      - MusicBrainz Test/1.0.2 (inkstak@users.noreply.github.com)
       Accept:
       - application/json
       Via:
-      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      - gem musicbrainz/1.0.2 (http://github.com/inkstak/musicbrainz)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -557,7 +557,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"created":"2014-08-19T09:04:11.208Z","count":1,"offset":0,"artist":[{"id":"85af0709-95db-4fbc-801a-120e9f4766d0","type":"Group","score":"100","name":"Nirvana","sort-name":"Nirvana","country":"FI","area":{"id":"6a264f94-6ff1-30b1-9a81-41f7bfabd616","name":"Finland","sort-name":"Finland"},"disambiguation":"Early
         1980''s Finnish punk band","life-span":{"ended":null},"tags":[{"count":1,"name":"punk"},{"count":1,"name":"finland"}]}]}'
-    http_version: 
+    http_version:
   recorded_at: Tue, 19 Aug 2014 14:08:10 GMT
 - request:
     method: get
@@ -567,11 +567,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      - MusicBrainz Test/1.0.2 (inkstak@users.noreply.github.com)
       Accept:
       - application/json
       Via:
-      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      - gem musicbrainz/1.0.2 (http://github.com/inkstak/musicbrainz)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -639,7 +639,7 @@ http_interactions:
         cHN5Y2hlZGVsaWMgcm9jayJ9LHsiY291bnQiOjEsIm5hbWUiOiJzb2Z0IHJv
         Y2sifSx7ImNvdW50IjoxLCJuYW1lIjoic3ltcGhvbmljIHJvY2sifSx7ImNv
         dW50IjoxLCJuYW1lIjoiZW5nbGlzaCJ9XX1dfQ==
-    http_version: 
+    http_version:
   recorded_at: Tue, 19 Aug 2014 14:08:16 GMT
 - request:
     method: get
@@ -649,11 +649,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      - MusicBrainz Test/1.0.2 (inkstak@users.noreply.github.com)
       Accept:
       - application/json
       Via:
-      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      - gem musicbrainz/1.0.2 (http://github.com/inkstak/musicbrainz)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -713,7 +713,7 @@ http_interactions:
         States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Green,
         Al","name":"Al Green","disambiguation":"","life-span":{"ended":false,"begin":"1946-04-13","end":null},"end_area":null,"id":"fb7272ba-f130-4f0a-934d-6eeea4c18c9a","type":"Person","begin_area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Forrest
         City","name":"Forrest City","id":"c4d48bca-3716-4533-8966-a25b8c7b50a5","iso_3166_2_codes":[],"iso_3166_1_codes":[]}}],"artist-offset":0,"artist-count":15}'
-    http_version: 
+    http_version:
   recorded_at: Tue, 19 Aug 2014 14:08:24 GMT
 - request:
     method: get
@@ -723,11 +723,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - MusicBrainz Test/1.0.0 ( test@inkstak.me )
+      - MusicBrainz Test/1.0.2 (inkstak@users.noreply.github.com)
       Accept:
       - application/json
       Via:
-      - gem musicbrainz/1.0.0 (http://github.com/inkstak/musicbrainz)
+      - gem musicbrainz/1.0.2 (http://github.com/inkstak/musicbrainz)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -758,6 +758,6 @@ http_interactions:
         States","name":"United States","id":"489ce91b-6658-3307-9877-795b68554c98","iso_3166_2_codes":[],"iso_3166_1_codes":["US"]},"sort-name":"Green,
         Al","name":"Al Green","disambiguation":"","life-span":{"ended":false,"begin":"1946-04-13","end":null},"end_area":null,"id":"fb7272ba-f130-4f0a-934d-6eeea4c18c9a","type":"Person","begin_area":{"disambiguation":"","iso_3166_3_codes":[],"sort-name":"Forrest
         City","name":"Forrest City","id":"c4d48bca-3716-4533-8966-a25b8c7b50a5","iso_3166_2_codes":[],"iso_3166_1_codes":[]}}],"artist-offset":0,"artist-count":15}'
-    http_version: 
+    http_version:
   recorded_at: Tue, 19 Aug 2014 14:08:25 GMT
 recorded_with: VCR 2.9.2
