@@ -13,10 +13,11 @@ module MusicBrainz
 
     def initialize(json)
       json.delete('relations')
-
       json.each_pair do |k, v|
         self[k.to_s.tr('-', '_')] = v
       end
+
+      super(json)
     end
   end
 end

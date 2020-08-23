@@ -3,7 +3,6 @@
 require 'spec_helper'
 
 RSpec.describe '#release_group', vcr: { cassette_name: 'release_group' } do
-
   let(:client)  { MusicBrainz::Client.new }
   let(:release) { client.release_group('fb3770f6-83fb-32b7-85c4-1f522a92287e') }
 
@@ -36,7 +35,6 @@ RSpec.describe '#release_group', vcr: { cassette_name: 'release_group' } do
 end
 
 RSpec.describe '#release_groups', vcr: { cassette_name: 'release_group' } do
-
   let(:client) { MusicBrainz::Client.new }
 
   context 'using string' do

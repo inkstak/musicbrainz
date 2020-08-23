@@ -99,7 +99,7 @@ module MusicBrainz
                             .join(" #{operator} ")
       end
 
-      hash.except(:includes, :limit, :offset).keys.each do |key|
+      hash.except(:includes, :limit, :offset).each_key do |key|
         hash[key.to_s.tr('_', '-')] = hash.delete(key)
       end
 

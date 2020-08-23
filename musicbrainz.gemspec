@@ -16,6 +16,8 @@ Gem::Specification.new do |s|
   s.files      = %w[Gemfile LICENSE README.md musicbrainz.gemspec]
   s.files     += Dir.glob('lib/**/*')
 
+  s.required_ruby_version = '>= 2.5'
+
   s.add_dependency 'activesupport'
   s.add_dependency 'faraday'
   s.add_dependency 'faraday_middleware'

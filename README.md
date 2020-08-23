@@ -15,7 +15,7 @@ gem 'musicbrainz', github: 'inkstak/musicbrainz', tag: '1.0.3'
 
 ### Requirements
 
-Ruby version 2.x required.
+Ruby >= 2.5 required.
 
 
 ## Usage

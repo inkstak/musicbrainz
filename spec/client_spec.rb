@@ -3,7 +3,6 @@
 require 'spec_helper'
 
 RSpec.describe MusicBrainz::Client, vcr: { cassette_name: 'client' } do
-
   before       { MusicBrainz.reset_config }
   let(:client) { MusicBrainz::Client.new }
 

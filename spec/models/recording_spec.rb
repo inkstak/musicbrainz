@@ -3,7 +3,6 @@
 require 'spec_helper'
 
 RSpec.describe '#recording', vcr: { cassette_name: 'recording' } do
-
   let(:client)    { MusicBrainz::Client.new }
   let(:recording) { client.recording('d6243d55-bb4f-4518-9c1c-d507a5d3843a') }
 
@@ -30,7 +29,6 @@ RSpec.describe '#recording', vcr: { cassette_name: 'recording' } do
 end
 
 RSpec.describe '#recordings', vcr: { cassette_name: 'recording' } do
-
   let(:client) { MusicBrainz::Client.new }
 
   context 'using string' do
