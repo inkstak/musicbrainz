@@ -3,6 +3,7 @@
 module MusicBrainz
   class Release < Model
     include MusicBrainz::Binding::Score
+    include MusicBrainz::Binding::Urls
 
     property :id
     property :title

@@ -63,6 +63,14 @@ RSpec.describe '#release', vcr: { cassette_name: 'release' } do
     it { expect( release.media[0].recordings[0].track_number ).to eq('1') }
     it { expect( release.media[0].recordings[0].position     ).to eq(1) }
   end
+
+  context 'with urls' do
+    let(:release) { client.release('1d929dbc-85b3-4cf1-bbf7-fd84f6f54a65', includes: %w[url-rels]) }
+
+    it { expect( release.urls ).to be_a(Hash) }
+    it { expect( release.urls['purchase for download'] ).to be_an(Array) }
+    it { expect( release.urls['purchase for download'] ).to match_array(['https://itunes.apple.com/mx/album/id1453228182', 'https://kishibashi.bandcamp.com/album/omoiyari']) }
+  end
 end
 
 RSpec.describe '#releases', vcr: { cassette_name: 'release' } do
