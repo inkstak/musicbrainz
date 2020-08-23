@@ -10,7 +10,7 @@ A simple client for the [MusicBrainz](http://musicbrainz.org) web service, large
 Add these line to your application's Gemfile:
 
 ```ruby
-gem 'musicbrainz', github: 'inkstak/musicbrainz', tag: '1.0.3'
+gem 'musicbrainz', github: 'inkstak/musicbrainz', tag: '1.1.0'
 ```
 
 ### Requirements
@@ -271,3 +271,4 @@ Largely inspired by the [musicbrainz gem](https://github.com/localhots/musicbrai
 Contributors:
 * James [@PoweredByRobots](https://github.com/PoweredByRobots)
 * Jerimiah Milton [@OBCENEIKON](https://github.com/OBCENEIKON)
+* Pat Allan [@pat](https://github.com/pat)
