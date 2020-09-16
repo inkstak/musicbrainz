@@ -1,6 +1,7 @@
 # Master
 
 * Test coverage report
+* Fix Ruby 2.7 warnings
 
 # 1.1.0 (August 23, 2020)
 

@@ -31,14 +31,14 @@ module MusicBrainz
     %w[artist release_group release recording label].each do |type|
       dashed = type.tr('_', '-')
 
-      define_method type do |*args|
-        lookup dashed, *args do |json|
+      define_method(type) do |uid, **options|
+        lookup(dashed, uid, **options) do |json|
           "MusicBrainz::#{type.classify}".constantize.new json
         end
       end
 
-      define_method type.pluralize do |*args|
-        search dashed, *args do |json|
+      define_method(type.pluralize) do |*args|
+        search(dashed, *args) do |json|
           (json[dashed.pluralize] || json[dashed]).map do |json_item|
             "MusicBrainz::#{type.classify}".constantize.new json_item
           end
@@ -67,10 +67,13 @@ module MusicBrainz
       get "#{path}/#{uid}", includes: includes, &block
     end
 
-    def search(path, query, *args, &block)
-      case query
-      when String then data = build_search_from_string(query, *args)
-      when Hash   then data = build_search_from_hash(query)
+    def search(path, *args, &block)
+      case args[0]
+      when String
+        options = args.last.is_a?(Hash) ? args.pop : {}
+        data    = build_search_from_string(*args, **options)
+      when Hash
+        data = build_search_from_hash(*args)
       else
         raise ArgumentError, "#{query.inspect} is not a valid search query"
       end
