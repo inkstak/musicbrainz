@@ -1,3 +1,7 @@
+# Master
+
+* Test coverage report
+
 # 1.1.0 (August 23, 2020)
 
 * **BREAKING CHANGES** : Ruby 2.5 required (2.4 in EOL)

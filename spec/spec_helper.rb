@@ -8,6 +8,9 @@ require 'webmock/rspec'
 require 'rspec/collection_matchers'
 require 'awesome_print'
 require 'active_support'
+require 'simplecov'
+
+SimpleCov.start
 
 VCR.configure do |c|
   c.hook_into :webmock
