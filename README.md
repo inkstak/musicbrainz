@@ -3,7 +3,7 @@
 A simple client for the [MusicBrainz](http://musicbrainz.org) web service, largely inspired by the [musicbrainz gem](https://github.com/localhots/musicbrainz) by [Gregory Eremin](https://github.com/localhots)
 
 [![Build Status](https://travis-ci.org/inkstak/musicbrainz.svg)](https://travis-ci.org/inkstak/musicbrainz)
-
+[![Maintainability](https://api.codeclimate.com/v1/badges/50bf9e300c9db9a6c24d/maintainability)](https://codeclimate.com/github/inkstak/musicbrainz/maintainability)
 
 ## Installation
 
