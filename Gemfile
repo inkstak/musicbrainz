@@ -14,3 +14,4 @@ gem 'rubocop'
 gem 'rubocop-performance'
 gem 'vcr'
 gem 'webmock'
+gem 'simplecov', '< 0.18' # see https://github.com/codeclimate/test-reporter/issues/413
