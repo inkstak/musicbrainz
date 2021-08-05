@@ -264,12 +264,9 @@ bundle exec irb -r './console.rb'
 
 ## License & credits
 
-Copyright (c) 2014 Savater Sebastien.  
+Copyright (c) 2021 Savater Sebastien.  
 See [LICENSE](https://github.com/inkstak/musicbrainz/blob/master/LICENSE) for further details.
 
 Largely inspired by the [musicbrainz gem](https://github.com/localhots/musicbrainz) by [Gregory Eremin](https://github.com/localhots)
 
-Contributors:
-* James [@PoweredByRobots](https://github.com/PoweredByRobots)
-* Jerimiah Milton [@OBCENEIKON](https://github.com/OBCENEIKON)
-* Pat Allan [@pat](https://github.com/pat)
+Contributors: [./graphs/contributors](https://github.com/inkstak/musicbrainz/graphs/contributors)
