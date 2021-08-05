@@ -1,17 +1,19 @@
 # frozen_string_literal: true
 
-source 'https://rubygems.org'
+source "https://rubygems.org"
 gemspec
 
-gem 'awesome_print'
-gem 'bump'
-gem 'guard-rspec'
-gem 'guard-rubocop'
-gem 'rspec'
-gem 'rspec-collection_matchers'
-gem 'rspec-its'
-gem 'rubocop'
-gem 'rubocop-performance'
-gem 'vcr'
-gem 'webmock'
-gem 'simplecov', '< 0.18' # see https://github.com/codeclimate/test-reporter/issues/413
+gem "amazing_print"
+gem "bump"
+gem "guard-rspec"
+gem "guard-rubocop"
+gem "rspec"
+gem "rspec-collection_matchers"
+gem "rspec-its"
+gem "rubocop"
+gem "rubocop-performance"
+gem "rubocop-rspec"
+gem "standard"
+gem "simplecov", "> 0.18" # see https://github.com/codeclimate/test-reporter/issues/413
+gem "vcr"
+gem "webmock"

@@ -1,23 +1,23 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
+require "spec_helper"
 
-RSpec.describe MusicBrainz::Client, vcr: { cassette_name: 'client' } do
+RSpec.describe MusicBrainz::Client, vcr: { cassette_name: "client" } do
   before       { MusicBrainz.reset_config }
   let(:client) { MusicBrainz::Client.new }
 
-  define_method(:request)           { client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da' }
-  define_method(:bad_request)       { client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da', includes: 'unknown' }
-  define_method(:throttled_request) { client.artist '5b11f4ce-a62d-471e-81fc-a69a8278c7da', includes: 'throttled' }
+  define_method(:request)           { client.artist "5b11f4ce-a62d-471e-81fc-a69a8278c7da" }
+  define_method(:bad_request)       { client.artist "5b11f4ce-a62d-471e-81fc-a69a8278c7da", includes: "unknown" }
+  define_method(:throttled_request) { client.artist "5b11f4ce-a62d-471e-81fc-a69a8278c7da", includes: "throttled" }
 
-  context 'without configuration' do
+  context "without configuration" do
     it { expect{ client }.to raise_error MusicBrainz::MissingConfiguration }
   end
 
-  context 'with incomplete configuration' do
+  context "with incomplete configuration" do
     before do
       MusicBrainz.configure do |config|
-        config.app_name    = 'MusicBrainz Test'
+        config.app_name    = "MusicBrainz Test"
         config.app_version = MusicBrainz::VERSION
       end
     end
@@ -25,7 +25,7 @@ RSpec.describe MusicBrainz::Client, vcr: { cassette_name: 'client' } do
     it { expect{ client }.to raise_error MusicBrainz::InvalidConfiguration }
   end
 
-  context 'with global configuration' do
+  context "with global configuration" do
     before do
       MusicBrainz.configure(&MUSICBRAINZ_CONFIG)
     end
@@ -44,7 +44,7 @@ RSpec.describe MusicBrainz::Client, vcr: { cassette_name: 'client' } do
       expect{ request }.to raise_error(VCR::Errors::UnhandledHTTPRequestError)
     end
 
-    context 'with caching' do
+    context "with caching" do
       let :client do
         MusicBrainz::Client.new do |connection|
           connection.response :caching, CACHE_STORE
@@ -57,7 +57,7 @@ RSpec.describe MusicBrainz::Client, vcr: { cassette_name: 'client' } do
       end
     end
 
-    context 'with bad request' do
+    context "with bad request" do
       it { expect{ bad_request }.to raise_error(MusicBrainz::BadRequest, /not a valid inc parameter/) }
     end
 
@@ -66,7 +66,7 @@ RSpec.describe MusicBrainz::Client, vcr: { cassette_name: 'client' } do
     #   code: 503
     #   message: Service Unavailable
 
-    context 'with request throttled' do
+    context "with request throttled" do
       it { expect{ throttled_request }.to raise_error(MusicBrainz::RequestFailed, /exceeding the allowable rate limit/) }
     end
   end

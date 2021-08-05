@@ -4,9 +4,9 @@ module MusicBrainz
   module Binding
     module Relationships
       def initialize(json)
-        if json['relations']
-          json['relationships'] = json['relations'].each_with_object([]) do |relation, array|
-            array << relation if relation['artist']
+        if json["relations"]
+          json["relationships"] = json["relations"].each_with_object([]) do |relation, array|
+            array << relation if relation["artist"]
           end
         end
 

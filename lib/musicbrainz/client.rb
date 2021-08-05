@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
-require 'faraday'
-require 'faraday_middleware'
-require 'musicbrainz/errors'
-require 'active_support/inflector'
+require "faraday"
+require "faraday_middleware"
+require "musicbrainz/errors"
+require "active_support/inflector"
 
 module MusicBrainz
   Faraday::Request.register_middleware musicbrainz: -> { Middleware }
   Faraday::Request.register_middleware throttler: -> { Throttler }
 
   class Client
-    ENDPOINT = 'http://musicbrainz.org/ws/2/'
+    ENDPOINT = "http://musicbrainz.org/ws/2/"
 
     attr_reader :http
 
@@ -29,7 +29,7 @@ module MusicBrainz
     end
 
     %w[artist release_group release recording label].each do |type|
-      dashed = type.tr('_', '-')
+      dashed = type.tr("_", "-")
 
       define_method(type) do |uid, **options|
         lookup(dashed, uid, **options) do |json|
@@ -55,8 +55,8 @@ module MusicBrainz
       # p http.build_url(url, options)
 
       case data.status
-      when 503 then raise RequestFailed, data.body['error']
-      when 400 then raise BadRequest, data.body['error']
+      when 503 then raise RequestFailed, data.body["error"]
+      when 400 then raise BadRequest, data.body["error"]
       when 404 then nil
       else
         yield data.body
@@ -83,8 +83,8 @@ module MusicBrainz
 
     def build_options(options)
       options.merge(
-        inc: Array(options.delete(:includes)).join('+'),
-        fmt: 'json'
+        inc: Array(options.delete(:includes)).join("+"),
+        fmt: "json"
       ).delete_if { |_, v| v.nil? }
     end
 
@@ -94,16 +94,17 @@ module MusicBrainz
 
     def build_search_from_hash(hash)
       hash      = hash.dup
-      operator  = hash.delete(:operator) || 'AND'
+      operator  = hash.delete(:operator) || "AND"
       query     = hash.delete(:q)
 
       if query
-        hash[:query] = query.map { |k, v| "#{k.to_s.tr('_', '')}:\"#{v}\"" }
-                            .join(" #{operator} ")
+        hash[:query] = query
+          .map { |k, v| "#{k.to_s.tr("_", "")}:\"#{v}\"" }
+          .join(" #{operator} ")
       end
 
       hash.except(:includes, :limit, :offset).each_key do |key|
-        hash[key.to_s.tr('_', '-')] = hash.delete(key)
+        hash[key.to_s.tr("_", "-")] = hash.delete(key)
       end
 
       hash

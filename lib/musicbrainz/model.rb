@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'hashie'
+require "hashie"
 
 module MusicBrainz
   class Model < Hashie::Hash
@@ -12,9 +12,9 @@ module MusicBrainz
     end
 
     def initialize(json)
-      json.delete('relations')
+      json.delete("relations")
       json.each_pair do |k, v|
-        self[k.to_s.tr('-', '_')] = v
+        self[k.to_s.tr("-", "_")] = v
       end
 
       super(json)

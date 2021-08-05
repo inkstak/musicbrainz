@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'faraday'
+require "faraday"
 
 module MusicBrainz
   class Throttler < Faraday::Middleware
@@ -10,7 +10,7 @@ module MusicBrainz
       end
 
       def cache_key
-        self[:cache_key] ||= 'mb_last_query_time'
+        self[:cache_key] ||= "mb_last_query_time"
       end
     end
 
@@ -26,7 +26,7 @@ module MusicBrainz
       time_passed = Time.now.to_f - read_last_query_time
 
       wait = @options.interval - time_passed
-      sleep(env['throttler_wait_time'] = wait) if wait.positive?
+      sleep(env["throttler_wait_time"] = wait) if wait.positive?
 
       @app.call(env)
     end

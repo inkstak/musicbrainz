@@ -14,9 +14,9 @@ module MusicBrainz
     end
 
     def call(env)
-      env.request_headers['Accept']     = 'application/json'
-      env.request_headers['User-Agent'] = user_agent_string
-      env.request_headers['Via']        = via_string
+      env.request_headers["Accept"]     = "application/json"
+      env.request_headers["User-Agent"] = user_agent_string
+      env.request_headers["Via"]        = via_string
 
       @app.call(env)
     end
