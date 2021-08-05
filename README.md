@@ -233,7 +233,7 @@ This middleware needs cache.
 
 ```ruby
 client = MusicBrainz::Client.new do |c|
-  f.request :throttler, Rails.cache, interval: 1.second
+  c.request :throttler, Rails.cache, interval: 1.second
 end
 ```
 
