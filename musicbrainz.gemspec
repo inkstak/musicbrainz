@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version    = MusicBrainz::VERSION
 
   s.authors    = ["Savater Sebastien"]
-  s.email      = "savater.sebastien@gmail.com"
+  s.email      = "inkstak@pm.me"
 
   s.homepage   = MusicBrainz::GH_PAGE_URL
   s.summary    = "Client for the [MusicBrainz](http://musicbrainz.org) web service"
