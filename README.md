@@ -11,7 +11,7 @@ A simple client for the [MusicBrainz](http://musicbrainz.org) web service, large
 Add these line to your application's Gemfile:
 
 ```ruby
-gem 'musicbrainz', github: 'inkstak/musicbrainz', tag: '1.1.0'
+gem 'musicbrainz', github: 'inkstak/musicbrainz', tag: '1.2.0'
 ```
 
 ### Requirements
