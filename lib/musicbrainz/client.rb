@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "faraday"
-require "faraday_middleware"
 require "musicbrainz/errors"
 require "active_support/inflector"
 
@@ -23,8 +22,8 @@ module MusicBrainz
 
         yield(f) if block_given?
 
-        f.response  :json
-        f.adapter   Faraday.default_adapter
+        f.response :json
+        f.adapter Faraday.default_adapter
       end
     end
 

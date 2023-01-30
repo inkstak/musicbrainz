@@ -46,8 +46,10 @@ RSpec.describe MusicBrainz::Client, vcr: { cassette_name: "client" } do
 
     context "with caching" do
       let :client do
+        require "faraday-http-cache"
+
         MusicBrainz::Client.new do |connection|
-          connection.response :caching, CACHE_STORE
+          connection.use :http_cache, store: CACHE_STORE
         end
       end
 

@@ -1,48 +1,22 @@
+inherit_from: .rubocop_todo.yml
+
 require:
   - rubocop-performance
   - rubocop-rspec
+  - rubocop-rake
   - standard
 
 inherit_gem:
   standard:
     - config/base.yml
     - config/ruby-2.5.yml
+    - config/ruby-2.6.yml
     - config/ruby-2.7.yml
+    - config/ruby-3.0.yml
 
 AllCops:
-  TargetRubyVersion: 2.5
-
-Layout/ExtraSpacing:
-  Enabled:                     true
-  AllowForAlignment:           true
-  AllowBeforeTrailingComments: false
-  ForceEqualSignAlignment:     false
-
-Layout/HashAlignment:
-  EnforcedHashRocketStyle: table
-  EnforcedColonStyle:      table
-
-Layout/SpaceBeforeBlockBraces:
+  TargetRubyVersion: 3.2
+  NewCops: enable
   Exclude:
-    - spec/**/*_spec.rb
-
-Layout/SpaceInsideHashLiteralBraces:
-  EnforcedStyle: space
-
-Layout/SpaceInsideParens:
-  Exclude:
-    - spec/**/*_spec.rb
-
-Metrics/AbcSize:
-  Enabled: false
-
-Metrics/LineLength:
-  Exclude:
-    - spec/**/*_spec.rb
-
-Metrics/MethodLength:
-  Enabled: false
-
-Metrics/BlockLength:
-  Exclude:
-    - spec/**/*_spec.rb
+    - '**/tmp/**/*'
+    - '**/vendor/**/*'

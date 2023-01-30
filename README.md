@@ -2,22 +2,19 @@
 
 A simple client for the [MusicBrainz](http://musicbrainz.org) web service, largely inspired by the [musicbrainz gem](https://github.com/localhots/musicbrainz) by [Gregory Eremin](https://github.com/localhots)
 
-[![Build Status](https://travis-ci.com/inkstak/musicbrainz.svg)](https://travis-ci.com/inkstak/musicbrainz)
+<!-- [![Gem Version](https://badge.fury.io/rb/musicbrainz.svg)](https://rubygems.org/gems/musicbrainz) -->
+[![CI Status](https://github.com/inkstak/musicbrainz/actions/workflows/ci.yml/badge.svg)](https://github.com/inkstak/musicbrainz/actions/workflows/ci.yml)
+[![Ruby Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/testdouble/standard)
 [![Maintainability](https://api.codeclimate.com/v1/badges/50bf9e300c9db9a6c24d/maintainability)](https://codeclimate.com/github/inkstak/musicbrainz/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/50bf9e300c9db9a6c24d/test_coverage)](https://codeclimate.com/github/inkstak/musicbrainz/test_coverage)
 
 ## Installation
 
-Add these line to your application's Gemfile:
+Add this line to your application's Gemfile:
 
 ```ruby
 gem 'musicbrainz', github: 'inkstak/musicbrainz', tag: '1.2.0'
 ```
-
-### Requirements
-
-Ruby >= 2.5 required.
-
 
 ## Usage
 
@@ -208,7 +205,7 @@ The `MusicBrainz::Client` uses Faraday middlewares to control requests cycle.
 
 #### Caching
 
-Take a look at [faraday_middleware](https://github.com/lostisland/faraday_middleware).  
+Take a look at [faraday middlewares](https://github.com/lostisland/awesome-faraday).  
 You may implement simple response body caching like that:
 
 ```ruby
@@ -237,20 +234,26 @@ client = MusicBrainz::Client.new do |c|
 end
 ```
 
-
 ## Contributing
 
-1. Fork the [repository](https://github.com/inkstak/musicbrainz)
-2. Create a feature branch
-4. Ensure tests & Rubocop are passing
-5. Create a pull request
+1. Don't hesitate to submit your feature/idea/fix in [issues](https://github.com/inkstak/musicbrainz)
+2. Fork the [repository](https://github.com/inkstak/musicbrainz)
+3. Create your feature branch
+4. Ensure RSpec & Rubocop are passing
+4. Create a pull request
 
-### Running tests & analyzing code
+### Tests & lint
 
-RSpec & Rubocop can be launched through guard:
-
+```bash
+bundle exec rspec
+bundle exec rubocop
+bundle exec standardrb
 ```
-bundle exec guard
+
+All of them can be run with:
+
+```bash
+bundle exec rake
 ```
 
 ### Console
@@ -261,12 +264,10 @@ To quickly run a console:
 bundle exec irb -r './console.rb'
 ```
 
-
 ## License & credits
 
-Copyright (c) 2021 Savater Sebastien.  
-See [LICENSE](https://github.com/inkstak/musicbrainz/blob/master/LICENSE) for further details.
-
 Largely inspired by the [musicbrainz gem](https://github.com/localhots/musicbrainz) by [Gregory Eremin](https://github.com/localhots)
+
+Please see [LICENSE](https://github.com/inkstak/musicbrainz/blob/main/LICENSE) for further details.
 
 Contributors: [./graphs/contributors](https://github.com/inkstak/musicbrainz/graphs/contributors)

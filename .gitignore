@@ -1,4 +1,4 @@
 *.gem
 Gemfile.lock
-tmp
 coverage
+tmp

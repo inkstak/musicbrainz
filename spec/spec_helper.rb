@@ -7,9 +7,11 @@ require "vcr"
 require "webmock/rspec"
 require "rspec/collection_matchers"
 require "active_support"
-require "simplecov"
 
-SimpleCov.start
+unless RUBY_ENGINE == "truffleruby"
+  require "simplecov"
+  SimpleCov.start
+end
 
 VCR.configure do |c|
   c.hook_into :webmock
