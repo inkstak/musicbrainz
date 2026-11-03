@@ -9,7 +9,7 @@ module MusicBrainz
         json["date_begin"] = life["begin"]
         json["date_end"]   = life["ended"] ? life["end"] : nil
 
-        super(json)
+        super
       end
     end
   end

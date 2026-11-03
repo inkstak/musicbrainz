@@ -6,7 +6,7 @@ RSpec.describe "#artist", vcr: { cassette_name: "artist" } do
   let(:client) { MusicBrainz::Client.new }
   let(:artist) { client.artist("5b11f4ce-a62d-471e-81fc-a69a8278c7da") }
 
-  it { expect{ artist }.to_not raise_error }
+  it { expect{ artist }.not_to raise_error }
 
   it { expect( artist                 ).to be_a(MusicBrainz::Artist) }
   it { expect( artist.id              ).to eq("5b11f4ce-a62d-471e-81fc-a69a8278c7da") }
@@ -31,7 +31,7 @@ RSpec.describe "#artist", vcr: { cassette_name: "artist" } do
   context "not found" do
     let(:artist) { client.artist("01234567-0123-0123-0123-012345678901") }
 
-    it { expect{ artist }.to_not raise_error }
+    it { expect{ artist }.not_to raise_error }
     it { expect( artist ).to be_nil }
   end
 
@@ -61,7 +61,7 @@ RSpec.describe "#artists", vcr: { cassette_name: "artist" } do
   context "using string" do
     let(:results) { client.artists("Nirvana") }
 
-    it { expect{ results }.to_not raise_error }
+    it { expect{ results }.not_to raise_error }
     it { expect( results ).to be_an Array }
     it { expect( results ).to have_at_least(1).artist }
     it { expect( results ).to have_at_most(25).artists }
@@ -73,7 +73,7 @@ RSpec.describe "#artists", vcr: { cassette_name: "artist" } do
     context "with limit" do
       let(:results) { client.artists("Nirvana", limit: 2) }
 
-      it { expect{ results }.to_not raise_error }
+      it { expect{ results }.not_to raise_error }
       it { expect( results ).to have(2).artists }
 
       it { expect( results[0]       ).to be_a MusicBrainz::Artist }
@@ -85,7 +85,7 @@ RSpec.describe "#artists", vcr: { cassette_name: "artist" } do
   context "using indexed search" do
     let(:results) { client.artists(q: { artist: "Nirvana", country: "fi" }) }
 
-    it { expect{ results }.to_not raise_error }
+    it { expect{ results }.not_to raise_error }
     it { expect( results ).to be_an Array }
     it { expect( results ).to have(1).artist }
 
@@ -97,7 +97,7 @@ RSpec.describe "#artists", vcr: { cassette_name: "artist" } do
     context "with limit" do
       let(:results) { client.artists(q: { artist: "Nirvana" }, limit: 2) }
 
-      it { expect{ results }.to_not raise_error }
+      it { expect{ results }.not_to raise_error }
       it { expect( results ).to have(2).artists }
 
       it { expect( results[0]       ).to be_a(MusicBrainz::Artist) }
@@ -109,7 +109,7 @@ RSpec.describe "#artists", vcr: { cassette_name: "artist" } do
   context "using browse syntax" do
     let(:results) { client.artists(release: "7a7b7bb2-5abe-3088-9e3e-6bfd54035138") }
 
-    it { expect{ results }.to_not raise_error }
+    it { expect{ results }.not_to raise_error }
     it { expect( results ).to be_an Array }
     it { expect( results ).to have(15).artist }
 
@@ -119,7 +119,7 @@ RSpec.describe "#artists", vcr: { cassette_name: "artist" } do
     context "with limit" do
       let(:results) { client.artists(release: "7a7b7bb2-5abe-3088-9e3e-6bfd54035138", limit: 2) }
 
-      it { expect{ results }.to_not raise_error }
+      it { expect{ results }.not_to raise_error }
       it { expect( results ).to have(2).artists }
 
       it { expect( results[0] ).to be_a(MusicBrainz::Artist) }

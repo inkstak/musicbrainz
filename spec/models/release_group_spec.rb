@@ -6,7 +6,7 @@ RSpec.describe "#release_group", vcr: { cassette_name: "release_group" } do
   let(:client)  { MusicBrainz::Client.new }
   let(:release) { client.release_group("fb3770f6-83fb-32b7-85c4-1f522a92287e") }
 
-  it { expect{ release }.to_not raise_error }
+  it { expect{ release }.not_to raise_error }
 
   it { expect( release                    ).to be_a(MusicBrainz::ReleaseGroup) }
   it { expect( release.id                 ).to eq("fb3770f6-83fb-32b7-85c4-1f522a92287e") }
@@ -40,7 +40,7 @@ RSpec.describe "#release_groups", vcr: { cassette_name: "release_group" } do
   context "using string" do
     let(:results) { client.release_groups("MTV Unplugged in New York") }
 
-    it { expect{ results }.to_not raise_error }
+    it { expect{ results }.not_to raise_error }
     it { expect( results ).to be_an(Array) }
     it { expect( results ).to have_at_least(1).release }
     it { expect( results ).to have_at_most(25).releases }
@@ -54,7 +54,7 @@ RSpec.describe "#release_groups", vcr: { cassette_name: "release_group" } do
     context "with limit" do
       let(:results) { client.release_groups("MTV Unplugged in New York", limit: 2) }
 
-      it { expect{ results }.to_not raise_error }
+      it { expect{ results }.not_to raise_error }
       it { expect( results ).to have(2).releases }
 
       it { expect( results[0]       ).to be_a(MusicBrainz::ReleaseGroup) }
@@ -66,7 +66,7 @@ RSpec.describe "#release_groups", vcr: { cassette_name: "release_group" } do
   context "using indexed search" do
     let(:results) { client.release_groups(q: { release_group: "Bleach", arid: "5b11f4ce-a62d-471e-81fc-a69a8278c7da", status: "official" }) }
 
-    it { expect{ results }.to_not raise_error }
+    it { expect{ results }.not_to raise_error }
     it { expect( results ).to be_an(Array) }
     it { expect( results ).to have(1).release }
 
@@ -77,7 +77,7 @@ RSpec.describe "#release_groups", vcr: { cassette_name: "release_group" } do
     context "with limit" do
       let(:results) { client.release_groups(q: { release_group: "Bleach" }, limit: 2) }
 
-      it { expect{ results }.to_not raise_error }
+      it { expect{ results }.not_to raise_error }
       it { expect( results ).to have(2).releases }
 
       it { expect( results[0]       ).to be_a(MusicBrainz::ReleaseGroup) }
@@ -89,7 +89,7 @@ RSpec.describe "#release_groups", vcr: { cassette_name: "release_group" } do
   context "using browse syntax" do
     let(:results) { client.release_groups(artist: "5b11f4ce-a62d-471e-81fc-a69a8278c7da") }
 
-    it { expect{ results }.to_not raise_error }
+    it { expect{ results }.not_to raise_error }
     it { expect( results ).to be_an(Array) }
     it { expect( results ).to have(25).releases }
 
@@ -99,7 +99,7 @@ RSpec.describe "#release_groups", vcr: { cassette_name: "release_group" } do
     context "with limit" do
       let(:results) { client.release_groups(artist: "5b11f4ce-a62d-471e-81fc-a69a8278c7da", limit: 2) }
 
-      it { expect{ results }.to_not raise_error }
+      it { expect{ results }.not_to raise_error }
       it { expect( results ).to have(2).releases }
 
       it { expect( results[0] ).to be_a(MusicBrainz::ReleaseGroup) }

@@ -6,7 +6,7 @@ module MusicBrainz
       def initialize(json)
         json["score"] = json["score"].to_i if json.key?("score")
 
-        super(json)
+        super
       end
     end
   end

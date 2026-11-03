@@ -17,7 +17,7 @@ module MusicBrainz
         self[k.to_s.tr("-", "_")] = v
       end
 
-      super(json)
+      super
     end
   end
 end
