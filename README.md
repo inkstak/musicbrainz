@@ -208,12 +208,14 @@ The `MusicBrainz::Client` uses Faraday middlewares to control requests cycle.
 
 #### Caching
 
-Take a look at [faraday_middleware](https://github.com/lostisland/faraday_middleware).  
-You may implement simple response body caching like that:
+Take a look at [faraday-http-cache](https://github.com/sourcelevel/faraday-http-cache).
+You may implement simple response body caching like so:
 
 ```ruby
+require 'faraday-http-cache'
+
 client = MusicBrainz::Client.new do |c|
-  c.response :caching, ActiveSupport::Cache.lookup_store(:file_store, './tmp/cache')
+  c.use :http_cache, store: ActiveSupport::Cache.lookup_store(:file_store, './tmp/cache')
 end
 ```
 
@@ -221,7 +223,7 @@ Inside a Rails app, it will look like:
 
 ```ruby
 client = MusicBrainz::Client.new do |c|
-  c.response :caching, Rails.cache
+  c.use :http_cache, store: Rails.cache
 end
 ```
 
@@ -264,7 +266,7 @@ bundle exec irb -r './console.rb'
 
 ## License & credits
 
-Copyright (c) 2021 Savater Sebastien.  
+Copyright (c) 2021 Savater Sebastien.
 See [LICENSE](https://github.com/inkstak/musicbrainz/blob/master/LICENSE) for further details.
 
 Largely inspired by the [musicbrainz gem](https://github.com/localhots/musicbrainz) by [Gregory Eremin](https://github.com/localhots)

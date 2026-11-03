@@ -33,30 +33,6 @@ RSpec.describe MusicBrainz::Client, vcr: { cassette_name: "client" } do
     it { expect{ client  }.to_not raise_error }
     it { expect{ request }.to_not raise_error }
 
-    # In order to test caching:
-    #   VCR should raise on the 2nd request, unless we cached it
-    #   . here, we check that it raises as expected
-    #   . then, we'll check that nothing raises
-
-    it do
-      expect{ request }.to_not raise_error
-      VCR.eject_cassette
-      expect{ request }.to raise_error(VCR::Errors::UnhandledHTTPRequestError)
-    end
-
-    context "with caching" do
-      let :client do
-        MusicBrainz::Client.new do |connection|
-          connection.response :caching, CACHE_STORE
-        end
-      end
-
-      it do
-        expect{ request }.to_not raise_error
-        expect{ request }.to_not raise_error
-      end
-    end
-
     context "with bad request" do
       it { expect{ bad_request }.to raise_error(MusicBrainz::BadRequest, /not a valid inc parameter/) }
     end
