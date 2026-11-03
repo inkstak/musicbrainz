@@ -12,6 +12,6 @@ module MusicBrainz
     property :status
     property :disambiguation
 
-    coerce_key :media, Array[Medium]
+    coerce_key :media, [Medium]
   end
 end

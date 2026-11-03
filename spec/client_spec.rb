@@ -4,7 +4,8 @@ require "spec_helper"
 
 RSpec.describe MusicBrainz::Client, vcr: { cassette_name: "client" } do
   before       { MusicBrainz.reset_config }
-  let(:client) { MusicBrainz::Client.new }
+
+  let(:client) { described_class.new }
 
   define_method(:request)           { client.artist "5b11f4ce-a62d-471e-81fc-a69a8278c7da" }
   define_method(:bad_request)       { client.artist "5b11f4ce-a62d-471e-81fc-a69a8278c7da", includes: "unknown" }
@@ -30,8 +31,8 @@ RSpec.describe MusicBrainz::Client, vcr: { cassette_name: "client" } do
       MusicBrainz.configure(&MUSICBRAINZ_CONFIG)
     end
 
-    it { expect{ client  }.to_not raise_error }
-    it { expect{ request }.to_not raise_error }
+    it { expect{ client  }.not_to raise_error }
+    it { expect{ request }.not_to raise_error }
 
     context "with bad request" do
       it { expect{ bad_request }.to raise_error(MusicBrainz::BadRequest, /not a valid inc parameter/) }

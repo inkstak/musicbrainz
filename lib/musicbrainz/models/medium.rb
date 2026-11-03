@@ -8,6 +8,6 @@ module MusicBrainz
     property :format
     property :position
 
-    coerce_key :recordings, Array[Recording]
+    coerce_key :recordings, [Recording]
   end
 end

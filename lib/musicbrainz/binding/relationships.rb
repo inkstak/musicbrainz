@@ -10,7 +10,7 @@ module MusicBrainz
           end
         end
 
-        super(json)
+        super
       end
     end
   end

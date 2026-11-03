@@ -20,7 +20,7 @@ module MusicBrainz
     coerce_key :begin_area, Area
     coerce_key :end_area,   Area
 
-    coerce_key :relationships, Array[Relationship]
+    coerce_key :relationships, [Relationship]
 
     # def release_groups limit: nil
     #   @client.browse_release_groups(artist: id, limit: limit).map do |release|
