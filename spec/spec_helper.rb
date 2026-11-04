@@ -23,8 +23,6 @@ VCR.configure do |c|
   }
 end
 
-CACHE_STORE = ActiveSupport::Cache.lookup_store(:file_store, "./tmp/cache")
-
 MUSICBRAINZ_CONFIG = lambda { |config|
   config.app_name    = "MusicBrainz Test"
   config.app_version = MusicBrainz::VERSION

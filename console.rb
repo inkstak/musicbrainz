@@ -16,7 +16,9 @@ MusicBrainz.configure do |c|
   c.contact = `git config --get user.email`.strip
 
   # c.use :instrumentation
-  # c.response :caching, ActiveSupport::Cache.lookup_store(:file_store, "./tmp/cache")
+  #
+  # require 'faraday-http-cache'
+  # c.use :http_cache, ActiveSupport::Cache.lookup_store(:file_store, "./tmp/cache")
 end
 
 def client

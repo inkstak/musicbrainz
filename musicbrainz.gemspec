@@ -19,7 +19,6 @@ Gem::Specification.new do |s|
   s.required_ruby_version = ">= 2.5"
 
   s.add_dependency "activesupport"
-  s.add_dependency "faraday"
-  s.add_dependency "faraday_middleware"
+  s.add_dependency "faraday", ">= 2"
   s.add_dependency "hashie", ">= 3.2.0"
 end

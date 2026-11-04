@@ -15,7 +15,7 @@ module MusicBrainz
             when nil    then hash[type] = url["resource"]
             when Array  then hash[type] << url["resource"]
             else
-              hash[type] = Array.wrap(hash[type])
+              hash[type] = Array(hash[type])
               hash[type] << url["resource"]
             end
           end
